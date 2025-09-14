@@ -1,3 +1,145 @@
+# EarX - Intelligent Ear Training Tool
+
+*[中文版本](#中文版本) | English*
+
+## 🎵 Project Overview
+
+EarX is a professional music ear training application designed specifically for music education and auditory training. The application uses a hybrid architecture that combines the powerful performance of the JUCE C++ audio engine with the elegant experience of modern Flutter UI.
+
+### ✨ Core Features
+
+- **🎯 Precise Ear Training**: Supports random playback training within the twelve-tone system
+- **🎹 Multiple Timbre Options**: Built-in high-quality piano timbres and pure sine wave timbres
+- **⚙️ Flexible Parameter Adjustment**: Adjustable BPM, note duration, volume and other parameters
+- **🎵 Center Tone Mode**: Long press to set center tone for tonal ear training
+- **⏰ Timed Training**: Supports 25/35/60 minute timed training modes
+- **🌍 Multi-language Support**: Supports Chinese, English, Japanese, German, French, Korean
+- **📚 Custom Note Names**: Supports various note name display methods (sharps, flats, double sharps/flats, etc.)
+
+### 🛠️ Technical Architecture
+
+- **Audio Engine**: JUCE C++ - Professional audio processing framework
+- **User Interface**: Flutter - Cross-platform modern UI
+- **Build System**: CMake - Cross-platform build management
+- **Platform Support**: iOS (primary), macOS (compatible)
+
+## 🚀 Quick Start
+
+### 📋 System Requirements
+
+- **iOS**: iOS 12.0 or higher
+- **Development Environment**:
+  - Xcode 14.0+
+  - Flutter 3.9.2+
+  - CMake 3.22+
+  - JUCE 7.0+
+
+### 🔧 Build Instructions
+
+#### 1. Clone Project
+```bash
+git clone https://github.com/MajsknuaaEXE/EarX.git
+cd EarX
+```
+
+#### 2. Initialize Submodules
+```bash
+git submodule update --init --recursive
+```
+
+#### 3. Build Audio Engine (iOS)
+```bash
+cd build-ios
+cmake -G Xcode \
+    -DCMAKE_SYSTEM_NAME=iOS \
+    -DCMAKE_OSX_SYSROOT=iphonesimulator \
+    -DCMAKE_OSX_ARCHITECTURES=arm64 \
+    -DCMAKE_BUILD_TYPE=Debug \
+    ..
+cmake --build . --config Debug
+```
+
+#### 4. Build Flutter App
+```bash
+cd earxui
+flutter pub get
+flutter run
+```
+
+## 📱 Application Usage
+
+### Basic Operations
+1. **Select Notes**: Click notes on the dial to select/deselect
+2. **Long Press Center Tone**: Long press a note to set it as the center tone for random playback
+3. **Adjust Parameters**: Adjust speed, duration, timbre, etc. in settings
+4. **Timed Training**: Enable timer mode for focused training sessions
+
+### Advanced Features
+- **Custom Note Names**: Click notes to customize displayed note names
+- **Multi-language Switching**: Switch interface language in settings
+- **Countdown Display**: Training progress ring displayed in timer mode
+
+## 🏗️ Project Structure
+
+```
+EarX/
+├── Source/                 # JUCE C++ audio engine source code
+│   ├── AppState.*          # Application state management
+│   ├── AudioController.*   # Audio controller
+│   ├── PlaybackEngine.*    # Playback engine
+│   ├── EarxAudioEngineFFI.*# FFI interface
+│   └── ...
+├── earxui/                 # Flutter UI frontend
+│   ├── lib/               # Dart source code
+│   │   ├── main.dart      # Application entry
+│   │   ├── wheel_dial.dart# Dial component
+│   │   ├── audio_engine.dart# Audio engine binding
+│   │   └── ...
+│   └── ...
+├── External/               # External dependencies
+│   └── JUCE/              # JUCE audio framework
+├── build-ios/             # iOS build output
+├── CMakeLists.txt         # CMake configuration
+├── LICENSE                # MIT license
+└── CHANGELOG.md           # Update log
+```
+
+## 🤝 Contributing
+
+We welcome community contributions! Please follow these steps:
+
+1. Fork this project
+2. Create feature branch (`git checkout -b feature/new-feature`)
+3. Commit changes (`git commit -am 'Add new feature'`)
+4. Push to branch (`git push origin feature/new-feature`)
+5. Create Pull Request
+
+### Development Guidelines
+- Follow existing code style
+- Add appropriate comments
+- Ensure error-free builds
+- Test new feature compatibility
+
+## 📄 License
+
+This project is open source under the [MIT License](LICENSE).
+
+## 🙏 Acknowledgments
+
+- **JUCE** - Professional audio development framework
+- **Flutter** - Cross-platform UI development framework
+- **Salamander Grand Piano** - High-quality piano timbre samples
+- Support from all contributors and users
+
+## 📞 Contact
+
+- **Issue Reports**: Please submit via [GitHub Issues](https://github.com/MajsknuaaEXE/EarX/issues)
+- **Feature Suggestions**: Welcome to discuss new feature ideas in Issues
+
+---
+
+## 中文版本
+
 # EarX - 智能听音训练工具
 
 ## 🎵 项目简介
@@ -26,7 +168,7 @@ EarX 是一个专业的音乐听音训练应用，专为音乐教育和听觉训
 ### 📋 系统要求
 
 - **iOS**: iOS 12.0 或更高版本
-- **开发环境**: 
+- **开发环境**:
   - Xcode 14.0+
   - Flutter 3.9.2+
   - CMake 3.22+
@@ -36,7 +178,7 @@ EarX 是一个专业的音乐听音训练应用，专为音乐教育和听觉训
 
 #### 1. 克隆项目
 ```bash
-git clone https://github.com/你的用户名/EarX.git
+git clone https://github.com/MajsknuaaEXE/EarX.git
 cd EarX
 ```
 
@@ -77,31 +219,6 @@ flutter run
 - **多语言切换**：在设置中切换界面语言
 - **倒计时显示**：定时模式下会显示训练进度环
 
-## 🏗️ 项目结构
-
-```
-EarX/
-├── Source/                 # JUCE C++ 音频引擎源码
-│   ├── AppState.*          # 应用状态管理
-│   ├── AudioController.*   # 音频控制器
-│   ├── PlaybackEngine.*    # 播放引擎
-│   ├── EarxAudioEngineFFI.*# FFI 接口
-│   └── ...
-├── earxui/                 # Flutter UI 前端
-│   ├── lib/               # Dart 源码
-│   │   ├── main.dart      # 应用入口
-│   │   ├── wheel_dial.dart# 圆盘组件
-│   │   ├── audio_engine.dart# 音频引擎绑定
-│   │   └── ...
-│   └── ...
-├── External/               # 外部依赖
-│   └── JUCE/              # JUCE 音频框架
-├── build-ios/             # iOS 构建输出
-├── CMakeLists.txt         # CMake 配置
-├── LICENSE                # MIT 许可证
-└── CHANGELOG.md           # 更新日志
-```
-
 ## 🤝 贡献指南
 
 我们欢迎社区贡献！请遵循以下步骤：
@@ -125,15 +242,15 @@ EarX/
 ## 🙏 致谢
 
 - **JUCE** - 专业音频开发框架
-- **Flutter** - 跨平台 UI 开发框架  
+- **Flutter** - 跨平台 UI 开发框架
 - **Salamander Grand Piano** - 高品质钢琴音色样本
 - 所有贡献者和用户的支持
 
 ## 📞 联系方式
 
-- **问题反馈**：请在 [GitHub Issues](https://github.com/你的用户名/EarX/issues) 提交
+- **问题反馈**：请在 [GitHub Issues](https://github.com/MajsknuaaEXE/EarX/issues) 提交
 - **功能建议**：欢迎在 Issues 中讨论新功能想法
 
 ---
 
-**EarX v1.0.0** - 让音乐听觉训练更智能、更有趣！🎵
+**EarX v1.0.1** - 让音乐听觉训练更智能、更有趣！🎵

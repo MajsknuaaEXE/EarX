@@ -1,5 +1,6 @@
 #pragma once
-#include <JuceHeader.h>
+#include <juce_audio_basics/juce_audio_basics.h>
+#include <juce_core/juce_core.h>
 #include "PianoSound.h"
 
 class PianoVoice : public juce::SynthesiserVoice
@@ -20,6 +21,7 @@ private:
     juce::AudioBuffer<float>* currentSample = nullptr;
     double currentPosition = 0.0;
     double pitchRatio = 1.0;
+    double frequency = 440.0;
     float level = 0.0f;
     float tailOff = 0.0f;
     float volume = 0.2f;

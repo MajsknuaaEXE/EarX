@@ -1,5 +1,6 @@
 #pragma once
-#include <JuceHeader.h>
+#include <juce_core/juce_core.h>
+#include <juce_gui_basics/juce_gui_basics.h>
 #include "AppState.h"  // 完整包含而不是前向声明
 
 /**
@@ -16,14 +17,14 @@ public:
     InteractionController(AppState* appState);
     virtual ~InteractionController() override;
     
-    // 鼠标事件处理
-    void handleButtonMouseDown(juce::Component* button, double timestamp);
-    void handleButtonMouseUp(juce::Component* button);
+    // 鼠标事件处理 (长按检测逻辑已移至Flutter)
+    void handleButtonMouseDown(juce::Component* button, double timestamp) {} // 空实现
+    void handleButtonMouseUp(juce::Component* button) {} // 空实现
     
-    // 长按处理
-    void updateLongPressDetection(double currentTime);
-    void handleLongPress(int buttonIndex);
-    void cancelLongPress(int buttonIndex);
+    // 长按处理 (已弃用，现在通过FFI直接设置中心音)
+    void updateLongPressDetection(double currentTime) {} // 空实现
+    void handleLongPress(int buttonIndex) {} // 已弃用
+    void cancelLongPress(int buttonIndex) {} // 已弃用
     
     // 按钮状态管理
     void updateButtonVisualState(juce::OwnedArray<juce::ToggleButton>& toggles);

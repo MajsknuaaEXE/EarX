@@ -2,10 +2,10 @@
 #include "AppState.h"
 #include "AudioController.h"
 
-// 音符名称常量定义
+// 音符名称常量定义 - 现在通过 AppState 动态获取
 const char* PlaybackEngine::NOTE_NAMES[12] = {
-    "C", "C#/Db", "D", "D#/Eb", "E/Fb", "#E/F", "F#/Gb",
-    "G", "G#/Ab", "A", "A#/Bb", "B/Cb"
+    "C", "C#/Db", "D", "D#/Eb", "E", "F", "F#/Gb",
+    "G", "G#/Ab", "A", "A#/Bb", "B"
 };
 
 PlaybackEngine::PlaybackEngine(AppState* state, AudioController* audio)
@@ -107,7 +107,12 @@ void PlaybackEngine::playNextNote(const juce::Array<int>& onIndices)
     
     appState->notifyPlaybackStateChanged();
     
-    DBG("Playing note: " + juce::String(NOTE_NAMES[semitone]) + " (MIDI: " + juce::String(note) + ")");
+    // 使用选择的音名进行调试输出
+    juce::String selectedNoteNames = appState->getSelectedNoteNamesDisplayForSemitone(semitone);
+    if (selectedNoteNames.isEmpty())
+        selectedNoteNames = juce::String(NOTE_NAMES[semitone]);
+    
+    DBG("Playing note: " + selectedNoteNames + " (MIDI: " + juce::String(note) + ")");
 }
 
 void PlaybackEngine::stopNote(int midiNote)
@@ -144,7 +149,15 @@ void PlaybackEngine::updateNoteDisplay(juce::Label& noteLabel)
     if (appState->interaction.currentPlayingButtonIndex >= 0 && 
         appState->interaction.currentPlayingButtonIndex < 12)
     {
-        juce::String displayText = juce::String(NOTE_NAMES[appState->interaction.currentPlayingButtonIndex]);
+        // 使用 AppState 中的音名选择获取显示文本
+        juce::String displayText = appState->getSelectedNoteNamesDisplayForSemitone(
+            appState->interaction.currentPlayingButtonIndex);
+        
+        // 如果没有选择的音名，回退到默认音名
+        if (displayText.isEmpty())
+        {
+            displayText = juce::String(NOTE_NAMES[appState->interaction.currentPlayingButtonIndex]);
+        }
         
         // 如果是中心音，添加特殊标识
         if (appState->interaction.longPressedButtonIndex == appState->interaction.currentPlayingButtonIndex)
@@ -182,20 +195,12 @@ juce::Array<int> PlaybackEngine::getActiveNoteIndices()
 {
     juce::Array<int> onIndices;
     
-    if (appState->interaction.currentMode == AppState::InteractionState::Mode::Scale)
+    // 只使用Custom模式：使用AppState中的customSemitones状态
+    for (int i = 0; i < 12; ++i)
     {
-        // Scale 模式：根据选择的音阶获取音级
-        juce::Array<bool> scalePattern = appState->getScalePattern(appState->interaction.selectedScaleIndex);
-        for (int i = 0; i < scalePattern.size(); ++i)
-        {
-            if (scalePattern[i])
-                onIndices.add(i);
-        }
-    }
-    else
-    {
-        // Custom 模式：这个方法目前无法访问UI按钮状态，需要在MainComponent中传入
-        // 暂时返回空数组，MainComponent会调用带参数的重载版本
+        if (i < appState->interaction.customSemitones.size() && 
+            appState->interaction.customSemitones[i])
+            onIndices.add(i);
     }
     
     return onIndices;

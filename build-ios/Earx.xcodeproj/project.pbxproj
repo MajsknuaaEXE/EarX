@@ -9,32 +9,32 @@
 /* Begin PBXAggregateTarget section */
 		0994B1D9C796CF496881D11E /* ALL_BUILD */ = {
 			isa = PBXAggregateTarget;
-			buildConfigurationList = 9EAB66BD907D462BAD0C8BCD /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+			buildConfigurationList = AC98EF5309654BDF91681946 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
 			buildPhases = (
 				E6A2B9B886FB4B7715D25BA4 /* Generate CMakeFiles/ALL_BUILD */,
 			);
 			dependencies = (
-				FB186E80904E4D19A351D99D /* PBXTargetDependency */,
-				DC7CB81CF41B473CAA504BD2 /* PBXTargetDependency */,
+				410C1105C12B4592ACBE275C /* PBXTargetDependency */,
+				C9A32C7D09C6479CA0879128 /* PBXTargetDependency */,
 			);
 			name = ALL_BUILD;
 			productName = ALL_BUILD;
 		};
 		407C6B283F2FF45ED15AA2B3 /* install */ = {
 			isa = PBXAggregateTarget;
-			buildConfigurationList = 42DE43FEA8D6432EB19BA79E /* Build configuration list for PBXAggregateTarget "install" */;
+			buildConfigurationList = 4D883B7B31634D07A22865A7 /* Build configuration list for PBXAggregateTarget "install" */;
 			buildPhases = (
 				93426DA6A4AC2C2AC9CE883C /* CMake PostBuild Rules */,
 			);
 			dependencies = (
-				F6D8D90F729849F0B4B09587 /* PBXTargetDependency */,
+				C18F6B2B530A4B888AD954AC /* PBXTargetDependency */,
 			);
 			name = install;
 			productName = install;
 		};
 		A566E1F39D4CB82164906065 /* ZERO_CHECK */ = {
 			isa = PBXAggregateTarget;
-			buildConfigurationList = CA2C93313B574897A2913666 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+			buildConfigurationList = E480921047D240F1ABF201D1 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
 			buildPhases = (
 				EC5A4C94B999C4590145E763 /* Generate CMakeFiles/ZERO_CHECK */,
 			);
@@ -46,147 +46,100 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		00854BA1F55E4CD0B5FC6774 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/build-ios/Earx_artefacts/JuceLibraryCode/JuceHeader.h */ = {isa = PBXBuildFile; fileRef = 87EB7862ED674682B3DD96BB /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/build-ios/Earx_artefacts/JuceLibraryCode/JuceHeader.h */; };
-		02C6E6D2130F4C9CAEFBCF79 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/UprightPianoKW-small-SFZ-20190703/samples/D#5vH.wav */ = {isa = PBXBuildFile; fileRef = 85C6F07A02FA4C67A2636FFD /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/UprightPianoKW-small-SFZ-20190703/samples/D#5vH.wav */; };
-		03EF62AE19804B9BB9C3CDA0 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/UprightPianoKW-small-SFZ-20190703/samples/C6vH.wav */ = {isa = PBXBuildFile; fileRef = FF82AE9B5DD34E8F8230A428 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/UprightPianoKW-small-SFZ-20190703/samples/C6vH.wav */; };
-		05B7B3A244FC40EC9FA4F1DB /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/UprightPianoKW-small-SFZ-20190703/samples/F#5vH.wav */ = {isa = PBXBuildFile; fileRef = 51A17D6DB3E04CF6A313D2F6 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/UprightPianoKW-small-SFZ-20190703/samples/F#5vH.wav */; };
-		071E5403FDDA4FBAA49BA292 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/UprightPianoKW-small-SFZ-20190703/samples/F#3vH.wav */ = {isa = PBXBuildFile; fileRef = 09D0D4B4912D434FA1683956 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/UprightPianoKW-small-SFZ-20190703/samples/F#3vH.wav */; };
-		07576F4F6A4545A894706FEC /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/AppState.h */ = {isa = PBXBuildFile; fileRef = 398E34A88E0A4F6E89D31A52 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/AppState.h */; };
-		07B4B7099226478986B9FBD3 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_core/juce_core_CompilationTime.cpp */ = {isa = PBXBuildFile; fileRef = E7037C6B709C4D269CD16C2B /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_core/juce_core_CompilationTime.cpp */; };
-		0AB3F793BD3F457BBC88C66F /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_audio_processors/juce_audio_processors_lv2_libs.cpp */ = {isa = PBXBuildFile; fileRef = 28317CB4A1754580BD701C8C /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_audio_processors/juce_audio_processors_lv2_libs.cpp */; };
-		0B921955039D465182649FFC /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_gui_extra/juce_gui_extra.mm */ = {isa = PBXBuildFile; fileRef = 6689B23BA5BA4667BA5FFA14 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_gui_extra/juce_gui_extra.mm */; };
-		0C2C23EB7CD943E899D76D57 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_core/juce_core.mm */ = {isa = PBXBuildFile; fileRef = E8BA1385A6A84D879C8F9A7F /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_core/juce_core.mm */; };
-		0E2D1462E383450688DB8C8C /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/PianoVoice.cpp */ = {isa = PBXBuildFile; fileRef = 3C90DC3DC3FF47CD9DE4790F /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/PianoVoice.cpp */; };
-		0E4387953FE2423285DBFB6B /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/UprightPianoKW-small-SFZ-20190703/samples/F#4vH.wav */ = {isa = PBXBuildFile; fileRef = 908E6BB551C943888D20DF40 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/UprightPianoKW-small-SFZ-20190703/samples/F#4vH.wav */; };
-		112A8D6FA1CB4ACFBB9C6151 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/UprightPianoKW-small-SFZ-20190703/samples/D#7vH.wav */ = {isa = PBXBuildFile; fileRef = 0ECBD50AA6C44CF5984E3C5A /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/UprightPianoKW-small-SFZ-20190703/samples/D#7vH.wav */; };
-		136C74BBCC994496BC0C8C14 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/UprightPianoKW-small-SFZ-20190703/samples/B1vH.wav */ = {isa = PBXBuildFile; fileRef = C0CB8B494C9E4500A37699C7 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/UprightPianoKW-small-SFZ-20190703/samples/B1vH.wav */; };
-		1A5B085DF66C4F1EA4871A82 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_audio_utils/juce_audio_utils.mm */ = {isa = PBXBuildFile; fileRef = 525DC78FB1E74D7A85AE5A6B /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_audio_utils/juce_audio_utils.mm */; };
-		1B3F2F30D64D49BDB9549EBC /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_dsp/juce_dsp.mm */ = {isa = PBXBuildFile; fileRef = FACD04FF3351474A82D6F2B7 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_dsp/juce_dsp.mm */; };
-		1C941B3F5F5E4D7DBF16431F /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/UprightPianoKW-small-SFZ-20190703/samples/A4vH.wav */ = {isa = PBXBuildFile; fileRef = 60804FC9B3154453B30F9B8F /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/UprightPianoKW-small-SFZ-20190703/samples/A4vH.wav */; };
-		26CEFF587F4B4F40916645C8 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_graphics/juce_graphics_Sheenbidi.c */ = {isa = PBXBuildFile; fileRef = 4F5B50019E9844FC81B7A903 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_graphics/juce_graphics_Sheenbidi.c */; };
-		2757029971CD44CBAFEEF278 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/UprightPianoKW-small-SFZ-20190703/samples/F#6vH.wav */ = {isa = PBXBuildFile; fileRef = 970A3C51ED60438785EC8BD1 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/UprightPianoKW-small-SFZ-20190703/samples/F#6vH.wav */; };
-		2B94D429F75D4E2A885CAC1A /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/DummySound.cpp */ = {isa = PBXBuildFile; fileRef = 183B9F23B69E4AD8B3C2785C /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/DummySound.cpp */; };
-		31CF0D8A8D0947D0B88758D2 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/UprightPianoKW-small-SFZ-20190703/samples/C1vH.wav */ = {isa = PBXBuildFile; fileRef = 032FE4929AB54212BFCC176B /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/UprightPianoKW-small-SFZ-20190703/samples/C1vH.wav */; };
-		385B7F3C04554DFEB5023F40 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/PlaybackEngine.cpp */ = {isa = PBXBuildFile; fileRef = DE62416A31BC47C2A29AA060 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/PlaybackEngine.cpp */; };
-		3AB077ACFE1C443F82F752E3 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/UprightPianoKW-small-SFZ-20190703/samples/C7vH.wav */ = {isa = PBXBuildFile; fileRef = A1496CE8975C47ACBB88DB39 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/UprightPianoKW-small-SFZ-20190703/samples/C7vH.wav */; };
-		3C4AA0350F4E42D2B0013767 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_gui_basics/juce_gui_basics.mm */ = {isa = PBXBuildFile; fileRef = AA8BCD36DA894E97B94DE229 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_gui_basics/juce_gui_basics.mm */; };
-		43C8F3117A3B445B8ED955D3 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_graphics/juce_graphics_Harfbuzz.cpp */ = {isa = PBXBuildFile; fileRef = F178FAEDE9CC4B9D9CED8FBB /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_graphics/juce_graphics_Harfbuzz.cpp */; };
-		4816945DC673412FBA64D8B5 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/UprightPianoKW-small-SFZ-20190703/samples/B2vH.wav */ = {isa = PBXBuildFile; fileRef = 53BFCF4C2B9C4A25AEA4E267 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/UprightPianoKW-small-SFZ-20190703/samples/B2vH.wav */; };
-		4D4ACA05DCC1408F883FF25D /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/MainComponent.h */ = {isa = PBXBuildFile; fileRef = 90D9551C58A94855891D296A /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/MainComponent.h */; };
-		4EE6F0B30F88490DBA685681 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/UprightPianoKW-small-SFZ-20190703/samples/D#6vH.wav */ = {isa = PBXBuildFile; fileRef = A892224916C44144928463AC /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/UprightPianoKW-small-SFZ-20190703/samples/D#6vH.wav */; };
-		503D415A700544E0AF26579C /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/InteractionController.cpp */ = {isa = PBXBuildFile; fileRef = EC6BFF5E6FF84859A82CCA9B /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/InteractionController.cpp */; };
-		519FB6A4E590488F82BEF430 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/SplashScreen.h */ = {isa = PBXBuildFile; fileRef = 3D4859E1A3B74091B541FC1E /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/SplashScreen.h */; };
-		558B8BDD45884850B83F1ABC /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/AudioController.h */ = {isa = PBXBuildFile; fileRef = E5C6D814596648FA811E4F83 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/AudioController.h */; };
-		56F1C7C709D74BB7928C94B3 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/IOSApp.h */ = {isa = PBXBuildFile; fileRef = E1EC2FB18A1A4C109919BD02 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/IOSApp.h */; };
-		59D7D72C82EF4692A6026AB9 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/PianoSound.cpp */ = {isa = PBXBuildFile; fileRef = 8F89839C547443968B2C03A4 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/PianoSound.cpp */; };
-		5D0BE5B181744CD6A2E93BAF /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/UprightPianoKW-small-SFZ-20190703/samples/A7vH.wav */ = {isa = PBXBuildFile; fileRef = 29ABD735A67C4FA38C3F5DB4 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/UprightPianoKW-small-SFZ-20190703/samples/A7vH.wav */; };
-		64E9F4C0B0834E1C8C6356EA /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/UprightPianoKW-small-SFZ-20190703/UprightPianoKW-small-20190703.sfz */ = {isa = PBXBuildFile; fileRef = F2A1004072A04403B5C94D5F /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/UprightPianoKW-small-SFZ-20190703/UprightPianoKW-small-20190703.sfz */; };
-		69221EB571F04A5DAEE937A7 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/build-ios/Earx_artefacts/JuceLibraryCode/Earx/PkgInfo */ = {isa = PBXBuildFile; fileRef = ED3336C6212546EFA47C0962 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/build-ios/Earx_artefacts/JuceLibraryCode/Earx/PkgInfo */; };
-		6D180C86D6664992AD9992D3 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/UprightPianoKW-small-SFZ-20190703/samples/A6vH.wav */ = {isa = PBXBuildFile; fileRef = 09E4B1D1A2E1429989B30CE6 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/UprightPianoKW-small-SFZ-20190703/samples/A6vH.wav */; };
-		6FFCD1EF705C47A3AE4BEDF3 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/MainComponent.cpp */ = {isa = PBXBuildFile; fileRef = 89C7BA8BBD584AE19D5FA3BC /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/MainComponent.cpp */; };
-		759CAE7692554017BBA8657C /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_graphics/juce_graphics.mm */ = {isa = PBXBuildFile; fileRef = C2ABC23EE2B54F6EA5512E86 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_graphics/juce_graphics.mm */; };
-		766C7E5DAB7642769FACF92E /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 4D649467168C44A48A74E699 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/CMakeLists.txt */; };
-		7DC2B81D4FB144A0A224C2F2 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/UprightPianoKW-small-SFZ-20190703/samples/D#4vH.wav */ = {isa = PBXBuildFile; fileRef = 7417CBCEB1B34552B26BAB2D /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/UprightPianoKW-small-SFZ-20190703/samples/D#4vH.wav */; };
-		80B303E524F94934BA708137 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/extras/Build/CMake/LaunchScreen.storyboard */ = {isa = PBXBuildFile; fileRef = FC5A9B62AD6E4F4F87BE0BC2 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/extras/Build/CMake/LaunchScreen.storyboard */; };
-		8347DD4ACB0348689EF36A21 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_events/juce_events.mm */ = {isa = PBXBuildFile; fileRef = 10F23E123D92428986572DAD /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_events/juce_events.mm */; };
-		844AD56FECB54B2784B1D6B0 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/SineVoice.h */ = {isa = PBXBuildFile; fileRef = 7888A33C429D4B72AD9DB226 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/SineVoice.h */; };
-		863EB56E6A1A466D856E23D4 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_audio_basics/juce_audio_basics.mm */ = {isa = PBXBuildFile; fileRef = 022EAA2F24A94CAAAF25DEA6 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_audio_basics/juce_audio_basics.mm */; };
-		8729180FC1694E11A1610F50 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/SineVoice.cpp */ = {isa = PBXBuildFile; fileRef = 8FD0DE0A3DCA421788E33B3A /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/SineVoice.cpp */; };
-		87B5FB63B2B44D1DADBC8451 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/SplashScreen.cpp */ = {isa = PBXBuildFile; fileRef = 3C376973BF6046119D8EAFC9 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/SplashScreen.cpp */; };
-		8C74FA89E9D94956A3CED08B /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/UprightPianoKW-small-SFZ-20190703/samples/B7vH.wav */ = {isa = PBXBuildFile; fileRef = 49B4480E56E14FC6882F4BDD /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/UprightPianoKW-small-SFZ-20190703/samples/B7vH.wav */; };
-		9219055FD4F345D796550118 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_data_structures/juce_data_structures.mm */ = {isa = PBXBuildFile; fileRef = 6133C75B807545879EE20EA1 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_data_structures/juce_data_structures.mm */; };
-		93C1A6A00A6C4854A2785B65 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/AppState.cpp */ = {isa = PBXBuildFile; fileRef = F1FC57CD308B416085D582C8 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/AppState.cpp */; };
-		9648802DFFED4AA19F05B3AA /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/MainWindow.h */ = {isa = PBXBuildFile; fileRef = 34BD3E3739A04977B047FD6B /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/MainWindow.h */; };
-		97E83566AF6C408ABBA34F15 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/DummySound.h */ = {isa = PBXBuildFile; fileRef = 7F356195859A40A4B272E902 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/DummySound.h */; };
-		9926E887841C4867A4E88AE0 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/UprightPianoKW-small-SFZ-20190703/photo.jpg */ = {isa = PBXBuildFile; fileRef = 7D956F908B77454484586782 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/UprightPianoKW-small-SFZ-20190703/photo.jpg */; };
-		99A923D11585403F885DF0F4 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/UprightPianoKW-small-SFZ-20190703/samples/A5vH.wav */ = {isa = PBXBuildFile; fileRef = 9F778293C96B448583095E30 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/UprightPianoKW-small-SFZ-20190703/samples/A5vH.wav */; };
-		9B8E2B52755A460DA53E5FE9 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/UprightPianoKW-small-SFZ-20190703/samples/C4vH.wav */ = {isa = PBXBuildFile; fileRef = C79FB84991D94EA8A1F350B6 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/UprightPianoKW-small-SFZ-20190703/samples/C4vH.wav */; };
-		AA9A7E08C6324C57A6DEE4E8 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/build-ios/Earx_artefacts/JuceLibraryCode/JuceHeader.h.rule */ = {isa = PBXBuildFile; fileRef = 8DE1832861284BAAAFDF4902 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/build-ios/Earx_artefacts/JuceLibraryCode/JuceHeader.h.rule */; };
-		AB97B1EA062D43C7B44ECB9F /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/build-ios/Earx_artefacts/JuceLibraryCode/Earx/PkgInfo.rule */ = {isa = PBXBuildFile; fileRef = F677828410834C8F8DFCFA8D /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/build-ios/Earx_artefacts/JuceLibraryCode/Earx/PkgInfo.rule */; };
-		AED79F85743E4CA2B5ABC266 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/UprightPianoKW-small-SFZ-20190703/samples/F#1vH.wav */ = {isa = PBXBuildFile; fileRef = C2DDDE69DD26413ABE12DB1F /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/UprightPianoKW-small-SFZ-20190703/samples/F#1vH.wav */; };
-		B42763F95BBD47D8A04BDDC6 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/AudioController.cpp */ = {isa = PBXBuildFile; fileRef = B5C98D3CF5674915ACADECD5 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/AudioController.cpp */; };
-		B549F690298D42908F855A81 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/PianoSound.h */ = {isa = PBXBuildFile; fileRef = 1A383CA251D54009B95E0D7C /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/PianoSound.h */; };
-		B5EF46BAE1114F1182FDA38E /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/LightIndicator.cpp */ = {isa = PBXBuildFile; fileRef = CA1607EC16B040FDB833998E /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/LightIndicator.cpp */; };
-		BA640BB64FAC4AB7B0C3690A /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/IOSApp.cpp */ = {isa = PBXBuildFile; fileRef = 4012A4F523F74D7C9BD099BC /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/IOSApp.cpp */; };
-		BB0489D0B2104165B136F15E /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/InteractionController.h */ = {isa = PBXBuildFile; fileRef = 36B3C23379D74582A39CDDDC /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/InteractionController.h */; };
-		C07049DDEEBA48C6A9424B0A /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/UprightPianoKW-small-SFZ-20190703/samples/D#3vH.wav */ = {isa = PBXBuildFile; fileRef = 6C135084041C402B90C9E289 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/UprightPianoKW-small-SFZ-20190703/samples/D#3vH.wav */; };
-		C57E7ECA48414D188B23AD58 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/LightIndicator.h */ = {isa = PBXBuildFile; fileRef = D3BD5C9DC0374B24A8343313 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/LightIndicator.h */; };
-		CA2B1403FF044A848B6727E7 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/UprightPianoKW-small-SFZ-20190703/samples/A3vH.wav */ = {isa = PBXBuildFile; fileRef = F2A010DC12DC4E55AD23DE08 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/UprightPianoKW-small-SFZ-20190703/samples/A3vH.wav */; };
-		CAFA7DB1D9DA4867A6CAD1DE /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/UprightPianoKW-small-SFZ-20190703/samples/D#2vH.wav */ = {isa = PBXBuildFile; fileRef = B19F7F53416E43CAA26CED77 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/UprightPianoKW-small-SFZ-20190703/samples/D#2vH.wav */; };
-		CD76794704F84721BACA6BE8 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/UprightPianoKW-small-SFZ-20190703/samples/C5vH.wav */ = {isa = PBXBuildFile; fileRef = 3DDFEB6E942B48F7A1E08B8B /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/UprightPianoKW-small-SFZ-20190703/samples/C5vH.wav */; };
-		CF3A3AD426FF4D5E9C5A6D2E /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/Main.mm */ = {isa = PBXBuildFile; fileRef = E49A92FC070945E682079370 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/Main.mm */; };
-		DCF1385C1CB3468AAD7A8D1C /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/PianoVoice.h */ = {isa = PBXBuildFile; fileRef = E3F20496C71040359BBDB925 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/PianoVoice.h */; };
-		E5591103159A4135B6292696 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_audio_processors/juce_audio_processors.mm */ = {isa = PBXBuildFile; fileRef = 5909C11387384184BC231DC1 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_audio_processors/juce_audio_processors.mm */; };
-		E9D56D1701C3424A85B42B1C /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/MainWindow.cpp */ = {isa = PBXBuildFile; fileRef = 28712BEB65E041F496BC71FE /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/MainWindow.cpp */; };
-		EAC009814CE7476A9EF1A72B /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_audio_formats/juce_audio_formats.mm */ = {isa = PBXBuildFile; fileRef = F4F10274DE174D50B1FDF3FA /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_audio_formats/juce_audio_formats.mm */; };
-		EAC73EDCDA5C48F6953D3AB1 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/EarxLookAndFeel.h */ = {isa = PBXBuildFile; fileRef = F0FEFBEA878147BE969A5194 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/EarxLookAndFeel.h */; };
-		ECBA762EAE1944BEA23270CF /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/PlaybackEngine.h */ = {isa = PBXBuildFile; fileRef = E6180798DF6841429C95C54B /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/PlaybackEngine.h */; };
-		EF6530FE2ADC4599875DEC59 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/UprightPianoKW-small-SFZ-20190703/samples/F#7vH.wav */ = {isa = PBXBuildFile; fileRef = 020A9A93A40C48FD97FEC810 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/UprightPianoKW-small-SFZ-20190703/samples/F#7vH.wav */; };
-		F1ECDEC5A62044A58E34C92B /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/EarxLookAndFeel.cpp */ = {isa = PBXBuildFile; fileRef = 1E9D485379BA480CAE050B03 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/EarxLookAndFeel.cpp */; };
-		F4C0913528EA4D8E9A7E8389 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_audio_processors/juce_audio_processors_ara.cpp */ = {isa = PBXBuildFile; fileRef = 4673E77E3DB648239527AF22 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_audio_processors/juce_audio_processors_ara.cpp */; };
-		F50C0F480C93405FBC138A3A /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/UprightPianoKW-small-SFZ-20190703/readme.txt */ = {isa = PBXBuildFile; fileRef = 6C17CAC32CDA43E493AA0942 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/UprightPianoKW-small-SFZ-20190703/readme.txt */; };
-		F640710CA84249028D016B8F /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/UprightPianoKW-small-SFZ-20190703/cc0.txt */ = {isa = PBXBuildFile; fileRef = C09F716C5A5C43489E527086 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/UprightPianoKW-small-SFZ-20190703/cc0.txt */; };
-		F67BA7E9A9F040B687EAEF86 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/UprightPianoKW-small-SFZ-20190703/samples/F#2vH.wav */ = {isa = PBXBuildFile; fileRef = 9E025E70830F4AD7AAC06402 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/UprightPianoKW-small-SFZ-20190703/samples/F#2vH.wav */; };
-		F757E8E986C84ED89969DC6E /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_audio_devices/juce_audio_devices.mm */ = {isa = PBXBuildFile; fileRef = 2FDA839254DA47679B41C845 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_audio_devices/juce_audio_devices.mm */; };
-		F87DA6EB2C074C3ABDB91A25 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/build-ios/CMakeFiles/Earx.dir/Info.plist */ = {isa = PBXBuildFile; fileRef = 9AACFC74EAA34E61990EDE36 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/build-ios/CMakeFiles/Earx.dir/Info.plist */; };
+		03F68DBA05EF405E804935BF /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/PlaybackEngine.cpp */ = {isa = PBXBuildFile; fileRef = D1FC02B0E9644529A646169A /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/PlaybackEngine.cpp */; };
+		05847DE00709465EBEB26C90 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_audio_processors/juce_audio_processors_ara.cpp */ = {isa = PBXBuildFile; fileRef = 28335463E80848CD9ED44EB7 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_audio_processors/juce_audio_processors_ara.cpp */; };
+		0D9708024EBC465A9316458A /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/PianoSound.h */ = {isa = PBXBuildFile; fileRef = 0D4F2D0A888449CAA50CB6D3 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/PianoSound.h */; };
+		0F356FE58B6044789487B2DB /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_events/juce_events.mm */ = {isa = PBXBuildFile; fileRef = 12660764C9184C9BA758CD0D /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_events/juce_events.mm */; };
+		147D28745B444EEEAFD09149 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_audio_utils/juce_audio_utils.mm */ = {isa = PBXBuildFile; fileRef = 12223CF15CE34340B82710BB /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_audio_utils/juce_audio_utils.mm */; };
+		1798A3A6BF3A425FBF46F5B4 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/InteractionController.cpp */ = {isa = PBXBuildFile; fileRef = 4DCE369776844E70A976336A /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/InteractionController.cpp */; };
+		1FEA800C01F74F0487929C5F /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_gui_extra/juce_gui_extra.mm */ = {isa = PBXBuildFile; fileRef = 4447AB3B1F0F4A87AB7B6198 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_gui_extra/juce_gui_extra.mm */; };
+		20B7070DB22F46F19087E1BC /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_graphics/juce_graphics.mm */ = {isa = PBXBuildFile; fileRef = B4ACF5F9933546AD86BDB6B5 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_graphics/juce_graphics.mm */; };
+		3305CA5BEF324747B3FC135A /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/PlaybackEngine.h */ = {isa = PBXBuildFile; fileRef = C362715235FD42469FBCCC14 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/PlaybackEngine.h */; };
+		359FF9D36E0C469EA5603E56 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/DummySound.h */ = {isa = PBXBuildFile; fileRef = 325FBD1049A5400AB4CBCB37 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/DummySound.h */; };
+		35A605514CD94478BB93F08F /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_core/juce_core_CompilationTime.cpp */ = {isa = PBXBuildFile; fileRef = 14EB225C905E4CD3B00A3AD6 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_core/juce_core_CompilationTime.cpp */; };
+		3D9EC2D568B346E08E3ECFA0 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/AppState.h */ = {isa = PBXBuildFile; fileRef = BDC687A4EA014008B5D2017A /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/AppState.h */; };
+		423D6180F5874AB0BFA9DB3A /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_audio_devices/juce_audio_devices.mm */ = {isa = PBXBuildFile; fileRef = 1A13582B94B54777B4AD88F1 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_audio_devices/juce_audio_devices.mm */; };
+		476710E8C7394F558A6AE7D0 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_audio_basics/juce_audio_basics.mm */ = {isa = PBXBuildFile; fileRef = B5D4F254B0254A4E953120EF /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_audio_basics/juce_audio_basics.mm */; };
+		47F698F8572B4BB3974B3A26 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/PianoVoice.cpp */ = {isa = PBXBuildFile; fileRef = 9AFACE80EDC54C3CAF45E7AC /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/PianoVoice.cpp */; };
+		544345179FD54571864A5C7F /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_graphics/juce_graphics_Harfbuzz.cpp */ = {isa = PBXBuildFile; fileRef = 00E191AE37EA4B7798069E20 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_graphics/juce_graphics_Harfbuzz.cpp */; };
+		57A85753AF0D481097816F72 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/DummySound.cpp */ = {isa = PBXBuildFile; fileRef = 7600685357AD44F9B09AAF53 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/DummySound.cpp */; };
+		5A4C7E7C73194E6DB3334518 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_dsp/juce_dsp.mm */ = {isa = PBXBuildFile; fileRef = 28C746BFBB6E4638945BE7A0 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_dsp/juce_dsp.mm */; };
+		5F98AFAF21FD4C0EB0F5FC0D /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/InteractionController.h */ = {isa = PBXBuildFile; fileRef = D2D0E9CBFE234718B7B6639F /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/InteractionController.h */; };
+		619B29A1DE8B4395AA80FE01 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/AudioController.cpp */ = {isa = PBXBuildFile; fileRef = CD69D5D3A3F0496BB599E946 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/AudioController.cpp */; };
+		6513C9CB834E480A8529B746 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/SineVoice.cpp */ = {isa = PBXBuildFile; fileRef = 34FA2EAF9C9740AE9D35375D /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/SineVoice.cpp */; };
+		6E2D59ED6F5F4934888689AB /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/AudioController.h */ = {isa = PBXBuildFile; fileRef = 26E33158929242C9B11BD0DD /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/AudioController.h */; };
+		845D903821D64CCABD504E1C /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_audio_processors/juce_audio_processors_lv2_libs.cpp */ = {isa = PBXBuildFile; fileRef = B1F37E57EC3E4F2D83ED9947 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_audio_processors/juce_audio_processors_lv2_libs.cpp */; };
+		9407B2944D4547768827A27D /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/PianoSound.cpp */ = {isa = PBXBuildFile; fileRef = 9135A8EA3B1E447597B563BC /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/PianoSound.cpp */; };
+		9B93B41207C9446199FF0619 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/PianoVoice.h */ = {isa = PBXBuildFile; fileRef = 50F3B598761F4168BBF360A9 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/PianoVoice.h */; };
+		ADB28816BFD549929FAB7BE1 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/AppState.cpp */ = {isa = PBXBuildFile; fileRef = 785839FC3F6143C095BE3C5E /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/AppState.cpp */; };
+		BAA8DE6E8B8C4A54864526F2 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_data_structures/juce_data_structures.mm */ = {isa = PBXBuildFile; fileRef = E0E31F18D2A7445FA21300DC /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_data_structures/juce_data_structures.mm */; };
+		BC0457D39AA1410DA647C8B7 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/EarxAudioEngineFFI.cpp */ = {isa = PBXBuildFile; fileRef = 50FA94A179FC42E28FE0D144 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/EarxAudioEngineFFI.cpp */; };
+		C2C328E14717452C949A9BE5 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_core/juce_core.mm */ = {isa = PBXBuildFile; fileRef = E83452193747463888D1F245 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_core/juce_core.mm */; };
+		CCB7BE4953704ECF8F01B2DF /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/EarxAudioEngineFFI.h */ = {isa = PBXBuildFile; fileRef = B7B04E1E7C124F7B853821E0 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/EarxAudioEngineFFI.h */; };
+		D0126A86B5524251A6EAFA8A /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = B09F73F9E4DF470797C9F6B9 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/CMakeLists.txt */; };
+		E76B1B0B1B2746EAB3A701CD /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_audio_processors/juce_audio_processors.mm */ = {isa = PBXBuildFile; fileRef = 132396C0BBC9462BB60B2F48 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_audio_processors/juce_audio_processors.mm */; };
+		EC73BD2B42C84C6FBF65E619 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_gui_basics/juce_gui_basics.mm */ = {isa = PBXBuildFile; fileRef = 6159BC419CF94C9EA24B49FC /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_gui_basics/juce_gui_basics.mm */; };
+		EFD29372A2774B0FB592AE42 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/SineVoice.h */ = {isa = PBXBuildFile; fileRef = 542E511714844A16BB82BAED /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/SineVoice.h */; };
+		F265EAA750BE411B9A5C2162 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_audio_formats/juce_audio_formats.mm */ = {isa = PBXBuildFile; fileRef = E0F9FEFC44DD4E4893421C1A /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_audio_formats/juce_audio_formats.mm */; };
+		F754E8F536BB4D66A262BA26 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_graphics/juce_graphics_Sheenbidi.c */ = {isa = PBXBuildFile; fileRef = FC3934C891634484A0DB152F /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_graphics/juce_graphics_Sheenbidi.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXBuildStyle section */
-		5C3716C0C6F1437185A8B268 /* Release */ = {
-			isa = PBXBuildStyle;
-			buildSettings = {
-				COPY_PHASE_STRIP = NO;
-			};
-			name = Release;
-		};
-		C6C82954239C45FF99E7CFB4 /* Debug */ = {
-			isa = PBXBuildStyle;
-			buildSettings = {
-				COPY_PHASE_STRIP = NO;
-			};
-			name = Debug;
-		};
-		D13081238C6C4775AE8E90D1 /* RelWithDebInfo */ = {
-			isa = PBXBuildStyle;
-			buildSettings = {
-				COPY_PHASE_STRIP = NO;
-			};
-			name = RelWithDebInfo;
-		};
-		DFDB21F5D8FE4EBE93411858 /* MinSizeRel */ = {
+		2CD005C2E03A449F912CFDB8 /* MinSizeRel */ = {
 			isa = PBXBuildStyle;
 			buildSettings = {
 				COPY_PHASE_STRIP = NO;
 			};
 			name = MinSizeRel;
 		};
+		59E4BE66BEBF4C44B06EEC70 /* Release */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Release;
+		};
+		DFEB68D9231143D0A7E58DE4 /* RelWithDebInfo */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = RelWithDebInfo;
+		};
+		EC65D97685CC4FCFB6D6977C /* Debug */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Debug;
+		};
 /* End PBXBuildStyle section */
 
 /* Begin PBXContainerItemProxy section */
-		1ECBB39ACE854101807348A4 /* PBXContainerItemProxy */ = {
+		2E1AE97B429B43798AAFF065 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 6C3D1CB7B3FB4E74AEF80895 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 8E500E3F07501B5867E41347;
-			remoteInfo = Earx;
-		};
-		2112E505259C46B68DF9C095 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 6C3D1CB7B3FB4E74AEF80895 /* Project object */;
+			containerPortal = 6E9D21AAB2724CC2901BFDDA /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 0994B1D9C796CF496881D11E;
 			remoteInfo = ALL_BUILD;
 		};
-		5676F1E0F95C41318D25B8CB /* PBXContainerItemProxy */ = {
+		546953A2D4AF4F85BE685C2B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 6C3D1CB7B3FB4E74AEF80895 /* Project object */;
+			containerPortal = 6E9D21AAB2724CC2901BFDDA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5041E8C8701D41F55709B4D0;
+			remoteInfo = EarxAudioEngine;
+		};
+		84723A26AC62415E88441286 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6E9D21AAB2724CC2901BFDDA /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = A566E1F39D4CB82164906065;
 			remoteInfo = ZERO_CHECK;
 		};
-		A0568DE661714045B9D0368B /* PBXContainerItemProxy */ = {
+		A595AA8B07F342BFBA1AA93D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 6C3D1CB7B3FB4E74AEF80895 /* Project object */;
+			containerPortal = 6E9D21AAB2724CC2901BFDDA /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = A566E1F39D4CB82164906065;
 			remoteInfo = ZERO_CHECK;
@@ -194,95 +147,48 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		020A9A93A40C48FD97FEC810 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/UprightPianoKW-small-SFZ-20190703/samples/F#7vH.wav */ = {isa = PBXFileReference; explicitFileType = default; fileEncoding = 4; name = "F#7vH.wav"; path = "Source/UprightPianoKW-small-SFZ-20190703/samples/F#7vH.wav"; sourceTree = SOURCE_ROOT; };
-		022EAA2F24A94CAAAF25DEA6 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_audio_basics/juce_audio_basics.mm */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; name = juce_audio_basics.mm; path = External/JUCE/modules/juce_audio_basics/juce_audio_basics.mm; sourceTree = SOURCE_ROOT; };
-		032FE4929AB54212BFCC176B /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/UprightPianoKW-small-SFZ-20190703/samples/C1vH.wav */ = {isa = PBXFileReference; explicitFileType = default; fileEncoding = 4; name = C1vH.wav; path = "Source/UprightPianoKW-small-SFZ-20190703/samples/C1vH.wav"; sourceTree = SOURCE_ROOT; };
-		09D0D4B4912D434FA1683956 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/UprightPianoKW-small-SFZ-20190703/samples/F#3vH.wav */ = {isa = PBXFileReference; explicitFileType = default; fileEncoding = 4; name = "F#3vH.wav"; path = "Source/UprightPianoKW-small-SFZ-20190703/samples/F#3vH.wav"; sourceTree = SOURCE_ROOT; };
-		09E4B1D1A2E1429989B30CE6 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/UprightPianoKW-small-SFZ-20190703/samples/A6vH.wav */ = {isa = PBXFileReference; explicitFileType = default; fileEncoding = 4; name = A6vH.wav; path = "Source/UprightPianoKW-small-SFZ-20190703/samples/A6vH.wav"; sourceTree = SOURCE_ROOT; };
-		0ECBD50AA6C44CF5984E3C5A /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/UprightPianoKW-small-SFZ-20190703/samples/D#7vH.wav */ = {isa = PBXFileReference; explicitFileType = default; fileEncoding = 4; name = "D#7vH.wav"; path = "Source/UprightPianoKW-small-SFZ-20190703/samples/D#7vH.wav"; sourceTree = SOURCE_ROOT; };
-		10F23E123D92428986572DAD /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_events/juce_events.mm */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; name = juce_events.mm; path = External/JUCE/modules/juce_events/juce_events.mm; sourceTree = SOURCE_ROOT; };
-		183B9F23B69E4AD8B3C2785C /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/DummySound.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = DummySound.cpp; path = Source/DummySound.cpp; sourceTree = SOURCE_ROOT; };
-		1A383CA251D54009B95E0D7C /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/PianoSound.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = PianoSound.h; path = Source/PianoSound.h; sourceTree = SOURCE_ROOT; };
-		1E9D485379BA480CAE050B03 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/EarxLookAndFeel.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = EarxLookAndFeel.cpp; path = Source/EarxLookAndFeel.cpp; sourceTree = SOURCE_ROOT; };
-		28317CB4A1754580BD701C8C /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_audio_processors/juce_audio_processors_lv2_libs.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = juce_audio_processors_lv2_libs.cpp; path = External/JUCE/modules/juce_audio_processors/juce_audio_processors_lv2_libs.cpp; sourceTree = SOURCE_ROOT; };
-		28712BEB65E041F496BC71FE /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/MainWindow.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = MainWindow.cpp; path = Source/MainWindow.cpp; sourceTree = SOURCE_ROOT; };
-		29ABD735A67C4FA38C3F5DB4 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/UprightPianoKW-small-SFZ-20190703/samples/A7vH.wav */ = {isa = PBXFileReference; explicitFileType = default; fileEncoding = 4; name = A7vH.wav; path = "Source/UprightPianoKW-small-SFZ-20190703/samples/A7vH.wav"; sourceTree = SOURCE_ROOT; };
-		2FDA839254DA47679B41C845 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_audio_devices/juce_audio_devices.mm */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; name = juce_audio_devices.mm; path = External/JUCE/modules/juce_audio_devices/juce_audio_devices.mm; sourceTree = SOURCE_ROOT; };
-		34BD3E3739A04977B047FD6B /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/MainWindow.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = MainWindow.h; path = Source/MainWindow.h; sourceTree = SOURCE_ROOT; };
-		36B3C23379D74582A39CDDDC /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/InteractionController.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = InteractionController.h; path = Source/InteractionController.h; sourceTree = SOURCE_ROOT; };
-		398E34A88E0A4F6E89D31A52 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/AppState.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = AppState.h; path = Source/AppState.h; sourceTree = SOURCE_ROOT; };
-		3C376973BF6046119D8EAFC9 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/SplashScreen.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = SplashScreen.cpp; path = Source/SplashScreen.cpp; sourceTree = SOURCE_ROOT; };
-		3C90DC3DC3FF47CD9DE4790F /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/PianoVoice.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = PianoVoice.cpp; path = Source/PianoVoice.cpp; sourceTree = SOURCE_ROOT; };
-		3D4859E1A3B74091B541FC1E /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/SplashScreen.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = SplashScreen.h; path = Source/SplashScreen.h; sourceTree = SOURCE_ROOT; };
-		3DDFEB6E942B48F7A1E08B8B /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/UprightPianoKW-small-SFZ-20190703/samples/C5vH.wav */ = {isa = PBXFileReference; explicitFileType = default; fileEncoding = 4; name = C5vH.wav; path = "Source/UprightPianoKW-small-SFZ-20190703/samples/C5vH.wav"; sourceTree = SOURCE_ROOT; };
-		4012A4F523F74D7C9BD099BC /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/IOSApp.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = IOSApp.cpp; path = Source/IOSApp.cpp; sourceTree = SOURCE_ROOT; };
-		4673E77E3DB648239527AF22 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_audio_processors/juce_audio_processors_ara.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = juce_audio_processors_ara.cpp; path = External/JUCE/modules/juce_audio_processors/juce_audio_processors_ara.cpp; sourceTree = SOURCE_ROOT; };
-		49B4480E56E14FC6882F4BDD /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/UprightPianoKW-small-SFZ-20190703/samples/B7vH.wav */ = {isa = PBXFileReference; explicitFileType = default; fileEncoding = 4; name = B7vH.wav; path = "Source/UprightPianoKW-small-SFZ-20190703/samples/B7vH.wav"; sourceTree = SOURCE_ROOT; };
-		4D649467168C44A48A74E699 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
-		4F5B50019E9844FC81B7A903 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_graphics/juce_graphics_Sheenbidi.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = juce_graphics_Sheenbidi.c; path = External/JUCE/modules/juce_graphics/juce_graphics_Sheenbidi.c; sourceTree = SOURCE_ROOT; };
-		51A17D6DB3E04CF6A313D2F6 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/UprightPianoKW-small-SFZ-20190703/samples/F#5vH.wav */ = {isa = PBXFileReference; explicitFileType = default; fileEncoding = 4; name = "F#5vH.wav"; path = "Source/UprightPianoKW-small-SFZ-20190703/samples/F#5vH.wav"; sourceTree = SOURCE_ROOT; };
-		525DC78FB1E74D7A85AE5A6B /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_audio_utils/juce_audio_utils.mm */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; name = juce_audio_utils.mm; path = External/JUCE/modules/juce_audio_utils/juce_audio_utils.mm; sourceTree = SOURCE_ROOT; };
-		53BFCF4C2B9C4A25AEA4E267 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/UprightPianoKW-small-SFZ-20190703/samples/B2vH.wav */ = {isa = PBXFileReference; explicitFileType = default; fileEncoding = 4; name = B2vH.wav; path = "Source/UprightPianoKW-small-SFZ-20190703/samples/B2vH.wav"; sourceTree = SOURCE_ROOT; };
-		5909C11387384184BC231DC1 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_audio_processors/juce_audio_processors.mm */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; name = juce_audio_processors.mm; path = External/JUCE/modules/juce_audio_processors/juce_audio_processors.mm; sourceTree = SOURCE_ROOT; };
-		60804FC9B3154453B30F9B8F /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/UprightPianoKW-small-SFZ-20190703/samples/A4vH.wav */ = {isa = PBXFileReference; explicitFileType = default; fileEncoding = 4; name = A4vH.wav; path = "Source/UprightPianoKW-small-SFZ-20190703/samples/A4vH.wav"; sourceTree = SOURCE_ROOT; };
-		6133C75B807545879EE20EA1 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_data_structures/juce_data_structures.mm */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; name = juce_data_structures.mm; path = External/JUCE/modules/juce_data_structures/juce_data_structures.mm; sourceTree = SOURCE_ROOT; };
-		6689B23BA5BA4667BA5FFA14 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_gui_extra/juce_gui_extra.mm */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; name = juce_gui_extra.mm; path = External/JUCE/modules/juce_gui_extra/juce_gui_extra.mm; sourceTree = SOURCE_ROOT; };
-		67901485F19F440EAC885FDF /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
-		6C135084041C402B90C9E289 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/UprightPianoKW-small-SFZ-20190703/samples/D#3vH.wav */ = {isa = PBXFileReference; explicitFileType = default; fileEncoding = 4; name = "D#3vH.wav"; path = "Source/UprightPianoKW-small-SFZ-20190703/samples/D#3vH.wav"; sourceTree = SOURCE_ROOT; };
-		6C17CAC32CDA43E493AA0942 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/UprightPianoKW-small-SFZ-20190703/readme.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = readme.txt; path = "Source/UprightPianoKW-small-SFZ-20190703/readme.txt"; sourceTree = SOURCE_ROOT; };
-		7417CBCEB1B34552B26BAB2D /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/UprightPianoKW-small-SFZ-20190703/samples/D#4vH.wav */ = {isa = PBXFileReference; explicitFileType = default; fileEncoding = 4; name = "D#4vH.wav"; path = "Source/UprightPianoKW-small-SFZ-20190703/samples/D#4vH.wav"; sourceTree = SOURCE_ROOT; };
-		7888A33C429D4B72AD9DB226 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/SineVoice.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = SineVoice.h; path = Source/SineVoice.h; sourceTree = SOURCE_ROOT; };
-		7D956F908B77454484586782 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/UprightPianoKW-small-SFZ-20190703/photo.jpg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = image; name = photo.jpg; path = "Source/UprightPianoKW-small-SFZ-20190703/photo.jpg"; sourceTree = SOURCE_ROOT; };
-		7F356195859A40A4B272E902 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/DummySound.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = DummySound.h; path = Source/DummySound.h; sourceTree = SOURCE_ROOT; };
-		85C6F07A02FA4C67A2636FFD /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/UprightPianoKW-small-SFZ-20190703/samples/D#5vH.wav */ = {isa = PBXFileReference; explicitFileType = default; fileEncoding = 4; name = "D#5vH.wav"; path = "Source/UprightPianoKW-small-SFZ-20190703/samples/D#5vH.wav"; sourceTree = SOURCE_ROOT; };
-		87EB7862ED674682B3DD96BB /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/build-ios/Earx_artefacts/JuceLibraryCode/JuceHeader.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = JuceHeader.h; path = "build-ios/Earx_artefacts/JuceLibraryCode/JuceHeader.h"; sourceTree = SOURCE_ROOT; };
-		89C7BA8BBD584AE19D5FA3BC /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/MainComponent.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = MainComponent.cpp; path = Source/MainComponent.cpp; sourceTree = SOURCE_ROOT; };
-		8DE1832861284BAAAFDF4902 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/build-ios/Earx_artefacts/JuceLibraryCode/JuceHeader.h.rule */ = {isa = PBXFileReference; explicitFileType = default; fileEncoding = 4; name = JuceHeader.h.rule; path = "build-ios/Earx_artefacts/JuceLibraryCode/JuceHeader.h.rule"; sourceTree = SOURCE_ROOT; };
-		8F89839C547443968B2C03A4 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/PianoSound.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = PianoSound.cpp; path = Source/PianoSound.cpp; sourceTree = SOURCE_ROOT; };
-		8FD0DE0A3DCA421788E33B3A /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/SineVoice.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = SineVoice.cpp; path = Source/SineVoice.cpp; sourceTree = SOURCE_ROOT; };
-		908E6BB551C943888D20DF40 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/UprightPianoKW-small-SFZ-20190703/samples/F#4vH.wav */ = {isa = PBXFileReference; explicitFileType = default; fileEncoding = 4; name = "F#4vH.wav"; path = "Source/UprightPianoKW-small-SFZ-20190703/samples/F#4vH.wav"; sourceTree = SOURCE_ROOT; };
-		90D9551C58A94855891D296A /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/MainComponent.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = MainComponent.h; path = Source/MainComponent.h; sourceTree = SOURCE_ROOT; };
-		970A3C51ED60438785EC8BD1 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/UprightPianoKW-small-SFZ-20190703/samples/F#6vH.wav */ = {isa = PBXFileReference; explicitFileType = default; fileEncoding = 4; name = "F#6vH.wav"; path = "Source/UprightPianoKW-small-SFZ-20190703/samples/F#6vH.wav"; sourceTree = SOURCE_ROOT; };
-		9AACFC74EAA34E61990EDE36 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/build-ios/CMakeFiles/Earx.dir/Info.plist */ = {isa = PBXFileReference; explicitFileType = sourcecode.text.plist; fileEncoding = 4; name = Info.plist; path = "build-ios/CMakeFiles/Earx.dir/Info.plist"; sourceTree = SOURCE_ROOT; };
-		9E025E70830F4AD7AAC06402 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/UprightPianoKW-small-SFZ-20190703/samples/F#2vH.wav */ = {isa = PBXFileReference; explicitFileType = default; fileEncoding = 4; name = "F#2vH.wav"; path = "Source/UprightPianoKW-small-SFZ-20190703/samples/F#2vH.wav"; sourceTree = SOURCE_ROOT; };
-		9F778293C96B448583095E30 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/UprightPianoKW-small-SFZ-20190703/samples/A5vH.wav */ = {isa = PBXFileReference; explicitFileType = default; fileEncoding = 4; name = A5vH.wav; path = "Source/UprightPianoKW-small-SFZ-20190703/samples/A5vH.wav"; sourceTree = SOURCE_ROOT; };
-		A1496CE8975C47ACBB88DB39 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/UprightPianoKW-small-SFZ-20190703/samples/C7vH.wav */ = {isa = PBXFileReference; explicitFileType = default; fileEncoding = 4; name = C7vH.wav; path = "Source/UprightPianoKW-small-SFZ-20190703/samples/C7vH.wav"; sourceTree = SOURCE_ROOT; };
-		A892224916C44144928463AC /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/UprightPianoKW-small-SFZ-20190703/samples/D#6vH.wav */ = {isa = PBXFileReference; explicitFileType = default; fileEncoding = 4; name = "D#6vH.wav"; path = "Source/UprightPianoKW-small-SFZ-20190703/samples/D#6vH.wav"; sourceTree = SOURCE_ROOT; };
-		AA8BCD36DA894E97B94DE229 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_gui_basics/juce_gui_basics.mm */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; name = juce_gui_basics.mm; path = External/JUCE/modules/juce_gui_basics/juce_gui_basics.mm; sourceTree = SOURCE_ROOT; };
-		AF01A3A092B6424EB490BE50 /* Earx */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = EarX; sourceTree = BUILT_PRODUCTS_DIR; };
-		B19F7F53416E43CAA26CED77 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/UprightPianoKW-small-SFZ-20190703/samples/D#2vH.wav */ = {isa = PBXFileReference; explicitFileType = default; fileEncoding = 4; name = "D#2vH.wav"; path = "Source/UprightPianoKW-small-SFZ-20190703/samples/D#2vH.wav"; sourceTree = SOURCE_ROOT; };
-		B5C98D3CF5674915ACADECD5 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/AudioController.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = AudioController.cpp; path = Source/AudioController.cpp; sourceTree = SOURCE_ROOT; };
-		C09F716C5A5C43489E527086 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/UprightPianoKW-small-SFZ-20190703/cc0.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = cc0.txt; path = "Source/UprightPianoKW-small-SFZ-20190703/cc0.txt"; sourceTree = SOURCE_ROOT; };
-		C0CB8B494C9E4500A37699C7 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/UprightPianoKW-small-SFZ-20190703/samples/B1vH.wav */ = {isa = PBXFileReference; explicitFileType = default; fileEncoding = 4; name = B1vH.wav; path = "Source/UprightPianoKW-small-SFZ-20190703/samples/B1vH.wav"; sourceTree = SOURCE_ROOT; };
-		C2ABC23EE2B54F6EA5512E86 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_graphics/juce_graphics.mm */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; name = juce_graphics.mm; path = External/JUCE/modules/juce_graphics/juce_graphics.mm; sourceTree = SOURCE_ROOT; };
-		C2DDDE69DD26413ABE12DB1F /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/UprightPianoKW-small-SFZ-20190703/samples/F#1vH.wav */ = {isa = PBXFileReference; explicitFileType = default; fileEncoding = 4; name = "F#1vH.wav"; path = "Source/UprightPianoKW-small-SFZ-20190703/samples/F#1vH.wav"; sourceTree = SOURCE_ROOT; };
-		C79FB84991D94EA8A1F350B6 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/UprightPianoKW-small-SFZ-20190703/samples/C4vH.wav */ = {isa = PBXFileReference; explicitFileType = default; fileEncoding = 4; name = C4vH.wav; path = "Source/UprightPianoKW-small-SFZ-20190703/samples/C4vH.wav"; sourceTree = SOURCE_ROOT; };
-		CA1607EC16B040FDB833998E /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/LightIndicator.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = LightIndicator.cpp; path = Source/LightIndicator.cpp; sourceTree = SOURCE_ROOT; };
-		D3BD5C9DC0374B24A8343313 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/LightIndicator.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = LightIndicator.h; path = Source/LightIndicator.h; sourceTree = SOURCE_ROOT; };
-		DE62416A31BC47C2A29AA060 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/PlaybackEngine.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = PlaybackEngine.cpp; path = Source/PlaybackEngine.cpp; sourceTree = SOURCE_ROOT; };
-		E1EC2FB18A1A4C109919BD02 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/IOSApp.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = IOSApp.h; path = Source/IOSApp.h; sourceTree = SOURCE_ROOT; };
-		E3F20496C71040359BBDB925 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/PianoVoice.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = PianoVoice.h; path = Source/PianoVoice.h; sourceTree = SOURCE_ROOT; };
-		E49A92FC070945E682079370 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/Main.mm */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; name = Main.mm; path = Source/Main.mm; sourceTree = SOURCE_ROOT; };
-		E5C6D814596648FA811E4F83 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/AudioController.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = AudioController.h; path = Source/AudioController.h; sourceTree = SOURCE_ROOT; };
-		E6180798DF6841429C95C54B /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/PlaybackEngine.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = PlaybackEngine.h; path = Source/PlaybackEngine.h; sourceTree = SOURCE_ROOT; };
-		E7037C6B709C4D269CD16C2B /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_core/juce_core_CompilationTime.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = juce_core_CompilationTime.cpp; path = External/JUCE/modules/juce_core/juce_core_CompilationTime.cpp; sourceTree = SOURCE_ROOT; };
-		E8BA1385A6A84D879C8F9A7F /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_core/juce_core.mm */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; name = juce_core.mm; path = External/JUCE/modules/juce_core/juce_core.mm; sourceTree = SOURCE_ROOT; };
-		EC6BFF5E6FF84859A82CCA9B /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/InteractionController.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = InteractionController.cpp; path = Source/InteractionController.cpp; sourceTree = SOURCE_ROOT; };
-		ED3336C6212546EFA47C0962 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/build-ios/Earx_artefacts/JuceLibraryCode/Earx/PkgInfo */ = {isa = PBXFileReference; explicitFileType = default; fileEncoding = 4; name = PkgInfo; path = "build-ios/Earx_artefacts/JuceLibraryCode/Earx/PkgInfo"; sourceTree = SOURCE_ROOT; };
-		F0FEFBEA878147BE969A5194 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/EarxLookAndFeel.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = EarxLookAndFeel.h; path = Source/EarxLookAndFeel.h; sourceTree = SOURCE_ROOT; };
-		F178FAEDE9CC4B9D9CED8FBB /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_graphics/juce_graphics_Harfbuzz.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = juce_graphics_Harfbuzz.cpp; path = External/JUCE/modules/juce_graphics/juce_graphics_Harfbuzz.cpp; sourceTree = SOURCE_ROOT; };
-		F1FC57CD308B416085D582C8 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/AppState.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = AppState.cpp; path = Source/AppState.cpp; sourceTree = SOURCE_ROOT; };
-		F2A010DC12DC4E55AD23DE08 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/UprightPianoKW-small-SFZ-20190703/samples/A3vH.wav */ = {isa = PBXFileReference; explicitFileType = default; fileEncoding = 4; name = A3vH.wav; path = "Source/UprightPianoKW-small-SFZ-20190703/samples/A3vH.wav"; sourceTree = SOURCE_ROOT; };
-		F2A1004072A04403B5C94D5F /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/UprightPianoKW-small-SFZ-20190703/UprightPianoKW-small-20190703.sfz */ = {isa = PBXFileReference; explicitFileType = default; fileEncoding = 4; name = "UprightPianoKW-small-20190703.sfz"; path = "Source/UprightPianoKW-small-SFZ-20190703/UprightPianoKW-small-20190703.sfz"; sourceTree = SOURCE_ROOT; };
-		F4F10274DE174D50B1FDF3FA /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_audio_formats/juce_audio_formats.mm */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; name = juce_audio_formats.mm; path = External/JUCE/modules/juce_audio_formats/juce_audio_formats.mm; sourceTree = SOURCE_ROOT; };
-		F677828410834C8F8DFCFA8D /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/build-ios/Earx_artefacts/JuceLibraryCode/Earx/PkgInfo.rule */ = {isa = PBXFileReference; explicitFileType = default; fileEncoding = 4; name = PkgInfo.rule; path = "build-ios/Earx_artefacts/JuceLibraryCode/Earx/PkgInfo.rule"; sourceTree = SOURCE_ROOT; };
-		FACD04FF3351474A82D6F2B7 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_dsp/juce_dsp.mm */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; name = juce_dsp.mm; path = External/JUCE/modules/juce_dsp/juce_dsp.mm; sourceTree = SOURCE_ROOT; };
-		FC5A9B62AD6E4F4F87BE0BC2 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/extras/Build/CMake/LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = External/JUCE/extras/Build/CMake/LaunchScreen.storyboard; sourceTree = SOURCE_ROOT; };
-		FF82AE9B5DD34E8F8230A428 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/UprightPianoKW-small-SFZ-20190703/samples/C6vH.wav */ = {isa = PBXFileReference; explicitFileType = default; fileEncoding = 4; name = C6vH.wav; path = "Source/UprightPianoKW-small-SFZ-20190703/samples/C6vH.wav"; sourceTree = SOURCE_ROOT; };
+		00E191AE37EA4B7798069E20 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_graphics/juce_graphics_Harfbuzz.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = juce_graphics_Harfbuzz.cpp; path = External/JUCE/modules/juce_graphics/juce_graphics_Harfbuzz.cpp; sourceTree = SOURCE_ROOT; };
+		0D4F2D0A888449CAA50CB6D3 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/PianoSound.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = PianoSound.h; path = Source/PianoSound.h; sourceTree = SOURCE_ROOT; };
+		12223CF15CE34340B82710BB /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_audio_utils/juce_audio_utils.mm */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; name = juce_audio_utils.mm; path = External/JUCE/modules/juce_audio_utils/juce_audio_utils.mm; sourceTree = SOURCE_ROOT; };
+		12660764C9184C9BA758CD0D /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_events/juce_events.mm */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; name = juce_events.mm; path = External/JUCE/modules/juce_events/juce_events.mm; sourceTree = SOURCE_ROOT; };
+		132396C0BBC9462BB60B2F48 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_audio_processors/juce_audio_processors.mm */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; name = juce_audio_processors.mm; path = External/JUCE/modules/juce_audio_processors/juce_audio_processors.mm; sourceTree = SOURCE_ROOT; };
+		14EB225C905E4CD3B00A3AD6 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_core/juce_core_CompilationTime.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = juce_core_CompilationTime.cpp; path = External/JUCE/modules/juce_core/juce_core_CompilationTime.cpp; sourceTree = SOURCE_ROOT; };
+		1A13582B94B54777B4AD88F1 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_audio_devices/juce_audio_devices.mm */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; name = juce_audio_devices.mm; path = External/JUCE/modules/juce_audio_devices/juce_audio_devices.mm; sourceTree = SOURCE_ROOT; };
+		26E33158929242C9B11BD0DD /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/AudioController.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = AudioController.h; path = Source/AudioController.h; sourceTree = SOURCE_ROOT; };
+		28335463E80848CD9ED44EB7 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_audio_processors/juce_audio_processors_ara.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = juce_audio_processors_ara.cpp; path = External/JUCE/modules/juce_audio_processors/juce_audio_processors_ara.cpp; sourceTree = SOURCE_ROOT; };
+		28C746BFBB6E4638945BE7A0 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_dsp/juce_dsp.mm */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; name = juce_dsp.mm; path = External/JUCE/modules/juce_dsp/juce_dsp.mm; sourceTree = SOURCE_ROOT; };
+		325FBD1049A5400AB4CBCB37 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/DummySound.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = DummySound.h; path = Source/DummySound.h; sourceTree = SOURCE_ROOT; };
+		34FA2EAF9C9740AE9D35375D /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/SineVoice.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = SineVoice.cpp; path = Source/SineVoice.cpp; sourceTree = SOURCE_ROOT; };
+		4447AB3B1F0F4A87AB7B6198 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_gui_extra/juce_gui_extra.mm */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; name = juce_gui_extra.mm; path = External/JUCE/modules/juce_gui_extra/juce_gui_extra.mm; sourceTree = SOURCE_ROOT; };
+		4DCE369776844E70A976336A /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/InteractionController.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = InteractionController.cpp; path = Source/InteractionController.cpp; sourceTree = SOURCE_ROOT; };
+		50F3B598761F4168BBF360A9 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/PianoVoice.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = PianoVoice.h; path = Source/PianoVoice.h; sourceTree = SOURCE_ROOT; };
+		50FA94A179FC42E28FE0D144 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/EarxAudioEngineFFI.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = EarxAudioEngineFFI.cpp; path = Source/EarxAudioEngineFFI.cpp; sourceTree = SOURCE_ROOT; };
+		542E511714844A16BB82BAED /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/SineVoice.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = SineVoice.h; path = Source/SineVoice.h; sourceTree = SOURCE_ROOT; };
+		6159BC419CF94C9EA24B49FC /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_gui_basics/juce_gui_basics.mm */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; name = juce_gui_basics.mm; path = External/JUCE/modules/juce_gui_basics/juce_gui_basics.mm; sourceTree = SOURCE_ROOT; };
+		7600685357AD44F9B09AAF53 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/DummySound.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = DummySound.cpp; path = Source/DummySound.cpp; sourceTree = SOURCE_ROOT; };
+		785839FC3F6143C095BE3C5E /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/AppState.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = AppState.cpp; path = Source/AppState.cpp; sourceTree = SOURCE_ROOT; };
+		812CD5098D534EF3B1D6B109 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		9135A8EA3B1E447597B563BC /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/PianoSound.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = PianoSound.cpp; path = Source/PianoSound.cpp; sourceTree = SOURCE_ROOT; };
+		9AFACE80EDC54C3CAF45E7AC /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/PianoVoice.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = PianoVoice.cpp; path = Source/PianoVoice.cpp; sourceTree = SOURCE_ROOT; };
+		B09F73F9E4DF470797C9F6B9 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		B1F37E57EC3E4F2D83ED9947 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_audio_processors/juce_audio_processors_lv2_libs.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = juce_audio_processors_lv2_libs.cpp; path = External/JUCE/modules/juce_audio_processors/juce_audio_processors_lv2_libs.cpp; sourceTree = SOURCE_ROOT; };
+		B4ACF5F9933546AD86BDB6B5 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_graphics/juce_graphics.mm */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; name = juce_graphics.mm; path = External/JUCE/modules/juce_graphics/juce_graphics.mm; sourceTree = SOURCE_ROOT; };
+		B5D4F254B0254A4E953120EF /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_audio_basics/juce_audio_basics.mm */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; name = juce_audio_basics.mm; path = External/JUCE/modules/juce_audio_basics/juce_audio_basics.mm; sourceTree = SOURCE_ROOT; };
+		B7B04E1E7C124F7B853821E0 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/EarxAudioEngineFFI.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = EarxAudioEngineFFI.h; path = Source/EarxAudioEngineFFI.h; sourceTree = SOURCE_ROOT; };
+		BDC687A4EA014008B5D2017A /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/AppState.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = AppState.h; path = Source/AppState.h; sourceTree = SOURCE_ROOT; };
+		C362715235FD42469FBCCC14 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/PlaybackEngine.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = PlaybackEngine.h; path = Source/PlaybackEngine.h; sourceTree = SOURCE_ROOT; };
+		CD69D5D3A3F0496BB599E946 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/AudioController.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = AudioController.cpp; path = Source/AudioController.cpp; sourceTree = SOURCE_ROOT; };
+		D1FC02B0E9644529A646169A /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/PlaybackEngine.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = PlaybackEngine.cpp; path = Source/PlaybackEngine.cpp; sourceTree = SOURCE_ROOT; };
+		D2D0E9CBFE234718B7B6639F /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/InteractionController.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = InteractionController.h; path = Source/InteractionController.h; sourceTree = SOURCE_ROOT; };
+		E0E31F18D2A7445FA21300DC /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_data_structures/juce_data_structures.mm */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; name = juce_data_structures.mm; path = External/JUCE/modules/juce_data_structures/juce_data_structures.mm; sourceTree = SOURCE_ROOT; };
+		E0F9FEFC44DD4E4893421C1A /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_audio_formats/juce_audio_formats.mm */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; name = juce_audio_formats.mm; path = External/JUCE/modules/juce_audio_formats/juce_audio_formats.mm; sourceTree = SOURCE_ROOT; };
+		E83452193747463888D1F245 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_core/juce_core.mm */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; name = juce_core.mm; path = External/JUCE/modules/juce_core/juce_core.mm; sourceTree = SOURCE_ROOT; };
+		F52C9F5149D742509C7C8809 /* EarxAudioEngine */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libEarxAudioEngine.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC3934C891634484A0DB152F /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_graphics/juce_graphics_Sheenbidi.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = juce_graphics_Sheenbidi.c; path = External/JUCE/modules/juce_graphics/juce_graphics_Sheenbidi.c; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		816870277B32480E8D04A373 /* Frameworks */ = {
+		DD1A19895C244C2A8A15BA3E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -292,229 +198,160 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1FB6B173053843F3A3437B48 /* ALL_BUILD */ = {
+		15CE14D22BEC448888FAA745 = {
 			isa = PBXGroup;
 			children = (
-				53BF68F66BB14F6885F279FE /* CMake Rules */,
-				67901485F19F440EAC885FDF /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/CMakeLists.txt */,
-			);
-			name = ALL_BUILD;
-			sourceTree = "<group>";
-		};
-		31D2306908D745C489C399E7 /* CMake Rules */ = {
-			isa = PBXGroup;
-			children = (
-				F677828410834C8F8DFCFA8D /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/build-ios/Earx_artefacts/JuceLibraryCode/Earx/PkgInfo.rule */,
-				8DE1832861284BAAAFDF4902 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/build-ios/Earx_artefacts/JuceLibraryCode/JuceHeader.h.rule */,
-			);
-			name = "CMake Rules";
-			sourceTree = "<group>";
-		};
-		38C89710A6834D2BA72183FB /* Source Files */ = {
-			isa = PBXGroup;
-			children = (
-				022EAA2F24A94CAAAF25DEA6 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_audio_basics/juce_audio_basics.mm */,
-				2FDA839254DA47679B41C845 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_audio_devices/juce_audio_devices.mm */,
-				F4F10274DE174D50B1FDF3FA /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_audio_formats/juce_audio_formats.mm */,
-				5909C11387384184BC231DC1 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_audio_processors/juce_audio_processors.mm */,
-				4673E77E3DB648239527AF22 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_audio_processors/juce_audio_processors_ara.cpp */,
-				28317CB4A1754580BD701C8C /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_audio_processors/juce_audio_processors_lv2_libs.cpp */,
-				525DC78FB1E74D7A85AE5A6B /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_audio_utils/juce_audio_utils.mm */,
-				E8BA1385A6A84D879C8F9A7F /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_core/juce_core.mm */,
-				E7037C6B709C4D269CD16C2B /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_core/juce_core_CompilationTime.cpp */,
-				6133C75B807545879EE20EA1 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_data_structures/juce_data_structures.mm */,
-				FACD04FF3351474A82D6F2B7 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_dsp/juce_dsp.mm */,
-				10F23E123D92428986572DAD /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_events/juce_events.mm */,
-				C2ABC23EE2B54F6EA5512E86 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_graphics/juce_graphics.mm */,
-				F178FAEDE9CC4B9D9CED8FBB /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_graphics/juce_graphics_Harfbuzz.cpp */,
-				4F5B50019E9844FC81B7A903 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_graphics/juce_graphics_Sheenbidi.c */,
-				AA8BCD36DA894E97B94DE229 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_gui_basics/juce_gui_basics.mm */,
-				6689B23BA5BA4667BA5FFA14 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_gui_extra/juce_gui_extra.mm */,
-				F1FC57CD308B416085D582C8 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/AppState.cpp */,
-				B5C98D3CF5674915ACADECD5 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/AudioController.cpp */,
-				183B9F23B69E4AD8B3C2785C /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/DummySound.cpp */,
-				1E9D485379BA480CAE050B03 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/EarxLookAndFeel.cpp */,
-				4012A4F523F74D7C9BD099BC /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/IOSApp.cpp */,
-				EC6BFF5E6FF84859A82CCA9B /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/InteractionController.cpp */,
-				CA1607EC16B040FDB833998E /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/LightIndicator.cpp */,
-				E49A92FC070945E682079370 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/Main.mm */,
-				89C7BA8BBD584AE19D5FA3BC /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/MainComponent.cpp */,
-				28712BEB65E041F496BC71FE /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/MainWindow.cpp */,
-				8F89839C547443968B2C03A4 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/PianoSound.cpp */,
-				3C90DC3DC3FF47CD9DE4790F /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/PianoVoice.cpp */,
-				DE62416A31BC47C2A29AA060 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/PlaybackEngine.cpp */,
-				8FD0DE0A3DCA421788E33B3A /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/SineVoice.cpp */,
-				3C376973BF6046119D8EAFC9 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/SplashScreen.cpp */,
-			);
-			name = "Source Files";
-			sourceTree = "<group>";
-		};
-		53BF68F66BB14F6885F279FE /* CMake Rules */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = "CMake Rules";
-			sourceTree = "<group>";
-		};
-		603AADBE56694E0FA7181F97 /* Header Files */ = {
-			isa = PBXGroup;
-			children = (
-				398E34A88E0A4F6E89D31A52 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/AppState.h */,
-				E5C6D814596648FA811E4F83 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/AudioController.h */,
-				7F356195859A40A4B272E902 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/DummySound.h */,
-				F0FEFBEA878147BE969A5194 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/EarxLookAndFeel.h */,
-				E1EC2FB18A1A4C109919BD02 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/IOSApp.h */,
-				36B3C23379D74582A39CDDDC /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/InteractionController.h */,
-				D3BD5C9DC0374B24A8343313 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/LightIndicator.h */,
-				90D9551C58A94855891D296A /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/MainComponent.h */,
-				34BD3E3739A04977B047FD6B /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/MainWindow.h */,
-				1A383CA251D54009B95E0D7C /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/PianoSound.h */,
-				E3F20496C71040359BBDB925 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/PianoVoice.h */,
-				E6180798DF6841429C95C54B /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/PlaybackEngine.h */,
-				7888A33C429D4B72AD9DB226 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/SineVoice.h */,
-				3D4859E1A3B74091B541FC1E /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/SplashScreen.h */,
-				87EB7862ED674682B3DD96BB /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/build-ios/Earx_artefacts/JuceLibraryCode/JuceHeader.h */,
-			);
-			name = "Header Files";
-			sourceTree = "<group>";
-		};
-		75A1C16B54DB4257B67D4610 /* Earx */ = {
-			isa = PBXGroup;
-			children = (
-				896DFF369091451BB7A3FEC5 /* Resources */,
-				603AADBE56694E0FA7181F97 /* Header Files */,
-				38C89710A6834D2BA72183FB /* Source Files */,
-				31D2306908D745C489C399E7 /* CMake Rules */,
-				4D649467168C44A48A74E699 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/CMakeLists.txt */,
-				F2A1004072A04403B5C94D5F /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/UprightPianoKW-small-SFZ-20190703/UprightPianoKW-small-20190703.sfz */,
-				C09F716C5A5C43489E527086 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/UprightPianoKW-small-SFZ-20190703/cc0.txt */,
-				6C17CAC32CDA43E493AA0942 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/UprightPianoKW-small-SFZ-20190703/readme.txt */,
-				F2A010DC12DC4E55AD23DE08 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/UprightPianoKW-small-SFZ-20190703/samples/A3vH.wav */,
-				60804FC9B3154453B30F9B8F /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/UprightPianoKW-small-SFZ-20190703/samples/A4vH.wav */,
-				9F778293C96B448583095E30 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/UprightPianoKW-small-SFZ-20190703/samples/A5vH.wav */,
-				09E4B1D1A2E1429989B30CE6 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/UprightPianoKW-small-SFZ-20190703/samples/A6vH.wav */,
-				29ABD735A67C4FA38C3F5DB4 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/UprightPianoKW-small-SFZ-20190703/samples/A7vH.wav */,
-				C0CB8B494C9E4500A37699C7 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/UprightPianoKW-small-SFZ-20190703/samples/B1vH.wav */,
-				53BFCF4C2B9C4A25AEA4E267 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/UprightPianoKW-small-SFZ-20190703/samples/B2vH.wav */,
-				49B4480E56E14FC6882F4BDD /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/UprightPianoKW-small-SFZ-20190703/samples/B7vH.wav */,
-				032FE4929AB54212BFCC176B /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/UprightPianoKW-small-SFZ-20190703/samples/C1vH.wav */,
-				C79FB84991D94EA8A1F350B6 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/UprightPianoKW-small-SFZ-20190703/samples/C4vH.wav */,
-				3DDFEB6E942B48F7A1E08B8B /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/UprightPianoKW-small-SFZ-20190703/samples/C5vH.wav */,
-				FF82AE9B5DD34E8F8230A428 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/UprightPianoKW-small-SFZ-20190703/samples/C6vH.wav */,
-				A1496CE8975C47ACBB88DB39 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/UprightPianoKW-small-SFZ-20190703/samples/C7vH.wav */,
-				B19F7F53416E43CAA26CED77 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/UprightPianoKW-small-SFZ-20190703/samples/D#2vH.wav */,
-				6C135084041C402B90C9E289 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/UprightPianoKW-small-SFZ-20190703/samples/D#3vH.wav */,
-				7417CBCEB1B34552B26BAB2D /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/UprightPianoKW-small-SFZ-20190703/samples/D#4vH.wav */,
-				85C6F07A02FA4C67A2636FFD /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/UprightPianoKW-small-SFZ-20190703/samples/D#5vH.wav */,
-				A892224916C44144928463AC /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/UprightPianoKW-small-SFZ-20190703/samples/D#6vH.wav */,
-				0ECBD50AA6C44CF5984E3C5A /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/UprightPianoKW-small-SFZ-20190703/samples/D#7vH.wav */,
-				C2DDDE69DD26413ABE12DB1F /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/UprightPianoKW-small-SFZ-20190703/samples/F#1vH.wav */,
-				9E025E70830F4AD7AAC06402 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/UprightPianoKW-small-SFZ-20190703/samples/F#2vH.wav */,
-				09D0D4B4912D434FA1683956 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/UprightPianoKW-small-SFZ-20190703/samples/F#3vH.wav */,
-				908E6BB551C943888D20DF40 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/UprightPianoKW-small-SFZ-20190703/samples/F#4vH.wav */,
-				51A17D6DB3E04CF6A313D2F6 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/UprightPianoKW-small-SFZ-20190703/samples/F#5vH.wav */,
-				970A3C51ED60438785EC8BD1 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/UprightPianoKW-small-SFZ-20190703/samples/F#6vH.wav */,
-				020A9A93A40C48FD97FEC810 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/UprightPianoKW-small-SFZ-20190703/samples/F#7vH.wav */,
-				ED3336C6212546EFA47C0962 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/build-ios/Earx_artefacts/JuceLibraryCode/Earx/PkgInfo */,
-			);
-			name = Earx;
-			sourceTree = "<group>";
-		};
-		896DFF369091451BB7A3FEC5 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				FC5A9B62AD6E4F4F87BE0BC2 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/extras/Build/CMake/LaunchScreen.storyboard */,
-				7D956F908B77454484586782 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/UprightPianoKW-small-SFZ-20190703/photo.jpg */,
-				9AACFC74EAA34E61990EDE36 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/build-ios/CMakeFiles/Earx.dir/Info.plist */,
-			);
-			name = Resources;
-			sourceTree = "<group>";
-		};
-		918316C085B4453DB89CE8DE = {
-			isa = PBXGroup;
-			children = (
-				75A1C16B54DB4257B67D4610 /* Earx */,
-				1FB6B173053843F3A3437B48 /* ALL_BUILD */,
-				C33E16144CB44EE3B7536F9F /* Products */,
-				D4A07DBE03B543B4B280AD9E /* Frameworks */,
-				BCD0211B35DB49F59295F307 /* Resources */,
+				D2A075DA7B22423A8F68E67D /* EarxAudioEngine */,
+				7A8D8AF9A5AE4093AF61949A /* ALL_BUILD */,
+				6D28BB5F9F8947BE96997EA9 /* Products */,
+				C32B76B443674FE1834D150F /* Frameworks */,
+				E4CB37CCF4E547B6831D0B88 /* Resources */,
 			);
 			sourceTree = "<group>";
 		};
-		BCD0211B35DB49F59295F307 /* Resources */ = {
+		6D28BB5F9F8947BE96997EA9 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-			);
-			name = Resources;
-			sourceTree = "<group>";
-		};
-		C33E16144CB44EE3B7536F9F /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				AF01A3A092B6424EB490BE50 /* Earx */,
+				F52C9F5149D742509C7C8809 /* EarxAudioEngine */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		D4A07DBE03B543B4B280AD9E /* Frameworks */ = {
+		7A8D8AF9A5AE4093AF61949A /* ALL_BUILD */ = {
+			isa = PBXGroup;
+			children = (
+				C52B8456DDF04BC39EE99B45 /* CMake Rules */,
+				812CD5098D534EF3B1D6B109 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/CMakeLists.txt */,
+			);
+			name = ALL_BUILD;
+			sourceTree = "<group>";
+		};
+		B6B0FF23CE894596BAB17F62 /* Header Files */ = {
+			isa = PBXGroup;
+			children = (
+				BDC687A4EA014008B5D2017A /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/AppState.h */,
+				26E33158929242C9B11BD0DD /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/AudioController.h */,
+				325FBD1049A5400AB4CBCB37 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/DummySound.h */,
+				B7B04E1E7C124F7B853821E0 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/EarxAudioEngineFFI.h */,
+				D2D0E9CBFE234718B7B6639F /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/InteractionController.h */,
+				0D4F2D0A888449CAA50CB6D3 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/PianoSound.h */,
+				50F3B598761F4168BBF360A9 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/PianoVoice.h */,
+				C362715235FD42469FBCCC14 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/PlaybackEngine.h */,
+				542E511714844A16BB82BAED /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/SineVoice.h */,
+			);
+			name = "Header Files";
+			sourceTree = "<group>";
+		};
+		C32B76B443674FE1834D150F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		C52B8456DDF04BC39EE99B45 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		D2A075DA7B22423A8F68E67D /* EarxAudioEngine */ = {
+			isa = PBXGroup;
+			children = (
+				E5AFC833B6BE49C0B9BD7F6C /* Source Files */,
+				B6B0FF23CE894596BAB17F62 /* Header Files */,
+				B09F73F9E4DF470797C9F6B9 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/CMakeLists.txt */,
+			);
+			name = EarxAudioEngine;
+			sourceTree = "<group>";
+		};
+		E4CB37CCF4E547B6831D0B88 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		E5AFC833B6BE49C0B9BD7F6C /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				B5D4F254B0254A4E953120EF /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_audio_basics/juce_audio_basics.mm */,
+				1A13582B94B54777B4AD88F1 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_audio_devices/juce_audio_devices.mm */,
+				E0F9FEFC44DD4E4893421C1A /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_audio_formats/juce_audio_formats.mm */,
+				132396C0BBC9462BB60B2F48 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_audio_processors/juce_audio_processors.mm */,
+				28335463E80848CD9ED44EB7 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_audio_processors/juce_audio_processors_ara.cpp */,
+				B1F37E57EC3E4F2D83ED9947 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_audio_processors/juce_audio_processors_lv2_libs.cpp */,
+				12223CF15CE34340B82710BB /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_audio_utils/juce_audio_utils.mm */,
+				E83452193747463888D1F245 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_core/juce_core.mm */,
+				14EB225C905E4CD3B00A3AD6 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_core/juce_core_CompilationTime.cpp */,
+				E0E31F18D2A7445FA21300DC /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_data_structures/juce_data_structures.mm */,
+				28C746BFBB6E4638945BE7A0 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_dsp/juce_dsp.mm */,
+				12660764C9184C9BA758CD0D /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_events/juce_events.mm */,
+				B4ACF5F9933546AD86BDB6B5 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_graphics/juce_graphics.mm */,
+				00E191AE37EA4B7798069E20 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_graphics/juce_graphics_Harfbuzz.cpp */,
+				FC3934C891634484A0DB152F /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_graphics/juce_graphics_Sheenbidi.c */,
+				6159BC419CF94C9EA24B49FC /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_gui_basics/juce_gui_basics.mm */,
+				4447AB3B1F0F4A87AB7B6198 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_gui_extra/juce_gui_extra.mm */,
+				785839FC3F6143C095BE3C5E /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/AppState.cpp */,
+				CD69D5D3A3F0496BB599E946 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/AudioController.cpp */,
+				7600685357AD44F9B09AAF53 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/DummySound.cpp */,
+				50FA94A179FC42E28FE0D144 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/EarxAudioEngineFFI.cpp */,
+				4DCE369776844E70A976336A /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/InteractionController.cpp */,
+				9135A8EA3B1E447597B563BC /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/PianoSound.cpp */,
+				9AFACE80EDC54C3CAF45E7AC /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/PianoVoice.cpp */,
+				D1FC02B0E9644529A646169A /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/PlaybackEngine.cpp */,
+				34FA2EAF9C9740AE9D35375D /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/SineVoice.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		8E500E3F07501B5867E41347 /* Earx */ = {
+		5041E8C8701D41F55709B4D0 /* EarxAudioEngine */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4FA0F1CA3CD942F284D6F18E /* Build configuration list for PBXNativeTarget "Earx" */;
+			buildConfigurationList = F157FA6A06CA4048ABA40EEE /* Build configuration list for PBXNativeTarget "EarxAudioEngine" */;
 			buildPhases = (
-				9F826A2FA5ACA7B9AF37CAC3 /* Generate Earx_artefacts/JuceLibraryCode/Earx/PkgInfo */,
-				C6B137234AD98F4531D4BAFE /* Generate Earx_artefacts/JuceLibraryCode/JuceHeader.h */,
-				74F1742BB0F34453A3A0A4E7 /* Resources */,
-				D82999F0D28A4C37A2E03952 /* Copy files */,
-				4B9A019DC77841EB8E3C2E1B /* Copy files */,
-				518436ED62414FAFA77C7D9F /* Sources */,
-				816870277B32480E8D04A373 /* Frameworks */,
-				5D4404822B3D9659F2CD8B15 /* CMake PostBuild Rules */,
+				2CDF66D7C61842B18CC3880C /* Sources */,
+				DD1A19895C244C2A8A15BA3E /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				C5B5D69A62D6497590A03605 /* PBXTargetDependency */,
+				36C59F7CB428439CB181F0E1 /* PBXTargetDependency */,
 			);
-			name = Earx;
-			productName = Earx;
-			productReference = AF01A3A092B6424EB490BE50 /* Earx */;
-			productType = "com.apple.product-type.application";
+			name = EarxAudioEngine;
+			productName = EarxAudioEngine;
+			productReference = F52C9F5149D742509C7C8809 /* EarxAudioEngine */;
+			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		6C3D1CB7B3FB4E74AEF80895 /* Project object */ = {
+		6E9D21AAB2724CC2901BFDDA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = YES;
 				LastUpgradeCheck = 1640;
 			};
-			buildConfigurationList = 2D7B5DBCCF3B43EAABBB82F1 /* Build configuration list for PBXProject "Earx" */;
+			buildConfigurationList = E5A1EF9171AD4355848C6D0B /* Build configuration list for PBXProject "Earx" */;
 			buildSettings = {
 			};
 			buildStyles = (
-				C6C82954239C45FF99E7CFB4 /* Debug */,
-				5C3716C0C6F1437185A8B268 /* Release */,
-				DFDB21F5D8FE4EBE93411858 /* MinSizeRel */,
-				D13081238C6C4775AE8E90D1 /* RelWithDebInfo */,
+				EC65D97685CC4FCFB6D6977C /* Debug */,
+				59E4BE66BEBF4C44B06EEC70 /* Release */,
+				2CD005C2E03A449F912CFDB8 /* MinSizeRel */,
+				DFEB68D9231143D0A7E58DE4 /* RelWithDebInfo */,
 			);
 			compatibilityVersion = "Xcode 3.2";
 			hasScannedForEncodings = 0;
-			mainGroup = 918316C085B4453DB89CE8DE;
+			mainGroup = 15CE14D22BEC448888FAA745;
 			projectDirPath = /Users/arminjay/Desktop/me/JUCE/Earx/Earx;
 			projectRoot = "";
 			targets = (
 				0994B1D9C796CF496881D11E /* ALL_BUILD */,
-				8E500E3F07501B5867E41347 /* Earx */,
+				5041E8C8701D41F55709B4D0 /* EarxAudioEngine */,
 				407C6B283F2FF45ED15AA2B3 /* install */,
 				A566E1F39D4CB82164906065 /* ZERO_CHECK */,
 			);
@@ -535,39 +372,6 @@
 			shellPath = /bin/sh;
 			shellScript = "# shell script goes here
 exit 0";
-			showEnvVarsInLog = 0;
-		};
-		5D4404822B3D9659F2CD8B15 /* CMake PostBuild Rules */ = {
-			isa = PBXShellScriptBuildPhase;
-			alwaysOutOfDate = 1;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-"${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}/Contents/Resources/DWARF/${PRODUCT_NAME}","${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}/Contents/Info.plist","$(TARGET_BUILD_DIR)/$(EXECUTABLE_PATH)","$(TARGET_BUILD_DIR)/$(INFOPLIST_PATH)"			);
-			name = "CMake PostBuild Rules";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "set -e
-if test \"$CONFIGURATION\" = \"Debug\"; then :
-  cd /Users/arminjay/Desktop/me/JUCE/Earx/Earx/build-ios
-  /opt/homebrew/bin/cmake -E copy /Users/arminjay/Desktop/me/JUCE/Earx/Earx/build-ios/Earx_artefacts/JuceLibraryCode/Earx/PkgInfo /Users/arminjay/Desktop/me/JUCE/Earx/Earx/build-ios/Earx_artefacts/Debug/EarX.app
-fi
-if test \"$CONFIGURATION\" = \"Release\"; then :
-  cd /Users/arminjay/Desktop/me/JUCE/Earx/Earx/build-ios
-  /opt/homebrew/bin/cmake -E copy /Users/arminjay/Desktop/me/JUCE/Earx/Earx/build-ios/Earx_artefacts/JuceLibraryCode/Earx/PkgInfo /Users/arminjay/Desktop/me/JUCE/Earx/Earx/build-ios/Earx_artefacts/Release/EarX.app
-fi
-if test \"$CONFIGURATION\" = \"MinSizeRel\"; then :
-  cd /Users/arminjay/Desktop/me/JUCE/Earx/Earx/build-ios
-  /opt/homebrew/bin/cmake -E copy /Users/arminjay/Desktop/me/JUCE/Earx/Earx/build-ios/Earx_artefacts/JuceLibraryCode/Earx/PkgInfo /Users/arminjay/Desktop/me/JUCE/Earx/Earx/build-ios/Earx_artefacts/MinSizeRel/EarX.app
-fi
-if test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :
-  cd /Users/arminjay/Desktop/me/JUCE/Earx/Earx/build-ios
-  /opt/homebrew/bin/cmake -E copy /Users/arminjay/Desktop/me/JUCE/Earx/Earx/build-ios/Earx_artefacts/JuceLibraryCode/Earx/PkgInfo /Users/arminjay/Desktop/me/JUCE/Earx/Earx/build-ios/Earx_artefacts/RelWithDebInfo/EarX.app
-fi
-";
 			showEnvVarsInLog = 0;
 		};
 		87AF4882E018677E2624B544 = {
@@ -601,19 +405,19 @@ exit 0";
 			shellScript = "set -e
 if test \"$CONFIGURATION\" = \"Debug\"; then :
   cd /Users/arminjay/Desktop/me/JUCE/Earx/Earx/build-ios
-  /opt/homebrew/bin/cmake -DBUILD_TYPE=$CONFIGURATION -DEFFECTIVE_PLATFORM_NAME=$EFFECTIVE_PLATFORM_NAME -P cmake_install.cmake
+  /opt/homebrew/bin/cmake -DBUILD_TYPE=$CONFIGURATION$EFFECTIVE_PLATFORM_NAME -P cmake_install.cmake
 fi
 if test \"$CONFIGURATION\" = \"Release\"; then :
   cd /Users/arminjay/Desktop/me/JUCE/Earx/Earx/build-ios
-  /opt/homebrew/bin/cmake -DBUILD_TYPE=$CONFIGURATION -DEFFECTIVE_PLATFORM_NAME=$EFFECTIVE_PLATFORM_NAME -P cmake_install.cmake
+  /opt/homebrew/bin/cmake -DBUILD_TYPE=$CONFIGURATION$EFFECTIVE_PLATFORM_NAME -P cmake_install.cmake
 fi
 if test \"$CONFIGURATION\" = \"MinSizeRel\"; then :
   cd /Users/arminjay/Desktop/me/JUCE/Earx/Earx/build-ios
-  /opt/homebrew/bin/cmake -DBUILD_TYPE=$CONFIGURATION -DEFFECTIVE_PLATFORM_NAME=$EFFECTIVE_PLATFORM_NAME -P cmake_install.cmake
+  /opt/homebrew/bin/cmake -DBUILD_TYPE=$CONFIGURATION$EFFECTIVE_PLATFORM_NAME -P cmake_install.cmake
 fi
 if test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :
   cd /Users/arminjay/Desktop/me/JUCE/Earx/Earx/build-ios
-  /opt/homebrew/bin/cmake -DBUILD_TYPE=$CONFIGURATION -DEFFECTIVE_PLATFORM_NAME=$EFFECTIVE_PLATFORM_NAME -P cmake_install.cmake
+  /opt/homebrew/bin/cmake -DBUILD_TYPE=$CONFIGURATION$EFFECTIVE_PLATFORM_NAME -P cmake_install.cmake
 fi
 ";
 			showEnvVarsInLog = 0;
@@ -631,70 +435,6 @@ fi
 			shellPath = /bin/sh;
 			shellScript = "# shell script goes here
 exit 0";
-			showEnvVarsInLog = 0;
-		};
-		9F826A2FA5ACA7B9AF37CAC3 /* Generate Earx_artefacts/JuceLibraryCode/Earx/PkgInfo */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Generate Earx_artefacts/JuceLibraryCode/Earx/PkgInfo";
-			outputPaths = (
-"/Users/arminjay/Desktop/me/JUCE/Earx/Earx/build-ios/Earx_artefacts/JuceLibraryCode/Earx/PkgInfo"			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "set -e
-if test \"$CONFIGURATION\" = \"Debug\"; then :
-  cd /Users/arminjay/Desktop/me/JUCE/Earx/Earx/build-ios
-  /Users/arminjay/Desktop/me/JUCE/Earx/Earx/build-ios/External/JUCE/tools/extras/Build/juceaide/juceaide_artefacts/Custom/juceaide pkginfo App /Users/arminjay/Desktop/me/JUCE/Earx/Earx/build-ios/Earx_artefacts/JuceLibraryCode/Earx/PkgInfo
-fi
-if test \"$CONFIGURATION\" = \"Release\"; then :
-  cd /Users/arminjay/Desktop/me/JUCE/Earx/Earx/build-ios
-  /Users/arminjay/Desktop/me/JUCE/Earx/Earx/build-ios/External/JUCE/tools/extras/Build/juceaide/juceaide_artefacts/Custom/juceaide pkginfo App /Users/arminjay/Desktop/me/JUCE/Earx/Earx/build-ios/Earx_artefacts/JuceLibraryCode/Earx/PkgInfo
-fi
-if test \"$CONFIGURATION\" = \"MinSizeRel\"; then :
-  cd /Users/arminjay/Desktop/me/JUCE/Earx/Earx/build-ios
-  /Users/arminjay/Desktop/me/JUCE/Earx/Earx/build-ios/External/JUCE/tools/extras/Build/juceaide/juceaide_artefacts/Custom/juceaide pkginfo App /Users/arminjay/Desktop/me/JUCE/Earx/Earx/build-ios/Earx_artefacts/JuceLibraryCode/Earx/PkgInfo
-fi
-if test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :
-  cd /Users/arminjay/Desktop/me/JUCE/Earx/Earx/build-ios
-  /Users/arminjay/Desktop/me/JUCE/Earx/Earx/build-ios/External/JUCE/tools/extras/Build/juceaide/juceaide_artefacts/Custom/juceaide pkginfo App /Users/arminjay/Desktop/me/JUCE/Earx/Earx/build-ios/Earx_artefacts/JuceLibraryCode/Earx/PkgInfo
-fi
-";
-			showEnvVarsInLog = 0;
-		};
-		C6B137234AD98F4531D4BAFE /* Generate Earx_artefacts/JuceLibraryCode/JuceHeader.h */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-"/Users/arminjay/Desktop/me/JUCE/Earx/Earx/build-ios/Earx_artefacts/JuceLibraryCode/Debug/Defs.txt","/Users/arminjay/Desktop/me/JUCE/Earx/Earx/build-ios/Earx_artefacts/JuceLibraryCode/MinSizeRel/Defs.txt","/Users/arminjay/Desktop/me/JUCE/Earx/Earx/build-ios/Earx_artefacts/JuceLibraryCode/RelWithDebInfo/Defs.txt","/Users/arminjay/Desktop/me/JUCE/Earx/Earx/build-ios/Earx_artefacts/JuceLibraryCode/Release/Defs.txt"			);
-			name = "Generate Earx_artefacts/JuceLibraryCode/JuceHeader.h";
-			outputPaths = (
-"/Users/arminjay/Desktop/me/JUCE/Earx/Earx/build-ios/Earx_artefacts/JuceLibraryCode/JuceHeader.h"			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "set -e
-if test \"$CONFIGURATION\" = \"Debug\"; then :
-  cd /Users/arminjay/Desktop/me/JUCE/Earx/Earx/build-ios
-  /Users/arminjay/Desktop/me/JUCE/Earx/Earx/build-ios/External/JUCE/tools/extras/Build/juceaide/juceaide_artefacts/Custom/juceaide header /Users/arminjay/Desktop/me/JUCE/Earx/Earx/build-ios/Earx_artefacts/JuceLibraryCode/Debug/Defs.txt /Users/arminjay/Desktop/me/JUCE/Earx/Earx/build-ios/Earx_artefacts/JuceLibraryCode/JuceHeader.h
-fi
-if test \"$CONFIGURATION\" = \"Release\"; then :
-  cd /Users/arminjay/Desktop/me/JUCE/Earx/Earx/build-ios
-  /Users/arminjay/Desktop/me/JUCE/Earx/Earx/build-ios/External/JUCE/tools/extras/Build/juceaide/juceaide_artefacts/Custom/juceaide header /Users/arminjay/Desktop/me/JUCE/Earx/Earx/build-ios/Earx_artefacts/JuceLibraryCode/Release/Defs.txt /Users/arminjay/Desktop/me/JUCE/Earx/Earx/build-ios/Earx_artefacts/JuceLibraryCode/JuceHeader.h
-fi
-if test \"$CONFIGURATION\" = \"MinSizeRel\"; then :
-  cd /Users/arminjay/Desktop/me/JUCE/Earx/Earx/build-ios
-  /Users/arminjay/Desktop/me/JUCE/Earx/Earx/build-ios/External/JUCE/tools/extras/Build/juceaide/juceaide_artefacts/Custom/juceaide header /Users/arminjay/Desktop/me/JUCE/Earx/Earx/build-ios/Earx_artefacts/JuceLibraryCode/MinSizeRel/Defs.txt /Users/arminjay/Desktop/me/JUCE/Earx/Earx/build-ios/Earx_artefacts/JuceLibraryCode/JuceHeader.h
-fi
-if test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :
-  cd /Users/arminjay/Desktop/me/JUCE/Earx/Earx/build-ios
-  /Users/arminjay/Desktop/me/JUCE/Earx/Earx/build-ios/External/JUCE/tools/extras/Build/juceaide/juceaide_artefacts/Custom/juceaide header /Users/arminjay/Desktop/me/JUCE/Earx/Earx/build-ios/Earx_artefacts/JuceLibraryCode/RelWithDebInfo/Defs.txt /Users/arminjay/Desktop/me/JUCE/Earx/Earx/build-ios/Earx_artefacts/JuceLibraryCode/JuceHeader.h
-fi
-";
 			showEnvVarsInLog = 0;
 		};
 		E6A2B9B886FB4B7715D25BA4 /* Generate CMakeFiles/ALL_BUILD */ = {
@@ -765,228 +505,93 @@ fi
 		};
 /* End PBXShellScriptBuildPhase section */
 
-/* Begin PBXResourcesBuildPhase section */
-		74F1742BB0F34453A3A0A4E7 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				80B303E524F94934BA708137 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/extras/Build/CMake/LaunchScreen.storyboard */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
-		518436ED62414FAFA77C7D9F /* Sources */ = {
+		2CDF66D7C61842B18CC3880C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				863EB56E6A1A466D856E23D4 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_audio_basics/juce_audio_basics.mm */,
-				F757E8E986C84ED89969DC6E /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_audio_devices/juce_audio_devices.mm */,
-				EAC009814CE7476A9EF1A72B /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_audio_formats/juce_audio_formats.mm */,
-				E5591103159A4135B6292696 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_audio_processors/juce_audio_processors.mm */,
-				F4C0913528EA4D8E9A7E8389 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_audio_processors/juce_audio_processors_ara.cpp */,
-				0AB3F793BD3F457BBC88C66F /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_audio_processors/juce_audio_processors_lv2_libs.cpp */,
-				1A5B085DF66C4F1EA4871A82 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_audio_utils/juce_audio_utils.mm */,
-				0C2C23EB7CD943E899D76D57 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_core/juce_core.mm */,
-				07B4B7099226478986B9FBD3 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_core/juce_core_CompilationTime.cpp */,
-				9219055FD4F345D796550118 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_data_structures/juce_data_structures.mm */,
-				1B3F2F30D64D49BDB9549EBC /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_dsp/juce_dsp.mm */,
-				8347DD4ACB0348689EF36A21 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_events/juce_events.mm */,
-				759CAE7692554017BBA8657C /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_graphics/juce_graphics.mm */,
-				43C8F3117A3B445B8ED955D3 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_graphics/juce_graphics_Harfbuzz.cpp */,
-				26CEFF587F4B4F40916645C8 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_graphics/juce_graphics_Sheenbidi.c */,
-				3C4AA0350F4E42D2B0013767 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_gui_basics/juce_gui_basics.mm */,
-				0B921955039D465182649FFC /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_gui_extra/juce_gui_extra.mm */,
-				93C1A6A00A6C4854A2785B65 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/AppState.cpp */,
-				B42763F95BBD47D8A04BDDC6 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/AudioController.cpp */,
-				2B94D429F75D4E2A885CAC1A /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/DummySound.cpp */,
-				F1ECDEC5A62044A58E34C92B /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/EarxLookAndFeel.cpp */,
-				BA640BB64FAC4AB7B0C3690A /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/IOSApp.cpp */,
-				503D415A700544E0AF26579C /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/InteractionController.cpp */,
-				B5EF46BAE1114F1182FDA38E /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/LightIndicator.cpp */,
-				CF3A3AD426FF4D5E9C5A6D2E /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/Main.mm */,
-				6FFCD1EF705C47A3AE4BEDF3 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/MainComponent.cpp */,
-				E9D56D1701C3424A85B42B1C /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/MainWindow.cpp */,
-				59D7D72C82EF4692A6026AB9 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/PianoSound.cpp */,
-				0E2D1462E383450688DB8C8C /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/PianoVoice.cpp */,
-				385B7F3C04554DFEB5023F40 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/PlaybackEngine.cpp */,
-				8729180FC1694E11A1610F50 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/SineVoice.cpp */,
-				87B5FB63B2B44D1DADBC8451 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/SplashScreen.cpp */,
+				476710E8C7394F558A6AE7D0 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_audio_basics/juce_audio_basics.mm */,
+				423D6180F5874AB0BFA9DB3A /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_audio_devices/juce_audio_devices.mm */,
+				F265EAA750BE411B9A5C2162 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_audio_formats/juce_audio_formats.mm */,
+				E76B1B0B1B2746EAB3A701CD /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_audio_processors/juce_audio_processors.mm */,
+				05847DE00709465EBEB26C90 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_audio_processors/juce_audio_processors_ara.cpp */,
+				845D903821D64CCABD504E1C /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_audio_processors/juce_audio_processors_lv2_libs.cpp */,
+				147D28745B444EEEAFD09149 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_audio_utils/juce_audio_utils.mm */,
+				C2C328E14717452C949A9BE5 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_core/juce_core.mm */,
+				35A605514CD94478BB93F08F /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_core/juce_core_CompilationTime.cpp */,
+				BAA8DE6E8B8C4A54864526F2 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_data_structures/juce_data_structures.mm */,
+				5A4C7E7C73194E6DB3334518 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_dsp/juce_dsp.mm */,
+				0F356FE58B6044789487B2DB /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_events/juce_events.mm */,
+				20B7070DB22F46F19087E1BC /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_graphics/juce_graphics.mm */,
+				544345179FD54571864A5C7F /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_graphics/juce_graphics_Harfbuzz.cpp */,
+				F754E8F536BB4D66A262BA26 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_graphics/juce_graphics_Sheenbidi.c */,
+				EC73BD2B42C84C6FBF65E619 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_gui_basics/juce_gui_basics.mm */,
+				1FEA800C01F74F0487929C5F /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_gui_extra/juce_gui_extra.mm */,
+				ADB28816BFD549929FAB7BE1 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/AppState.cpp */,
+				619B29A1DE8B4395AA80FE01 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/AudioController.cpp */,
+				57A85753AF0D481097816F72 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/DummySound.cpp */,
+				BC0457D39AA1410DA647C8B7 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/EarxAudioEngineFFI.cpp */,
+				1798A3A6BF3A425FBF46F5B4 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/InteractionController.cpp */,
+				9407B2944D4547768827A27D /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/PianoSound.cpp */,
+				47F698F8572B4BB3974B3A26 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/PianoVoice.cpp */,
+				03F68DBA05EF405E804935BF /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/PlaybackEngine.cpp */,
+				6513C9CB834E480A8529B746 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/SineVoice.cpp */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		4B9A019DC77841EB8E3C2E1B /* Copy files */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "UprightPianoKW-small-SFZ-20190703/samples";
-			dstSubfolderSpec = 7;
-			files = (
-				CA2B1403FF044A848B6727E7 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/UprightPianoKW-small-SFZ-20190703/samples/A3vH.wav */,
-				1C941B3F5F5E4D7DBF16431F /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/UprightPianoKW-small-SFZ-20190703/samples/A4vH.wav */,
-				99A923D11585403F885DF0F4 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/UprightPianoKW-small-SFZ-20190703/samples/A5vH.wav */,
-				6D180C86D6664992AD9992D3 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/UprightPianoKW-small-SFZ-20190703/samples/A6vH.wav */,
-				5D0BE5B181744CD6A2E93BAF /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/UprightPianoKW-small-SFZ-20190703/samples/A7vH.wav */,
-				136C74BBCC994496BC0C8C14 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/UprightPianoKW-small-SFZ-20190703/samples/B1vH.wav */,
-				4816945DC673412FBA64D8B5 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/UprightPianoKW-small-SFZ-20190703/samples/B2vH.wav */,
-				8C74FA89E9D94956A3CED08B /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/UprightPianoKW-small-SFZ-20190703/samples/B7vH.wav */,
-				31CF0D8A8D0947D0B88758D2 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/UprightPianoKW-small-SFZ-20190703/samples/C1vH.wav */,
-				9B8E2B52755A460DA53E5FE9 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/UprightPianoKW-small-SFZ-20190703/samples/C4vH.wav */,
-				CD76794704F84721BACA6BE8 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/UprightPianoKW-small-SFZ-20190703/samples/C5vH.wav */,
-				03EF62AE19804B9BB9C3CDA0 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/UprightPianoKW-small-SFZ-20190703/samples/C6vH.wav */,
-				3AB077ACFE1C443F82F752E3 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/UprightPianoKW-small-SFZ-20190703/samples/C7vH.wav */,
-				CAFA7DB1D9DA4867A6CAD1DE /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/UprightPianoKW-small-SFZ-20190703/samples/D#2vH.wav */,
-				C07049DDEEBA48C6A9424B0A /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/UprightPianoKW-small-SFZ-20190703/samples/D#3vH.wav */,
-				7DC2B81D4FB144A0A224C2F2 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/UprightPianoKW-small-SFZ-20190703/samples/D#4vH.wav */,
-				02C6E6D2130F4C9CAEFBCF79 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/UprightPianoKW-small-SFZ-20190703/samples/D#5vH.wav */,
-				4EE6F0B30F88490DBA685681 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/UprightPianoKW-small-SFZ-20190703/samples/D#6vH.wav */,
-				112A8D6FA1CB4ACFBB9C6151 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/UprightPianoKW-small-SFZ-20190703/samples/D#7vH.wav */,
-				AED79F85743E4CA2B5ABC266 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/UprightPianoKW-small-SFZ-20190703/samples/F#1vH.wav */,
-				F67BA7E9A9F040B687EAEF86 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/UprightPianoKW-small-SFZ-20190703/samples/F#2vH.wav */,
-				071E5403FDDA4FBAA49BA292 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/UprightPianoKW-small-SFZ-20190703/samples/F#3vH.wav */,
-				0E4387953FE2423285DBFB6B /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/UprightPianoKW-small-SFZ-20190703/samples/F#4vH.wav */,
-				05B7B3A244FC40EC9FA4F1DB /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/UprightPianoKW-small-SFZ-20190703/samples/F#5vH.wav */,
-				2757029971CD44CBAFEEF278 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/UprightPianoKW-small-SFZ-20190703/samples/F#6vH.wav */,
-				EF6530FE2ADC4599875DEC59 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/UprightPianoKW-small-SFZ-20190703/samples/F#7vH.wav */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D82999F0D28A4C37A2E03952 /* Copy files */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "UprightPianoKW-small-SFZ-20190703";
-			dstSubfolderSpec = 7;
-			files = (
-				64E9F4C0B0834E1C8C6356EA /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/UprightPianoKW-small-SFZ-20190703/UprightPianoKW-small-20190703.sfz */,
-				F640710CA84249028D016B8F /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/UprightPianoKW-small-SFZ-20190703/cc0.txt */,
-				9926E887841C4867A4E88AE0 /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/UprightPianoKW-small-SFZ-20190703/photo.jpg */,
-				F50C0F480C93405FBC138A3A /* /Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source/UprightPianoKW-small-SFZ-20190703/readme.txt */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXTargetDependency section */
-		C5B5D69A62D6497590A03605 /* PBXTargetDependency */ = {
+		36C59F7CB428439CB181F0E1 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = A566E1F39D4CB82164906065 /* ZERO_CHECK */;
-			targetProxy = A0568DE661714045B9D0368B /* PBXContainerItemProxy */;
+			targetProxy = 84723A26AC62415E88441286 /* PBXContainerItemProxy */;
 		};
-		DC7CB81CF41B473CAA504BD2 /* PBXTargetDependency */ = {
+		410C1105C12B4592ACBE275C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 8E500E3F07501B5867E41347 /* Earx */;
-			targetProxy = 1ECBB39ACE854101807348A4 /* PBXContainerItemProxy */;
+			target = A566E1F39D4CB82164906065 /* ZERO_CHECK */;
+			targetProxy = A595AA8B07F342BFBA1AA93D /* PBXContainerItemProxy */;
 		};
-		F6D8D90F729849F0B4B09587 /* PBXTargetDependency */ = {
+		C18F6B2B530A4B888AD954AC /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 0994B1D9C796CF496881D11E /* ALL_BUILD */;
-			targetProxy = 2112E505259C46B68DF9C095 /* PBXContainerItemProxy */;
+			targetProxy = 2E1AE97B429B43798AAFF065 /* PBXContainerItemProxy */;
 		};
-		FB186E80904E4D19A351D99D /* PBXTargetDependency */ = {
+		C9A32C7D09C6479CA0879128 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = A566E1F39D4CB82164906065 /* ZERO_CHECK */;
-			targetProxy = 5676F1E0F95C41318D25B8CB /* PBXContainerItemProxy */;
+			target = 5041E8C8701D41F55709B4D0 /* EarxAudioEngine */;
+			targetProxy = 546953A2D4AF4F85BE685C2B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		0CB6B606B56C46ED807AD290 /* Debug */ = {
+		32FBBB727DC54782A1DC0300 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = arm64;
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = "/Users/arminjay/Desktop/me/JUCE/Earx/Earx/build-ios/Earx_artefacts/JuceLibraryCode/Earx.entitlements";
-				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CONFIGURATION_BUILD_DIR = "/Users/arminjay/Desktop/me/JUCE/Earx/Earx/build-ios/Earx_artefacts/Debug";
-				DEVELOPMENT_TEAM = "";
-				ENABLE_BITCODE = NO;
-				ENABLE_HARDENED_RUNTIME = FALSE;
-				EXECUTABLE_PREFIX = "";
-				EXECUTABLE_SUFFIX = "";
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
 				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","'JUCE_STANDALONE_APPLICATION=1'","'JUCE_APPLICATION_NAME_STRING=\"EarX\"'","'JUCE_APPLICATION_VERSION_STRING=\"0.3.1\"'","'JUCE_WEB_BROWSER=0'","'JUCE_USE_CURL=0'","'JUCE_STRICT_REFCOUNTEDPOINTER=1'","'DEBUG=1'","'_DEBUG=1'","'JUCE_MODULE_AVAILABLE_juce_gui_extra=1'","'JUCE_MODULE_AVAILABLE_juce_gui_basics=1'","'JUCE_MODULE_AVAILABLE_juce_graphics=1'","'JUCE_MODULE_AVAILABLE_juce_events=1'","'JUCE_GLOBAL_MODULE_SETTINGS_INCLUDED=1'","'JUCE_MODULE_AVAILABLE_juce_core=1'","'JUCE_MODULE_AVAILABLE_juce_data_structures=1'","'JUCE_MODULE_AVAILABLE_juce_audio_utils=1'","'JUCE_MODULE_AVAILABLE_juce_audio_processors=1'","'JUCE_MODULE_AVAILABLE_juce_audio_basics=1'","'JUCE_MODULE_AVAILABLE_juce_audio_formats=1'","'JUCE_MODULE_AVAILABLE_juce_audio_devices=1'","'JUCE_MODULE_AVAILABLE_juce_dsp=1'","$(inherited)");
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = ("/Users/arminjay/Desktop/me/JUCE/Earx/Earx/build-ios/Earx_artefacts/JuceLibraryCode",/Users/arminjay/Desktop/me/JUCE/Earx/Earx,/Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules,/Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_audio_processors/format_types/VST3_SDK,/Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_audio_processors/format_types/LV2_SDK,/Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_audio_processors/format_types/LV2_SDK/lv2,/Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_audio_processors/format_types/LV2_SDK/serd,/Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_audio_processors/format_types/LV2_SDK/sord,/Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_audio_processors/format_types/LV2_SDK/sord/src,/Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_audio_processors/format_types/LV2_SDK/sratom,/Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_audio_processors/format_types/LV2_SDK/lilv,/Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_audio_processors/format_types/LV2_SDK/lilv/src,"$(inherited)");
-				INFOPLIST_FILE = "/Users/arminjay/Desktop/me/JUCE/Earx/Earx/build-ios/CMakeFiles/Earx.dir/Info.plist";
-				INSTALL_PATH = "$(LOCAL_APPS_DIR)";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				INSTALL_PATH = "";
 				ONLY_ACTIVE_ARCH = NO;
-				OTHER_CFLAGS = ("   ","$(inherited)");
-				OTHER_CPLUSPLUSFLAGS = "   '-std=gnu++17' -Wno-deprecated-declarations ";
-				OTHER_LDFLAGS = (" -Wl,-headerpad_max_install_names","-framework CoreGraphics","-framework CoreImage","-framework CoreText","-framework CoreServices","-framework UIKit","-weak_framework Metal","-weak_framework MetalKit","-weak_framework UniformTypeIdentifiers","-framework WebKit","-weak_framework UserNotifications","-framework CoreAudio","-framework CoreMIDI","-framework AVFoundation","-framework CoreAudioKit","-framework Foundation","-framework QuartzCore","-framework AudioToolbox","-framework Accelerate","-lobjc","$(inherited)");
-				OTHER_REZFLAGS = "";
-				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.Earx;
-				PRODUCT_NAME = EarX;
-				SECTORDER_FLAGS = "";
-				SKIP_INSTALL = NO;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TARGET_TEMP_DIR = "/Users/arminjay/Desktop/me/JUCE/Earx/Earx/build-ios/build/Earx.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
-			};
-			name = Debug;
-		};
-		0EE92BE0EBF8446B8FF4DB79 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INSTALL_PATH = "";
 				OTHER_LDFLAGS = ("","$(inherited)");
 				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = ALL_BUILD;
+				PRODUCT_NAME = ZERO_CHECK;
 				SECTORDER_FLAGS = "";
 				USE_HEADERMAP = NO;
 				WARNING_CFLAGS = ("$(inherited)");
 			};
 			name = Release;
 		};
-		11070B99BA1B451AA5C5EEF3 /* MinSizeRel */ = {
+		39DE2A6E2A1C441B8606B729 /* RelWithDebInfo */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INSTALL_PATH = "";
-				OTHER_LDFLAGS = ("","$(inherited)");
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = install;
-				SECTORDER_FLAGS = "";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
-			};
-			name = MinSizeRel;
-		};
-		36C6AB96CFA84AC5A3CC0B7B /* MinSizeRel */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
 				ARCHS = arm64;
-				SDKROOT = iphonesimulator;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SYMROOT = "/Users/arminjay/Desktop/me/JUCE/Earx/Earx/build-ios/build";
-			};
-			name = MinSizeRel;
-		};
-		3F90099E469B48B68E9C9BE3 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
 				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
@@ -994,26 +599,7 @@ fi
 				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				INSTALL_PATH = "";
-				OTHER_LDFLAGS = ("","$(inherited)");
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = install;
-				SECTORDER_FLAGS = "";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
-			};
-			name = Release;
-		};
-		510364D60D05421FAF5E1C97 /* RelWithDebInfo */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = ("","$(inherited)");
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = install;
@@ -1023,50 +609,53 @@ fi
 			};
 			name = RelWithDebInfo;
 		};
-		52050D58DFB44A7E84A36020 /* Release */ = {
+		3F8ED4731DE14AF887E0F45E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = arm64;
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = "/Users/arminjay/Desktop/me/JUCE/Earx/Earx/build-ios/Earx_artefacts/JuceLibraryCode/Earx.entitlements";
-				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CONFIGURATION_BUILD_DIR = "/Users/arminjay/Desktop/me/JUCE/Earx/Earx/build-ios/Earx_artefacts/Release";
-				DEVELOPMENT_TEAM = "";
+				CONFIGURATION_BUILD_DIR = "/Users/arminjay/Desktop/me/JUCE/Earx/Earx/build-ios/Release";
 				ENABLE_BITCODE = NO;
-				ENABLE_HARDENED_RUNTIME = FALSE;
-				EXECUTABLE_PREFIX = "";
-				EXECUTABLE_SUFFIX = "";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
 				GCC_OPTIMIZATION_LEVEL = 3;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","'JUCE_STANDALONE_APPLICATION=1'","'JUCE_APPLICATION_NAME_STRING=\"EarX\"'","'JUCE_APPLICATION_VERSION_STRING=\"0.3.1\"'","'JUCE_WEB_BROWSER=0'","'JUCE_USE_CURL=0'","'JUCE_STRICT_REFCOUNTEDPOINTER=1'","'JUCE_MODULE_AVAILABLE_juce_gui_extra=1'","'JUCE_MODULE_AVAILABLE_juce_gui_basics=1'","'JUCE_MODULE_AVAILABLE_juce_graphics=1'","'JUCE_MODULE_AVAILABLE_juce_events=1'","'JUCE_GLOBAL_MODULE_SETTINGS_INCLUDED=1'","'NDEBUG=1'","'_NDEBUG=1'","'JUCE_MODULE_AVAILABLE_juce_core=1'","'JUCE_MODULE_AVAILABLE_juce_data_structures=1'","'JUCE_MODULE_AVAILABLE_juce_audio_utils=1'","'JUCE_MODULE_AVAILABLE_juce_audio_processors=1'","'JUCE_MODULE_AVAILABLE_juce_audio_basics=1'","'JUCE_MODULE_AVAILABLE_juce_audio_formats=1'","'JUCE_MODULE_AVAILABLE_juce_audio_devices=1'","'JUCE_MODULE_AVAILABLE_juce_dsp=1'","$(inherited)");
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","'JUCE_APPLICATION_NAME_STRING=\"EarX\"'","'JUCE_APPLICATION_VERSION_STRING=\"1.0.0\"'","'JUCE_WEB_BROWSER=0'","'JUCE_USE_CURL=0'","'JUCE_STRICT_REFCOUNTEDPOINTER=1'","'JUCE_STANDALONE_APPLICATION=1'","'JUCE_ALSA=0'","'JUCE_USE_ANDROID_MIDI_API=0'","'JUCE_USE_WINRT_MIDI=0'","'JUCE_DISABLE_AUDIO_MIXING_WITH_OTHER_APPS=0'","'JUCE_USE_COREMIDI=0'","'JUCE_PLUGINHOST_AU=0'","'JUCE_PLUGINHOST_VST3=0'","'JUCE_USE_MP3AUDIOFORMAT=0'","'JUCE_DONT_AUTO_OPEN_MIDI_DEVICES_ON_MOBILE=1'","'JUCE_GLOBAL_MODULE_SETTINGS_INCLUDED=1'","'NDEBUG=1'","'_NDEBUG=1'","'JUCE_MODULE_AVAILABLE_juce_core=1'","'JUCE_MODULE_AVAILABLE_juce_data_structures=1'","'JUCE_MODULE_AVAILABLE_juce_events=1'","'JUCE_MODULE_AVAILABLE_juce_audio_utils=1'","'JUCE_MODULE_AVAILABLE_juce_audio_processors=1'","'JUCE_MODULE_AVAILABLE_juce_gui_extra=1'","'JUCE_MODULE_AVAILABLE_juce_gui_basics=1'","'JUCE_MODULE_AVAILABLE_juce_graphics=1'","'JUCE_MODULE_AVAILABLE_juce_audio_basics=1'","'JUCE_MODULE_AVAILABLE_juce_audio_formats=1'","'JUCE_MODULE_AVAILABLE_juce_audio_devices=1'","'JUCE_MODULE_AVAILABLE_juce_dsp=1'","$(inherited)");
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = ("/Users/arminjay/Desktop/me/JUCE/Earx/Earx/build-ios/Earx_artefacts/JuceLibraryCode",/Users/arminjay/Desktop/me/JUCE/Earx/Earx,/Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules,/Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_audio_processors/format_types/VST3_SDK,/Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_audio_processors/format_types/LV2_SDK,/Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_audio_processors/format_types/LV2_SDK/lv2,/Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_audio_processors/format_types/LV2_SDK/serd,/Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_audio_processors/format_types/LV2_SDK/sord,/Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_audio_processors/format_types/LV2_SDK/sord/src,/Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_audio_processors/format_types/LV2_SDK/sratom,/Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_audio_processors/format_types/LV2_SDK/lilv,/Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_audio_processors/format_types/LV2_SDK/lilv/src,"$(inherited)");
-				INFOPLIST_FILE = "/Users/arminjay/Desktop/me/JUCE/Earx/Earx/build-ios/CMakeFiles/Earx.dir/Info.plist";
-				INSTALL_PATH = "$(LOCAL_APPS_DIR)";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				HEADER_SEARCH_PATHS = (/Users/arminjay/Desktop/me/JUCE/Earx/Earx,/Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source,/Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules,/Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_audio_processors/format_types/VST3_SDK,/Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_audio_processors/format_types/LV2_SDK,/Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_audio_processors/format_types/LV2_SDK/lv2,/Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_audio_processors/format_types/LV2_SDK/serd,/Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_audio_processors/format_types/LV2_SDK/sord,/Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_audio_processors/format_types/LV2_SDK/sord/src,/Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_audio_processors/format_types/LV2_SDK/sratom,/Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_audio_processors/format_types/LV2_SDK/lilv,/Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_audio_processors/format_types/LV2_SDK/lilv/src,"$(inherited)");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_CFLAGS = ("    -DNDEBUG ","$(inherited)");
 				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG '-std=gnu++17' -Wno-deprecated-declarations ";
-				OTHER_LDFLAGS = (" -Wl,-headerpad_max_install_names","-framework CoreGraphics","-framework CoreImage","-framework CoreText","-framework CoreServices","-framework UIKit","-weak_framework Metal","-weak_framework MetalKit","-weak_framework UniformTypeIdentifiers","-framework WebKit","-weak_framework UserNotifications","-framework CoreAudio","-framework CoreMIDI","-framework AVFoundation","-framework CoreAudioKit","-framework Foundation","-framework QuartzCore","-framework AudioToolbox","-framework Accelerate","-lobjc","$(inherited)");
+				OTHER_LIBTOOLFLAGS = ("");
 				OTHER_REZFLAGS = "";
-				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.Earx;
-				PRODUCT_NAME = EarX;
+				PRODUCT_NAME = EarxAudioEngine;
 				SECTORDER_FLAGS = "";
-				SKIP_INSTALL = NO;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TARGET_TEMP_DIR = "/Users/arminjay/Desktop/me/JUCE/Earx/Earx/build-ios/build/Earx.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				TARGET_TEMP_DIR = "/Users/arminjay/Desktop/me/JUCE/Earx/Earx/build-ios/build/EarxAudioEngine.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
 				USE_HEADERMAP = NO;
 				WARNING_CFLAGS = ("$(inherited)");
 			};
 			name = Release;
 		};
-		5AEECCFE0CF94EC2998169D7 /* Release */ = {
+		482B33689FFD4D17858DE028 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				SDKROOT = "";
+				SYMROOT = "/Users/arminjay/Desktop/me/JUCE/Earx/Earx/build-ios/build";
+			};
+			name = Debug;
+		};
+		5217EC8ACEFE474AB10E99CD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
 				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
@@ -1074,19 +663,64 @@ fi
 				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = ("","$(inherited)");
 				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = ZERO_CHECK;
+				PRODUCT_NAME = ALL_BUILD;
 				SECTORDER_FLAGS = "";
 				USE_HEADERMAP = NO;
 				WARNING_CFLAGS = ("$(inherited)");
 			};
 			name = Release;
 		};
-		5C03DB91529E4E32902BCB1A /* MinSizeRel */ = {
+		6F9C2C978AFA415EAD7C4379 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				SDKROOT = "";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SYMROOT = "/Users/arminjay/Desktop/me/JUCE/Earx/Earx/build-ios/build";
+			};
+			name = Release;
+		};
+		7C38A464E8F94D868205B80A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/arminjay/Desktop/me/JUCE/Earx/Earx/build-ios/Debug";
+				ENABLE_BITCODE = NO;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","'JUCE_APPLICATION_NAME_STRING=\"EarX\"'","'JUCE_APPLICATION_VERSION_STRING=\"1.0.0\"'","'JUCE_WEB_BROWSER=0'","'JUCE_USE_CURL=0'","'JUCE_STRICT_REFCOUNTEDPOINTER=1'","'JUCE_STANDALONE_APPLICATION=1'","'JUCE_ALSA=0'","'JUCE_USE_ANDROID_MIDI_API=0'","'JUCE_USE_WINRT_MIDI=0'","'JUCE_DISABLE_AUDIO_MIXING_WITH_OTHER_APPS=0'","'JUCE_USE_COREMIDI=0'","'JUCE_PLUGINHOST_AU=0'","'JUCE_PLUGINHOST_VST3=0'","'JUCE_USE_MP3AUDIOFORMAT=0'","'JUCE_DONT_AUTO_OPEN_MIDI_DEVICES_ON_MOBILE=1'","'DEBUG=1'","'_DEBUG=1'","'JUCE_GLOBAL_MODULE_SETTINGS_INCLUDED=1'","'JUCE_MODULE_AVAILABLE_juce_core=1'","'JUCE_MODULE_AVAILABLE_juce_data_structures=1'","'JUCE_MODULE_AVAILABLE_juce_events=1'","'JUCE_MODULE_AVAILABLE_juce_audio_utils=1'","'JUCE_MODULE_AVAILABLE_juce_audio_processors=1'","'JUCE_MODULE_AVAILABLE_juce_gui_extra=1'","'JUCE_MODULE_AVAILABLE_juce_gui_basics=1'","'JUCE_MODULE_AVAILABLE_juce_graphics=1'","'JUCE_MODULE_AVAILABLE_juce_audio_basics=1'","'JUCE_MODULE_AVAILABLE_juce_audio_formats=1'","'JUCE_MODULE_AVAILABLE_juce_audio_devices=1'","'JUCE_MODULE_AVAILABLE_juce_dsp=1'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/arminjay/Desktop/me/JUCE/Earx/Earx,/Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source,/Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules,/Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_audio_processors/format_types/VST3_SDK,/Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_audio_processors/format_types/LV2_SDK,/Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_audio_processors/format_types/LV2_SDK/lv2,/Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_audio_processors/format_types/LV2_SDK/serd,/Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_audio_processors/format_types/LV2_SDK/sord,/Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_audio_processors/format_types/LV2_SDK/sord/src,/Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_audio_processors/format_types/LV2_SDK/sratom,/Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_audio_processors/format_types/LV2_SDK/lilv,/Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_audio_processors/format_types/LV2_SDK/lilv/src,"$(inherited)");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = ("   ","$(inherited)");
+				OTHER_CPLUSPLUSFLAGS = "   '-std=gnu++17' -Wno-deprecated-declarations ";
+				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = EarxAudioEngine;
+				SECTORDER_FLAGS = "";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				TARGET_TEMP_DIR = "/Users/arminjay/Desktop/me/JUCE/Earx/Earx/build-ios/build/EarxAudioEngine.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		82C3A2A318F74D5183737727 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
 				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
@@ -1094,6 +728,29 @@ fi
 				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		9CCD7A3CFBEB47BCB5FEAB91 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = ("","$(inherited)");
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = ALL_BUILD;
@@ -1103,10 +760,44 @@ fi
 			};
 			name = MinSizeRel;
 		};
-		8D2D2A2F323642EB94F3E14A /* Debug */ = {
+		AD6C473AC620436A990660C1 /* MinSizeRel */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/arminjay/Desktop/me/JUCE/Earx/Earx/build-ios/MinSizeRel";
+				ENABLE_BITCODE = NO;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","'JUCE_APPLICATION_NAME_STRING=\"EarX\"'","'JUCE_APPLICATION_VERSION_STRING=\"1.0.0\"'","'JUCE_WEB_BROWSER=0'","'JUCE_USE_CURL=0'","'JUCE_STRICT_REFCOUNTEDPOINTER=1'","'JUCE_STANDALONE_APPLICATION=1'","'JUCE_ALSA=0'","'JUCE_USE_ANDROID_MIDI_API=0'","'JUCE_USE_WINRT_MIDI=0'","'JUCE_DISABLE_AUDIO_MIXING_WITH_OTHER_APPS=0'","'JUCE_USE_COREMIDI=0'","'JUCE_PLUGINHOST_AU=0'","'JUCE_PLUGINHOST_VST3=0'","'JUCE_USE_MP3AUDIOFORMAT=0'","'JUCE_DONT_AUTO_OPEN_MIDI_DEVICES_ON_MOBILE=1'","'JUCE_GLOBAL_MODULE_SETTINGS_INCLUDED=1'","'NDEBUG=1'","'_NDEBUG=1'","'JUCE_MODULE_AVAILABLE_juce_core=1'","'JUCE_MODULE_AVAILABLE_juce_data_structures=1'","'JUCE_MODULE_AVAILABLE_juce_events=1'","'JUCE_MODULE_AVAILABLE_juce_audio_utils=1'","'JUCE_MODULE_AVAILABLE_juce_audio_processors=1'","'JUCE_MODULE_AVAILABLE_juce_gui_extra=1'","'JUCE_MODULE_AVAILABLE_juce_gui_basics=1'","'JUCE_MODULE_AVAILABLE_juce_graphics=1'","'JUCE_MODULE_AVAILABLE_juce_audio_basics=1'","'JUCE_MODULE_AVAILABLE_juce_audio_formats=1'","'JUCE_MODULE_AVAILABLE_juce_audio_devices=1'","'JUCE_MODULE_AVAILABLE_juce_dsp=1'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/arminjay/Desktop/me/JUCE/Earx/Earx,/Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source,/Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules,/Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_audio_processors/format_types/VST3_SDK,/Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_audio_processors/format_types/LV2_SDK,/Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_audio_processors/format_types/LV2_SDK/lv2,/Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_audio_processors/format_types/LV2_SDK/serd,/Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_audio_processors/format_types/LV2_SDK/sord,/Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_audio_processors/format_types/LV2_SDK/sord/src,/Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_audio_processors/format_types/LV2_SDK/sratom,/Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_audio_processors/format_types/LV2_SDK/lilv,/Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_audio_processors/format_types/LV2_SDK/lilv/src,"$(inherited)");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = ("    -DNDEBUG ","$(inherited)");
+				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG '-std=gnu++17' -Wno-deprecated-declarations ";
+				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = EarxAudioEngine;
+				SECTORDER_FLAGS = "";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				TARGET_TEMP_DIR = "/Users/arminjay/Desktop/me/JUCE/Earx/Earx/build-ios/build/EarxAudioEngine.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		B5FDF613B0D0492198CE6F27 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
 				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
@@ -1114,6 +805,117 @@ fi
 				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		CC4472F964BF460EB5629607 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		CFF883B3080F4477977E84FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		D07CF45BD46540098B7CF14E /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		D9900D8497854AA78428D113 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		DBCF05A47C9945469BC0E0B3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = ("","$(inherited)");
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = install;
@@ -1123,274 +925,140 @@ fi
 			};
 			name = Debug;
 		};
-		908C35B6115B4413B12638B2 /* MinSizeRel */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = arm64;
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = "/Users/arminjay/Desktop/me/JUCE/Earx/Earx/build-ios/Earx_artefacts/JuceLibraryCode/Earx.entitlements";
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				CONFIGURATION_BUILD_DIR = "/Users/arminjay/Desktop/me/JUCE/Earx/Earx/build-ios/Earx_artefacts/MinSizeRel";
-				DEVELOPMENT_TEAM = "";
-				ENABLE_BITCODE = NO;
-				ENABLE_HARDENED_RUNTIME = FALSE;
-				EXECUTABLE_PREFIX = "";
-				EXECUTABLE_SUFFIX = "";
-				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = s;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","'JUCE_STANDALONE_APPLICATION=1'","'JUCE_APPLICATION_NAME_STRING=\"EarX\"'","'JUCE_APPLICATION_VERSION_STRING=\"0.3.1\"'","'JUCE_WEB_BROWSER=0'","'JUCE_USE_CURL=0'","'JUCE_STRICT_REFCOUNTEDPOINTER=1'","'JUCE_MODULE_AVAILABLE_juce_gui_extra=1'","'JUCE_MODULE_AVAILABLE_juce_gui_basics=1'","'JUCE_MODULE_AVAILABLE_juce_graphics=1'","'JUCE_MODULE_AVAILABLE_juce_events=1'","'JUCE_GLOBAL_MODULE_SETTINGS_INCLUDED=1'","'NDEBUG=1'","'_NDEBUG=1'","'JUCE_MODULE_AVAILABLE_juce_core=1'","'JUCE_MODULE_AVAILABLE_juce_data_structures=1'","'JUCE_MODULE_AVAILABLE_juce_audio_utils=1'","'JUCE_MODULE_AVAILABLE_juce_audio_processors=1'","'JUCE_MODULE_AVAILABLE_juce_audio_basics=1'","'JUCE_MODULE_AVAILABLE_juce_audio_formats=1'","'JUCE_MODULE_AVAILABLE_juce_audio_devices=1'","'JUCE_MODULE_AVAILABLE_juce_dsp=1'","$(inherited)");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = ("/Users/arminjay/Desktop/me/JUCE/Earx/Earx/build-ios/Earx_artefacts/JuceLibraryCode",/Users/arminjay/Desktop/me/JUCE/Earx/Earx,/Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules,/Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_audio_processors/format_types/VST3_SDK,/Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_audio_processors/format_types/LV2_SDK,/Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_audio_processors/format_types/LV2_SDK/lv2,/Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_audio_processors/format_types/LV2_SDK/serd,/Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_audio_processors/format_types/LV2_SDK/sord,/Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_audio_processors/format_types/LV2_SDK/sord/src,/Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_audio_processors/format_types/LV2_SDK/sratom,/Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_audio_processors/format_types/LV2_SDK/lilv,/Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_audio_processors/format_types/LV2_SDK/lilv/src,"$(inherited)");
-				INFOPLIST_FILE = "/Users/arminjay/Desktop/me/JUCE/Earx/Earx/build-ios/CMakeFiles/Earx.dir/Info.plist";
-				INSTALL_PATH = "$(LOCAL_APPS_DIR)";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				ONLY_ACTIVE_ARCH = NO;
-				OTHER_CFLAGS = ("    -DNDEBUG ","$(inherited)");
-				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG '-std=gnu++17' -Wno-deprecated-declarations ";
-				OTHER_LDFLAGS = (" -Wl,-headerpad_max_install_names","-framework CoreGraphics","-framework CoreImage","-framework CoreText","-framework CoreServices","-framework UIKit","-weak_framework Metal","-weak_framework MetalKit","-weak_framework UniformTypeIdentifiers","-framework WebKit","-weak_framework UserNotifications","-framework CoreAudio","-framework CoreMIDI","-framework AVFoundation","-framework CoreAudioKit","-framework Foundation","-framework QuartzCore","-framework AudioToolbox","-framework Accelerate","-lobjc","$(inherited)");
-				OTHER_REZFLAGS = "";
-				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.Earx;
-				PRODUCT_NAME = EarX;
-				SECTORDER_FLAGS = "";
-				SKIP_INSTALL = NO;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TARGET_TEMP_DIR = "/Users/arminjay/Desktop/me/JUCE/Earx/Earx/build-ios/build/Earx.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
-			};
-			name = MinSizeRel;
-		};
-		954A4112CC7C4E8B8D9B786C /* RelWithDebInfo */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INSTALL_PATH = "";
-				OTHER_LDFLAGS = ("","$(inherited)");
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = ALL_BUILD;
-				SECTORDER_FLAGS = "";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
-			};
-			name = RelWithDebInfo;
-		};
-		ADCF6474969C4EFC95685CF1 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INSTALL_PATH = "";
-				OTHER_LDFLAGS = ("","$(inherited)");
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = ALL_BUILD;
-				SECTORDER_FLAGS = "";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
-			};
-			name = Debug;
-		};
-		B74F6D60E7A445BD8A5D26CF /* MinSizeRel */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INSTALL_PATH = "";
-				OTHER_LDFLAGS = ("","$(inherited)");
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = ZERO_CHECK;
-				SECTORDER_FLAGS = "";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
-			};
-			name = MinSizeRel;
-		};
-		BB0BE617013B4627A81C90B0 /* RelWithDebInfo */ = {
+		E3EE2934B1924E7080018D44 /* RelWithDebInfo */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = arm64;
-				SDKROOT = iphonesimulator;
+				SDKROOT = "";
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SYMROOT = "/Users/arminjay/Desktop/me/JUCE/Earx/Earx/build-ios/build";
 			};
 			name = RelWithDebInfo;
 		};
-		C7060D67242B497B99343FF7 /* RelWithDebInfo */ = {
+		E8BDB4A8BF2B430B8BE38EE2 /* RelWithDebInfo */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = arm64;
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = "/Users/arminjay/Desktop/me/JUCE/Earx/Earx/build-ios/Earx_artefacts/JuceLibraryCode/Earx.entitlements";
-				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CONFIGURATION_BUILD_DIR = "/Users/arminjay/Desktop/me/JUCE/Earx/Earx/build-ios/Earx_artefacts/RelWithDebInfo";
-				DEVELOPMENT_TEAM = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		F1DBB43E9AA749D58F4C4E86 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				SDKROOT = "";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SYMROOT = "/Users/arminjay/Desktop/me/JUCE/Earx/Earx/build-ios/build";
+			};
+			name = MinSizeRel;
+		};
+		FEFBFE5EBA4E443AAD114EDF /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/arminjay/Desktop/me/JUCE/Earx/Earx/build-ios/RelWithDebInfo";
 				ENABLE_BITCODE = NO;
-				ENABLE_HARDENED_RUNTIME = FALSE;
-				EXECUTABLE_PREFIX = "";
-				EXECUTABLE_SUFFIX = "";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
 				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
 				GCC_OPTIMIZATION_LEVEL = 2;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","'JUCE_STANDALONE_APPLICATION=1'","'JUCE_APPLICATION_NAME_STRING=\"EarX\"'","'JUCE_APPLICATION_VERSION_STRING=\"0.3.1\"'","'JUCE_WEB_BROWSER=0'","'JUCE_USE_CURL=0'","'JUCE_STRICT_REFCOUNTEDPOINTER=1'","'JUCE_MODULE_AVAILABLE_juce_gui_extra=1'","'JUCE_MODULE_AVAILABLE_juce_gui_basics=1'","'JUCE_MODULE_AVAILABLE_juce_graphics=1'","'JUCE_MODULE_AVAILABLE_juce_events=1'","'JUCE_GLOBAL_MODULE_SETTINGS_INCLUDED=1'","'NDEBUG=1'","'_NDEBUG=1'","'JUCE_MODULE_AVAILABLE_juce_core=1'","'JUCE_MODULE_AVAILABLE_juce_data_structures=1'","'JUCE_MODULE_AVAILABLE_juce_audio_utils=1'","'JUCE_MODULE_AVAILABLE_juce_audio_processors=1'","'JUCE_MODULE_AVAILABLE_juce_audio_basics=1'","'JUCE_MODULE_AVAILABLE_juce_audio_formats=1'","'JUCE_MODULE_AVAILABLE_juce_audio_devices=1'","'JUCE_MODULE_AVAILABLE_juce_dsp=1'","$(inherited)");
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","'JUCE_APPLICATION_NAME_STRING=\"EarX\"'","'JUCE_APPLICATION_VERSION_STRING=\"1.0.0\"'","'JUCE_WEB_BROWSER=0'","'JUCE_USE_CURL=0'","'JUCE_STRICT_REFCOUNTEDPOINTER=1'","'JUCE_STANDALONE_APPLICATION=1'","'JUCE_ALSA=0'","'JUCE_USE_ANDROID_MIDI_API=0'","'JUCE_USE_WINRT_MIDI=0'","'JUCE_DISABLE_AUDIO_MIXING_WITH_OTHER_APPS=0'","'JUCE_USE_COREMIDI=0'","'JUCE_PLUGINHOST_AU=0'","'JUCE_PLUGINHOST_VST3=0'","'JUCE_USE_MP3AUDIOFORMAT=0'","'JUCE_DONT_AUTO_OPEN_MIDI_DEVICES_ON_MOBILE=1'","'JUCE_GLOBAL_MODULE_SETTINGS_INCLUDED=1'","'NDEBUG=1'","'_NDEBUG=1'","'JUCE_MODULE_AVAILABLE_juce_core=1'","'JUCE_MODULE_AVAILABLE_juce_data_structures=1'","'JUCE_MODULE_AVAILABLE_juce_events=1'","'JUCE_MODULE_AVAILABLE_juce_audio_utils=1'","'JUCE_MODULE_AVAILABLE_juce_audio_processors=1'","'JUCE_MODULE_AVAILABLE_juce_gui_extra=1'","'JUCE_MODULE_AVAILABLE_juce_gui_basics=1'","'JUCE_MODULE_AVAILABLE_juce_graphics=1'","'JUCE_MODULE_AVAILABLE_juce_audio_basics=1'","'JUCE_MODULE_AVAILABLE_juce_audio_formats=1'","'JUCE_MODULE_AVAILABLE_juce_audio_devices=1'","'JUCE_MODULE_AVAILABLE_juce_dsp=1'","$(inherited)");
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = ("/Users/arminjay/Desktop/me/JUCE/Earx/Earx/build-ios/Earx_artefacts/JuceLibraryCode",/Users/arminjay/Desktop/me/JUCE/Earx/Earx,/Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules,/Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_audio_processors/format_types/VST3_SDK,/Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_audio_processors/format_types/LV2_SDK,/Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_audio_processors/format_types/LV2_SDK/lv2,/Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_audio_processors/format_types/LV2_SDK/serd,/Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_audio_processors/format_types/LV2_SDK/sord,/Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_audio_processors/format_types/LV2_SDK/sord/src,/Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_audio_processors/format_types/LV2_SDK/sratom,/Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_audio_processors/format_types/LV2_SDK/lilv,/Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_audio_processors/format_types/LV2_SDK/lilv/src,"$(inherited)");
-				INFOPLIST_FILE = "/Users/arminjay/Desktop/me/JUCE/Earx/Earx/build-ios/CMakeFiles/Earx.dir/Info.plist";
-				INSTALL_PATH = "$(LOCAL_APPS_DIR)";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				HEADER_SEARCH_PATHS = (/Users/arminjay/Desktop/me/JUCE/Earx/Earx,/Users/arminjay/Desktop/me/JUCE/Earx/Earx/Source,/Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules,/Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_audio_processors/format_types/VST3_SDK,/Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_audio_processors/format_types/LV2_SDK,/Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_audio_processors/format_types/LV2_SDK/lv2,/Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_audio_processors/format_types/LV2_SDK/serd,/Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_audio_processors/format_types/LV2_SDK/sord,/Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_audio_processors/format_types/LV2_SDK/sord/src,/Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_audio_processors/format_types/LV2_SDK/sratom,/Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_audio_processors/format_types/LV2_SDK/lilv,/Users/arminjay/Desktop/me/JUCE/Earx/Earx/External/JUCE/modules/juce_audio_processors/format_types/LV2_SDK/lilv/src,"$(inherited)");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_CFLAGS = ("       -DNDEBUG ","$(inherited)");
 				OTHER_CPLUSPLUSFLAGS = "       -DNDEBUG '-std=gnu++17' -Wno-deprecated-declarations ";
-				OTHER_LDFLAGS = (" -Wl,-headerpad_max_install_names","-framework CoreGraphics","-framework CoreImage","-framework CoreText","-framework CoreServices","-framework UIKit","-weak_framework Metal","-weak_framework MetalKit","-weak_framework UniformTypeIdentifiers","-framework WebKit","-weak_framework UserNotifications","-framework CoreAudio","-framework CoreMIDI","-framework AVFoundation","-framework CoreAudioKit","-framework Foundation","-framework QuartzCore","-framework AudioToolbox","-framework Accelerate","-lobjc","$(inherited)");
+				OTHER_LIBTOOLFLAGS = ("");
 				OTHER_REZFLAGS = "";
-				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.Earx;
-				PRODUCT_NAME = EarX;
+				PRODUCT_NAME = EarxAudioEngine;
 				SECTORDER_FLAGS = "";
-				SKIP_INSTALL = NO;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TARGET_TEMP_DIR = "/Users/arminjay/Desktop/me/JUCE/Earx/Earx/build-ios/build/Earx.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				TARGET_TEMP_DIR = "/Users/arminjay/Desktop/me/JUCE/Earx/Earx/build-ios/build/EarxAudioEngine.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
 				USE_HEADERMAP = NO;
 				WARNING_CFLAGS = ("$(inherited)");
 			};
 			name = RelWithDebInfo;
-		};
-		F68D2F40F4484F6EB28FCF2E /* RelWithDebInfo */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INSTALL_PATH = "";
-				OTHER_LDFLAGS = ("","$(inherited)");
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = ZERO_CHECK;
-				SECTORDER_FLAGS = "";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
-			};
-			name = RelWithDebInfo;
-		};
-		F6AF85F38ABF459DB55F0EF6 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INSTALL_PATH = "";
-				OTHER_LDFLAGS = ("","$(inherited)");
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = ZERO_CHECK;
-				SECTORDER_FLAGS = "";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("$(inherited)");
-			};
-			name = Debug;
-		};
-		F9129F0C60BD44D285D0E0A3 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = arm64;
-				SDKROOT = iphonesimulator;
-				SYMROOT = "/Users/arminjay/Desktop/me/JUCE/Earx/Earx/build-ios/build";
-			};
-			name = Debug;
-		};
-		FCF64EA364A04535BDDE78D4 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = arm64;
-				SDKROOT = iphonesimulator;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SYMROOT = "/Users/arminjay/Desktop/me/JUCE/Earx/Earx/build-ios/build";
-			};
-			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2D7B5DBCCF3B43EAABBB82F1 /* Build configuration list for PBXProject "Earx" */ = {
+		4D883B7B31634D07A22865A7 /* Build configuration list for PBXAggregateTarget "install" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F9129F0C60BD44D285D0E0A3 /* Debug */,
-				FCF64EA364A04535BDDE78D4 /* Release */,
-				36C6AB96CFA84AC5A3CC0B7B /* MinSizeRel */,
-				BB0BE617013B4627A81C90B0 /* RelWithDebInfo */,
+				DBCF05A47C9945469BC0E0B3 /* Debug */,
+				82C3A2A318F74D5183737727 /* Release */,
+				D9900D8497854AA78428D113 /* MinSizeRel */,
+				39DE2A6E2A1C441B8606B729 /* RelWithDebInfo */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		42DE43FEA8D6432EB19BA79E /* Build configuration list for PBXAggregateTarget "install" */ = {
+		AC98EF5309654BDF91681946 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8D2D2A2F323642EB94F3E14A /* Debug */,
-				3F90099E469B48B68E9C9BE3 /* Release */,
-				11070B99BA1B451AA5C5EEF3 /* MinSizeRel */,
-				510364D60D05421FAF5E1C97 /* RelWithDebInfo */,
+				B5FDF613B0D0492198CE6F27 /* Debug */,
+				5217EC8ACEFE474AB10E99CD /* Release */,
+				9CCD7A3CFBEB47BCB5FEAB91 /* MinSizeRel */,
+				E8BDB4A8BF2B430B8BE38EE2 /* RelWithDebInfo */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		4FA0F1CA3CD942F284D6F18E /* Build configuration list for PBXNativeTarget "Earx" */ = {
+		E480921047D240F1ABF201D1 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0CB6B606B56C46ED807AD290 /* Debug */,
-				52050D58DFB44A7E84A36020 /* Release */,
-				908C35B6115B4413B12638B2 /* MinSizeRel */,
-				C7060D67242B497B99343FF7 /* RelWithDebInfo */,
+				CFF883B3080F4477977E84FF /* Debug */,
+				32FBBB727DC54782A1DC0300 /* Release */,
+				D07CF45BD46540098B7CF14E /* MinSizeRel */,
+				CC4472F964BF460EB5629607 /* RelWithDebInfo */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		9EAB66BD907D462BAD0C8BCD /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+		E5A1EF9171AD4355848C6D0B /* Build configuration list for PBXProject "Earx" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				ADCF6474969C4EFC95685CF1 /* Debug */,
-				0EE92BE0EBF8446B8FF4DB79 /* Release */,
-				5C03DB91529E4E32902BCB1A /* MinSizeRel */,
-				954A4112CC7C4E8B8D9B786C /* RelWithDebInfo */,
+				482B33689FFD4D17858DE028 /* Debug */,
+				6F9C2C978AFA415EAD7C4379 /* Release */,
+				F1DBB43E9AA749D58F4C4E86 /* MinSizeRel */,
+				E3EE2934B1924E7080018D44 /* RelWithDebInfo */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		CA2C93313B574897A2913666 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+		F157FA6A06CA4048ABA40EEE /* Build configuration list for PBXNativeTarget "EarxAudioEngine" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F6AF85F38ABF459DB55F0EF6 /* Debug */,
-				5AEECCFE0CF94EC2998169D7 /* Release */,
-				B74F6D60E7A445BD8A5D26CF /* MinSizeRel */,
-				F68D2F40F4484F6EB28FCF2E /* RelWithDebInfo */,
+				7C38A464E8F94D868205B80A /* Debug */,
+				3F8ED4731DE14AF887E0F45E /* Release */,
+				AD6C473AC620436A990660C1 /* MinSizeRel */,
+				FEFBFE5EBA4E443AAD114EDF /* RelWithDebInfo */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 6C3D1CB7B3FB4E74AEF80895 /* Project object */;
+	rootObject = 6E9D21AAB2724CC2901BFDDA /* Project object */;
 }

@@ -1,5 +1,9 @@
 #pragma once
-#include <JuceHeader.h>
+#include <juce_audio_basics/juce_audio_basics.h>
+#include <juce_audio_devices/juce_audio_devices.h>
+#include <juce_audio_formats/juce_audio_formats.h>
+#include <juce_audio_utils/juce_audio_utils.h>
+#include <juce_core/juce_core.h>
 #include "AppState.h"  // 完整包含而不是前向声明
 #include "PianoSound.h"
 #include "PianoVoice.h"
@@ -31,6 +35,7 @@ public:
     // 音色管理
     void switchTimbre(bool isPianoMode);
     void setupSynthesiser();
+    void preloadPianoSamples();
     
     // 音量控制
     void setMasterVolume(float volume);
@@ -50,10 +55,17 @@ public:
     // 获取合成器引用（用于MainComponent的getNextAudioBlock）
     juce::Synthesiser& getSynthesiser() { return synth; }
     
+    // 采样加载状态查询
+    bool arePianoSamplesLoaded() const;
+    
 private:
     AppState* appState;
     juce::Synthesiser synth;
     double currentSampleRate = 44100.0;
+    bool soundsInitialized = false;
+    juce::CriticalSection synthMutex; // 保护对 synth 的并发访问
+    DummySound* dummySound = nullptr;
+    PianoSound* pianoSound = nullptr;
     
     // SFZ文件路径辅助方法
     juce::File getSFZFile() const;

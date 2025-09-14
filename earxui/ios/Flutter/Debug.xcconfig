@@ -1,0 +1,18 @@
+#include? "Pods/Target Support Files/Pods-Runner/Pods-Runner.debug.xcconfig"
+#include "Generated.xcconfig"
+
+// EarX Audio Engine Static Library Configuration
+// Use configuration+platform-specific output folder from CMake/Xcode
+// e.g. Debug-iphonesimulator, Debug-iphoneos, Release-iphoneos
+// Search multiple CMake/Xcode config folders to avoid missing library when
+// Runner uses "Profile" but CMake project only has RelWithDebInfo/Release/Debug
+LIBRARY_SEARCH_PATHS = $(inherited) \
+  ../../build-ios/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME) \
+  ../../build-ios/RelWithDebInfo$(EFFECTIVE_PLATFORM_NAME) \
+  ../../build-ios/Release$(EFFECTIVE_PLATFORM_NAME) \
+  ../../build-ios/Debug$(EFFECTIVE_PLATFORM_NAME)
+
+// Link statically by name; symbol references in EarxAudioEngineInit.c
+// ensure the archive is pulled without -force_load
+OTHER_LDFLAGS = $(inherited) -lEarxAudioEngine -framework AVFoundation -framework AudioToolbox -framework CoreMIDI -framework Accelerate -weak_framework CoreAudioKit -Wl,-u,_earx_initialize -Wl,-u,_earx_is_initialized
+HEADER_SEARCH_PATHS = $(inherited) ../../Source

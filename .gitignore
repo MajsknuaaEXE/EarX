@@ -1,5 +1,9 @@
+# ===============================
+# EarX 混合架构项目 Git Ignore
+# ===============================
+
 # =======================
-# JUCE Project Git Ignore
+# JUCE C++ 音频引擎部分
 # =======================
 
 # 忽略 Projucer 自动生成的用户配置文件
@@ -10,6 +14,10 @@
 Builds/
 */Builds/
 DerivedData/
+build/
+build-*/
+Debug/
+Release/
 
 # 忽略临时缓存、二进制文件
 *.o
@@ -20,6 +28,8 @@ DerivedData/
 *.app
 *.dylib
 *.pdb
+*.a
+*.so
 
 # 忽略编译中间文件
 *.pch
@@ -28,21 +38,88 @@ DerivedData/
 *.ipdb
 *.iobj
 
-# 忽略日志文件
-*.log
-
-# 忽略系统文件
-.DS_Store
-Thumbs.db
-
 # 忽略 CMake 构建目录
 cmake-build*/
 CMakeFiles/
 CMakeCache.txt
 Makefile
 *.cmake
+install_manifest.txt
 
-# 忽略 IDE 文件（Xcode、VS、CLion）
+# =======================
+# Flutter 前端部分
+# =======================
+
+# Flutter/Dart 相关
+**/doc/api/
+**/ios/Flutter/.last_build_id
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+.pub-cache/
+.pub/
+build/
+flutter_*.png
+linked_*.ds
+unlinked.ds
+unlinked_spec.ds
+
+# Flutter Web
+lib/generated_plugin_registrant.dart
+
+# Flutter Coverage
+coverage/
+test/.test_coverage.dart
+
+# =======================
+# 移动平台构建文件
+# =======================
+
+# iOS
+**/ios/Flutter/Flutter.framework
+**/ios/Flutter/Flutter.podspec
+**/ios/Flutter/Generated.xcconfig
+**/ios/Flutter/app.flx
+**/ios/Flutter/app.zip
+**/ios/Flutter/flutter_assets/
+**/ios/ServiceDefinitions.json
+**/ios/Runner/GeneratedPluginRegistrant.*
+*.pbxuser
+*.mode1v3
+*.mode2v3
+*.perspectivev3
+xcuserdata
+project.xcworkspace
+
+# Android
+**/android/gradle-wrapper.jar
+**/android/.gradle
+**/android/captures/
+**/android/gradlew
+**/android/gradlew.bat
+**/android/local.properties
+**/android/**/GeneratedPluginRegistrant.java
+**/android/key.properties
+*.jks
+
+# =======================
+# 通用忽略规则
+# =======================
+
+# 忽略日志文件
+*.log
+
+# 忽略系统文件
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# 忽略 IDE 文件
 *.xcworkspace
 *.xcuserstate
 *.xcuserdata
@@ -53,3 +130,19 @@ Makefile
 .idea/
 .vscode/
 JuceLibraryCode/
+
+# 忽略备份文件
+*.backup
+*.bak
+*.tmp
+*.temp
+*~
+
+# 忽略依赖管理
+**/node_modules/
+**/vendor/
+**/.bundle/
+
+# 忽略缓存目录
+.cache/
+**/.pub-cache/

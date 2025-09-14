@@ -1,9 +1,0 @@
-Target dependency graph (4 targets)
-Target 'install' in project 'Earx'
-➜ Explicit dependency on target 'ALL_BUILD' in project 'Earx'
-Target 'ALL_BUILD' in project 'Earx'
-➜ Explicit dependency on target 'ZERO_CHECK' in project 'Earx'
-➜ Explicit dependency on target 'Earx' in project 'Earx'
-Target 'Earx' in project 'Earx'
-➜ Explicit dependency on target 'ZERO_CHECK' in project 'Earx'
-Target 'ZERO_CHECK' in project 'Earx' (no dependencies)

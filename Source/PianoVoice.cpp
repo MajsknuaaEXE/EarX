@@ -18,43 +18,36 @@ void PianoVoice::startNote(int midiNoteNumber, float velocity, juce::Synthesiser
         currentSample = pianoSound->getSampleForNote(midiNoteNumber);
         if (currentSample != nullptr)
         {
+            // 使用 SFZ 样本
             currentPosition = 0.0;
             level = velocity;
             tailOff = 0.0f;
             isPlaying = true;
             
-            // 获取样本的根音符（从SFZ文件中的pitch_keycenter）
+            // 计算音高比率
             int sampleRootNote = pianoSound->getRootNoteForMidiNote(midiNoteNumber);
-            
-            // 计算音高比率 - 对钢琴应用采样率修正
             double sampleSampleRate = pianoSound->getSampleRateForMidiNote(midiNoteNumber);
             double currentSampleRate = getSampleRate();
             double noteFreq = juce::MidiMessage::getMidiNoteInHertz(midiNoteNumber);
             double sampleFreq = juce::MidiMessage::getMidiNoteInHertz(sampleRootNote);
             
-            // 应用采样率修正：样本采样率 / 当前采样率
             pitchRatio = (noteFreq / sampleFreq) * (sampleSampleRate / currentSampleRate);
             
-            // 添加平台特定的调试信息
-            #if JUCE_IOS
-            DBG("=== iOS DEVICE DEBUG ===");
-            #else
-            DBG("=== SIMULATOR DEBUG ===");
-            #endif
-            
-            DBG("Successfully started piano note - sample length: " + juce::String(currentSample->getNumSamples()) + 
-                ", pitch ratio: " + juce::String(pitchRatio) + 
-                ", sample root note: " + juce::String(sampleRootNote) +
-                ", MIDI note: " + juce::String(midiNoteNumber) +
-                ", note freq: " + juce::String(noteFreq) +
-                ", sample freq: " + juce::String(sampleFreq) +
-                ", sample sample rate: " + juce::String(sampleSampleRate) +
-                ", current sample rate: " + juce::String(currentSampleRate));
+            DBG("SFZ sample loaded - pitch ratio: " + juce::String(pitchRatio));
         }
         else
         {
-            DBG("Error: Could not find sample for MIDI note " + juce::String(midiNoteNumber));
-            isPlaying = false;
+            // 回退到合成音色
+            currentSample = nullptr;
+            currentPosition = 0.0;
+            level = velocity * 0.4f;
+            tailOff = 0.0f;
+            isPlaying = true;
+            
+            frequency = juce::MidiMessage::getMidiNoteInHertz(midiNoteNumber);
+            pitchRatio = frequency * 2.0 * juce::MathConstants<double>::pi / getSampleRate();
+            
+            DBG("Using synthetic piano fallback");
         }
     }
     else
@@ -79,7 +72,7 @@ void PianoVoice::stopNote(float, bool allowTailOff)
 
 void PianoVoice::renderNextBlock(juce::AudioBuffer<float>& outputBuffer, int startSample, int numSamples)
 {
-    if (!isVoiceActive() || currentSample == nullptr)
+    if (!isVoiceActive() || !isPlaying)
         return;
     
     auto localLevel = level * volume;
@@ -90,10 +83,10 @@ void PianoVoice::renderNextBlock(juce::AudioBuffer<float>& outputBuffer, int sta
         
         if (tailOff > 0.0f)
         {
-            tailOff *= 0.998f; // 更快的淡出速度 (之前是0.9995f)
+            tailOff *= 0.998f;
             envGain *= tailOff;
             
-            if (tailOff < 0.01f) // 稍微提高停止阈值，更快停止
+            if (tailOff < 0.01f)
             {
                 clearCurrentNote();
                 isPlaying = false;
@@ -101,26 +94,90 @@ void PianoVoice::renderNextBlock(juce::AudioBuffer<float>& outputBuffer, int sta
             }
         }
         
-        // 从样本中读取音频数据
-        int sampleIndex = (int)currentPosition;
-        if (sampleIndex < currentSample->getNumSamples())
+        float sampleL = 0.0f;
+        float sampleR = 0.0f;
+
+        if (currentSample != nullptr)
         {
-            float sample = currentSample->getSample(0, sampleIndex) * localLevel * envGain;
-            
-            for (int channel = 0; channel < outputBuffer.getNumChannels(); ++channel)
+            // 使用 SFZ 样本（带线性插值 + 立体声）
+            const int totalSamples = currentSample->getNumSamples();
+            int idx = (int) currentPosition;
+            if (idx + 1 < totalSamples)
             {
-                outputBuffer.addSample(channel, startSample, sample);
+                float frac = (float) (currentPosition - (double) idx);
+                // 左声道
+                float s0L = currentSample->getSample(0, idx);
+                float s1L = currentSample->getSample(0, idx + 1);
+                sampleL = s0L + frac * (s1L - s0L);
+                // 右声道（若无则复用左声道）
+                if (currentSample->getNumChannels() > 1)
+                {
+                    float s0R = currentSample->getSample(1, idx);
+                    float s1R = currentSample->getSample(1, idx + 1);
+                    sampleR = s0R + frac * (s1R - s0R);
+                }
+                else
+                {
+                    sampleR = sampleL;
+                }
+                // 简单攻击避免起始点击（5ms 渐入）
+                const double attackSamples = getSampleRate() * 0.005;
+                if (currentPosition < attackSamples)
+                {
+                    float attackGain = (float) (currentPosition / attackSamples);
+                    envGain *= attackGain;
+                }
+                sampleL *= (localLevel * envGain);
+                sampleR *= (localLevel * envGain);
+                currentPosition += pitchRatio;
+            }
+            else
+            {
+                clearCurrentNote();
+                isPlaying = false;
+                break;
             }
         }
         else
         {
-            // 样本播放完毕
-            clearCurrentNote();
-            isPlaying = false;
-            break;
+            // 合成音色回退
+            float attackTime = getSampleRate() * 0.01f;
+            float decayTime = getSampleRate() * 2.0f;
+            
+            if (currentPosition < attackTime)
+            {
+                envGain = (float)currentPosition / attackTime;
+            }
+            else
+            {
+                float decay = 1.0f - ((float)(currentPosition - attackTime) / decayTime);
+                envGain = juce::jmax(0.3f, decay);
+            }
+            
+            float osc = 0.0f;
+            osc += std::sin(currentPosition * pitchRatio) * 0.6f;
+            osc += std::sin(currentPosition * pitchRatio * 2.0) * 0.3f;
+            osc += std::sin(currentPosition * pitchRatio * 3.0) * 0.15f;
+            osc *= localLevel * envGain;
+            sampleL = sampleR = osc;
+            
+            currentPosition += 1.0;
+            
+            if (tailOff == 0.0f && currentPosition > getSampleRate() * 5.0)
+            {
+                tailOff = 1.0f;
+            }
         }
         
-        currentPosition += pitchRatio;
+        // 写入输出（立体声优先，多通道则复制左右）
+        const int outChans = outputBuffer.getNumChannels();
+        if (outChans > 0)
+            outputBuffer.addSample(0, startSample, sampleL);
+        if (outChans > 1)
+            outputBuffer.addSample(1, startSample, sampleR);
+        for (int ch = 2; ch < outChans; ++ch)
+            outputBuffer.addSample(ch, startSample, 0.5f * (sampleL + sampleR));
+        
         ++startSample;
     }
 }
@@ -131,4 +188,4 @@ void PianoVoice::pitchWheelMoved(int)
 
 void PianoVoice::controllerMoved(int, int)
 {
-} 
+}

@@ -31,6 +31,9 @@ void AudioController::renderNextBlock(juce::AudioBuffer<float>& buffer,
                                     const juce::MidiBuffer& midiBuffer,
                                     int startSample, int numSamples)
 {
+    // 在音频线程中推进淡入淡出与切换逻辑，避免点击声
+    updateFadeTransition();
+    const juce::ScopedLock sl (synthMutex);
     synth.renderNextBlock(buffer, midiBuffer, startSample, numSamples);
 }
 
@@ -46,45 +49,70 @@ void AudioController::switchTimbre(bool isPianoMode)
     }
     
     DBG("Starting smooth timbre switch to: " + juce::String(isPianoMode ? "Piano" : "Sine"));
-    
-    appState->audio.targetVolume = appState->audio.masterVolume;
+    // 先淡出，淡出完成后在音频线程执行真正的切换，再淡入
     startTimbreFadeOut(isPianoMode);
-    appState->notifyAudioStateChanged();
 }
 
 void AudioController::setupSynthesiser()
 {
+    DBG("=== setupSynthesiser() called ===");
     DBG("Starting synthesiser setup, mode: " + juce::String(appState->audio.isPianoMode ? "piano" : "sine"));
-    
-    // 清除现有的voices和sounds
+    const juce::ScopedLock sl (synthMutex);
+    // 只清除现有的voices，保留sounds（一次性添加，避免切换时重新加载样本）
     synth.clearVoices();
-    synth.clearSounds();
-    
-    if (appState->audio.isPianoMode)
+
+    // 首次初始化时一次性添加两种Sound（DummySound + PianoSound），之后不再移除
+    if (!soundsInitialized)
     {
-        // 钢琴模式
-        DBG("Setting up piano mode");
-        for (int i = 0; i < 8; ++i)
-            synth.addVoice(new PianoVoice());
-        
-        // 创建新的PianoSound对象
-        auto* pianoSound = new PianoSound();
+        // 添加正弦用的占位Sound
+        dummySound = new DummySound();
+        synth.addSound(dummySound);
+
+        // 添加钢琴Sound：异步加载避免阻塞UI
+        pianoSound = new PianoSound();
+        synth.addSound(pianoSound);
         
         juce::File sfzFile = getSFZFile();
         if (sfzFile.exists())
         {
-            pianoSound->loadSFZ(sfzFile);
+            DBG("Starting async SFZ loading to avoid UI blocking");
+            pianoSound->loadSFZAsync(sfzFile, [this](bool completed, int progress, int loadedSamples) {
+                if (completed)
+                {
+                    DBG("[Preload] SFZ piano samples preloaded");
+                }
+                else
+                {
+                    DBG("[Preload] Loading progress: " + juce::String(progress) + "% (" + juce::String(loadedSamples) + " samples)");
+                }
+            });
         }
-        
-        synth.addSound(pianoSound);
+        else
+        {
+            DBG("Initial attach: SFZ file not found, piano sound will be silent");
+        }
+
+        soundsInitialized = true;
+    }
+    
+    if (appState->audio.isPianoMode)
+    {
+        // 钢琴模式：仅添加钢琴 Voices（PianoSound 已常驻）
+        DBG("Setting up piano mode with SFZ samples");
+        if (dummySound) dummySound->setEnabled(false);
+        if (pianoSound) pianoSound->setEnabled(true);
+        for (int i = 0; i < 8; ++i)
+            synth.addVoice(new PianoVoice());
+        DBG("Piano mode setup complete");
     }
     else
     {
-        // 正弦波模式
+        // 正弦波模式：仅添加正弦 Voices（DummySound 已常驻）
         DBG("Setting up sine mode");
+        if (dummySound) dummySound->setEnabled(true);
+        if (pianoSound) pianoSound->setEnabled(false);
         for (int i = 0; i < 8; ++i)
             synth.addVoice(new SineVoice());
-        synth.addSound(new DummySound());
     }
     
     // 应用当前音量设置
@@ -113,12 +141,14 @@ void AudioController::setMasterVolume(float volume)
 void AudioController::applyVolumeToVoices(float volume)
 {
     float effectiveVolume = volume * appState->audio.currentFadeVolume;
-    
+    const juce::ScopedLock sl (synthMutex);
+    // 为了匹配两种音色的主观响度，适当降低正弦波音色的电平
+    constexpr float kSineLoudnessScale = 0.55f; // 调整此系数以微调两种音色的相对音量
     for (int i = 0; i < synth.getNumVoices(); ++i)
     {
         if (auto* sineVoice = dynamic_cast<SineVoice*>(synth.getVoice(i)))
         {
-            sineVoice->setVolume(effectiveVolume);
+            sineVoice->setVolume(effectiveVolume * kSineLoudnessScale);
         }
         else if (auto* pianoVoice = dynamic_cast<PianoVoice*>(synth.getVoice(i)))
         {
@@ -139,17 +169,13 @@ void AudioController::startTimbreFadeOut(bool targetIsPianoMode)
 
 void AudioController::performTimbreSwitch()
 {
-    DBG("Performing actual timbre switch");
+    DBG("Performing timbre switch fade transition");
     
     // 停止所有正在播放的音符
     stopAllNotes();
-    
-    // 切换模式
+    // 在音频线程中完成真正的音色切换，避免点击
     appState->audio.isPianoMode = appState->audio.nextIsPianoMode;
-    
-    // 重新设置合成器
     setupSynthesiser();
-    
     DBG("Timbre switched to: " + juce::String(appState->audio.isPianoMode ? "Piano" : "Sine"));
     
     // 开始淡入
@@ -217,22 +243,26 @@ void AudioController::playNote(int midiNote, float velocity)
         DBG("MIDI output disabled, ignoring note: " + juce::String(midiNote));
         return;
     }
-    
+    const juce::ScopedLock sl (synthMutex);
     synth.noteOn(1, midiNote, velocity);
 }
 
 void AudioController::stopNote(int midiNote)
 {
+    const juce::ScopedLock sl (synthMutex);
     synth.noteOff(1, midiNote, 0.0f, true); // 允许淡出
 }
 
 void AudioController::stopAllNotes()
 {
+    const juce::ScopedLock sl (synthMutex);
     synth.allNotesOff(1, true); // 允许淡出
 }
 
 juce::File AudioController::getSFZFile() const
 {
+    DBG("=== getSFZFile() called ===");
+    
     // iOS真机优先：尝试从app bundle获取资源
     #if JUCE_IOS
     juce::File bundleDir = juce::File::getSpecialLocation(juce::File::currentApplicationFile);
@@ -246,15 +276,26 @@ juce::File AudioController::getSFZFile() const
         DBG("  - " + file.getFileName() + (file.isDirectory() ? " (dir)" : " (file)"));
     }
     
-    // 正确的文件夹结构：UprightPianoKW-small-SFZ-20190703/UprightPianoKW-small-20190703.sfz
-    juce::File bundleSFZ = bundleDir
-        .getChildFile("UprightPianoKW-small-SFZ-20190703")
-        .getChildFile("UprightPianoKW-small-20190703.sfz");
-    
-    DBG("Checking bundle SFZ path: " + bundleSFZ.getFullPathName());
-    if (bundleSFZ.exists()) {
-        DBG("Found SFZ in app bundle: " + bundleSFZ.getFullPathName());
-        return bundleSFZ;
+    // 常规：保留目录层级的蓝色文件夹
+    {
+        juce::File bundleSFZ = bundleDir
+            .getChildFile("AccurateSalamanderGrandPianoV6.0_48khz16bit")
+            .getChildFile("sfz")
+            .getChildFile("Accurate-SalamanderGrandPiano_flat.Recommended_vel9_dry_flac_48_84.sfz");
+        DBG("Checking bundle SFZ path: " + bundleSFZ.getFullPathName());
+        if (bundleSFZ.exists()) {
+            DBG("Found SFZ in app bundle: " + bundleSFZ.getFullPathName());
+            return bundleSFZ;
+        }
+    }
+
+    // 特殊：若以“创建组（黄色文件夹）”方式添加，可能被扁平化到根目录
+    {
+        juce::File flatSFZ = bundleDir.getChildFile("Accurate-SalamanderGrandPiano_flat.Recommended_vel9_dry_flac_48_84.sfz");
+        if (flatSFZ.exists()) {
+            DBG("Found flat SFZ in bundle root: " + flatSFZ.getFullPathName());
+            return flatSFZ;
+        }
     }
     
     DBG("SFZ not found in bundle structure, trying Resources directory...");
@@ -273,13 +314,54 @@ juce::File AudioController::getSFZFile() const
         }
         
         juce::File resourcesSFZ = resourcesDir
-            .getChildFile("UprightPianoKW-small-SFZ-20190703")
-            .getChildFile("UprightPianoKW-small-20190703.sfz");
+            .getChildFile("AccurateSalamanderGrandPianoV6.0_48khz16bit")
+            .getChildFile("sfz")
+            .getChildFile("Accurate-SalamanderGrandPiano_flat.Recommended_vel9_dry_flac_48_84.sfz");
             
         if (resourcesSFZ.exists()) {
             DBG("Found SFZ in Resources: " + resourcesSFZ.getFullPathName());
             return resourcesSFZ;
         }
+    }
+    // 再尝试：Flutter 资产目录 (Runner.app/Frameworks/App.framework/flutter_assets/...)
+    {
+        auto flutterAssets = bundleDir
+            .getChildFile("Frameworks")
+            .getChildFile("App.framework")
+            .getChildFile("flutter_assets");
+        DBG("Flutter assets dir: " + flutterAssets.getFullPathName() + ", exists=" + juce::String(flutterAssets.exists() ? "true" : "false"));
+
+        // 允许两种布局：直接放在 flutter_assets/Accurate... 或 flutter_assets/assets/Accurate...
+        juce::File fa1 = flutterAssets
+            .getChildFile("AccurateSalamanderGrandPianoV6.0_48khz16bit")
+            .getChildFile("sfz")
+            .getChildFile("Accurate-SalamanderGrandPiano_flat.Recommended_vel9_dry_flac_48_84.sfz");
+        juce::File fa2 = flutterAssets
+            .getChildFile("assets")
+            .getChildFile("AccurateSalamanderGrandPianoV6.0_48khz16bit")
+            .getChildFile("sfz")
+            .getChildFile("Accurate-SalamanderGrandPiano_flat.Recommended_vel9_dry_flac_48_84.sfz");
+        if (fa1.exists()) { DBG("Found SFZ in flutter_assets: " + fa1.getFullPathName()); return fa1; }
+        if (fa2.exists()) { DBG("Found SFZ in flutter_assets/assets: " + fa2.getFullPathName()); return fa2; }
+    }
+
+    // 最后尝试：应用可写目录（可通过 Files / iTunes 拷入）
+    {
+        auto docs = juce::File::getSpecialLocation(juce::File::userDocumentsDirectory);
+        juce::File docsSFZ = docs
+            .getChildFile("AccurateSalamanderGrandPianoV6.0_48khz16bit")
+            .getChildFile("sfz")
+            .getChildFile("Accurate-SalamanderGrandPiano_flat.Recommended_vel9_dry_flac_48_84.sfz");
+        DBG("Documents dir: " + docs.getFullPathName() + ", candidate: " + docsSFZ.getFullPathName());
+        if (docsSFZ.exists()) { DBG("Found SFZ in Documents"); return docsSFZ; }
+
+        auto appData = juce::File::getSpecialLocation(juce::File::userApplicationDataDirectory);
+        juce::File dataSFZ = appData
+            .getChildFile("AccurateSalamanderGrandPianoV6.0_48khz16bit")
+            .getChildFile("sfz")
+            .getChildFile("Accurate-SalamanderGrandPiano_flat.Recommended_vel9_dry_flac_48_84.sfz");
+        DBG("ApplicationSupport dir: " + appData.getFullPathName() + ", candidate: " + dataSFZ.getFullPathName());
+        if (dataSFZ.exists()) { DBG("Found SFZ in ApplicationSupport"); return dataSFZ; }
     }
     #endif
     
@@ -287,10 +369,27 @@ juce::File AudioController::getSFZFile() const
     DBG("Using source directory fallback");
     juce::File sourceDir = juce::File(__FILE__).getParentDirectory();
     juce::File sourceSFZ = sourceDir
-        .getChildFile("UprightPianoKW-small-SFZ-20190703")
-        .getChildFile("UprightPianoKW-small-20190703.sfz");
+        .getChildFile("AccurateSalamanderGrandPianoV6.0_48khz16bit")
+        .getChildFile("sfz")
+        .getChildFile("Accurate-SalamanderGrandPiano_flat.Recommended_vel9_dry_flac_48_84.sfz");
     
     DBG("Source SFZ exists: " + juce::String(sourceSFZ.exists() ? "true" : "false"));
     DBG("Using source directory SFZ: " + sourceSFZ.getFullPathName());
     return sourceSFZ;
 } 
+void AudioController::preloadPianoSamples()
+{
+    // 现在由 setupSynthesiser() 中的异步加载处理，这个方法已不需要
+    DBG("[Preload] Piano samples will be loaded asynchronously by setupSynthesiser()");
+}
+
+bool AudioController::arePianoSamplesLoaded() const
+{
+    const juce::ScopedLock sl(synthMutex);
+    
+    if (!soundsInitialized || !pianoSound) {
+        return false;
+    }
+    
+    return pianoSound->isLoaded();
+}

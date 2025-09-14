@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.22)
 
-project(Earx VERSION 0.3.1 LANGUAGES CXX OBJC OBJCXX)
+project(Earx VERSION 1.0.0 LANGUAGES CXX OBJC OBJCXX)
 
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
@@ -19,72 +19,43 @@ else()
     add_subdirectory("${JUCE_DIR}" EXCLUDE_FROM_ALL)
 endif()
 
-# ===== 源文件 =====
+# ===== 核心音频引擎源文件 =====
 set(SOURCES
     Source/AppState.cpp
     Source/AudioController.cpp
     Source/DummySound.cpp
-    Source/EarxLookAndFeel.cpp
     Source/InteractionController.cpp
-    Source/IOSApp.cpp
-    Source/LightIndicator.cpp
-    Source/MainComponent.cpp
-    Source/MainWindow.cpp
     Source/PianoSound.cpp
     Source/PianoVoice.cpp
     Source/PlaybackEngine.cpp
     Source/SineVoice.cpp
-    Source/SplashScreen.cpp
-    Source/Main.mm
+    Source/EarxAudioEngineFFI.cpp
 )
 
 set(HEADERS
     Source/AppState.h
     Source/AudioController.h
     Source/DummySound.h
-    Source/EarxLookAndFeel.h
     Source/InteractionController.h
-    Source/IOSApp.h
-    Source/LightIndicator.h
-    Source/MainComponent.h
-    Source/MainWindow.h
     Source/PianoSound.h
     Source/PianoVoice.h
     Source/PlaybackEngine.h
     Source/SineVoice.h
-    Source/SplashScreen.h
+    Source/EarxAudioEngineFFI.h
 )
 
-# App 图标（Assets）
-set(APP_ICON_RESOURCES)
-if(EXISTS "${CMAKE_CURRENT_SOURCE_DIR}/Assets.xcassets/AppIcon.appiconset/Contents.json")
-    file(GLOB APP_ICONS "Assets.xcassets/AppIcon.appiconset/*.png")
-    set(APP_ICON_RESOURCES ${APP_ICONS} "Assets.xcassets/AppIcon.appiconset/Contents.json")
-elseif(EXISTS "${CMAKE_CURRENT_SOURCE_DIR}/Builds/iOS/Assets.xcassets/AppIcon.appiconset/Contents.json")
-    file(GLOB APP_ICONS "Builds/iOS/Assets.xcassets/AppIcon.appiconset/*.png")
-    set(APP_ICON_RESOURCES ${APP_ICONS} "Builds/iOS/Assets.xcassets/AppIcon.appiconset/Contents.json")
-endif()
+# ===== 创建音频引擎库 =====
+# 改为静态库供Flutter FFI使用
+add_library(EarxAudioEngine STATIC ${SOURCES} ${HEADERS})
 
-# ===== 创建 GUI App（官方） =====
-juce_add_gui_app(Earx
-    PRODUCT_NAME "EarX"
-    # 如果你需要开 VST/AU 等插件格式，改用 juce_add_plugin
-)
+# 注释掉 JuceHeader.h 生成 - 静态库不需要
+# juce_generate_juce_header(EarxAudioEngine)
 
-# 生成 JuceHeader.h（代替你旧的 JuceLibraryCode）
-juce_generate_juce_header(Earx)
-
-# 源码
-target_sources(Earx PRIVATE ${SOURCES} ${HEADERS})
-
-# 依赖的 JUCE 模块（按你项目需求增减）
-target_link_libraries(Earx PRIVATE
-    juce::juce_gui_extra
-    juce::juce_gui_basics
-    juce::juce_graphics
-    juce::juce_events
-    juce::juce_data_structures
+# 音频引擎核心 JUCE 模块
+target_link_libraries(EarxAudioEngine PRIVATE
     juce::juce_core
+    juce::juce_data_structures
+    juce::juce_events
 
     juce::juce_audio_utils
     juce::juce_audio_processors
@@ -95,78 +66,65 @@ target_link_libraries(Earx PRIVATE
     juce::juce_dsp
 )
 
+# Xcode 平台与构建属性（确保可同时针对 iOS 与模拟器构建）
+if(APPLE)
+    # 允许目标在 iOS 真机与 iOS 模拟器平台上构建
+    set_target_properties(EarxAudioEngine PROPERTIES
+        XCODE_ATTRIBUTE_SUPPORTED_PLATFORMS "iphonesimulator iphoneos"
+        XCODE_ATTRIBUTE_SKIP_INSTALL "YES"
+        XCODE_ATTRIBUTE_ENABLE_BITCODE "NO"
+    )
+endif()
+
 # 统一编译定义（不要再去碰模块内部）
-target_compile_definitions(Earx PRIVATE
+target_compile_definitions(EarxAudioEngine PRIVATE
     JUCE_APPLICATION_NAME_STRING="EarX"
     JUCE_APPLICATION_VERSION_STRING="${PROJECT_VERSION}"
     JUCE_WEB_BROWSER=0
     JUCE_USE_CURL=0
     JUCE_STRICT_REFCOUNTEDPOINTER=1
     JUCE_STANDALONE_APPLICATION=1
+    # iOS特定：禁用MIDI以避免断言失败
+    JUCE_ALSA=0
+    JUCE_USE_ANDROID_MIDI_API=0
+    JUCE_USE_WINRT_MIDI=0
+    JUCE_DISABLE_AUDIO_MIXING_WITH_OTHER_APPS=0
+    # 完全禁用MIDI功能
+    JUCE_USE_COREMIDI=0
+    JUCE_PLUGINHOST_AU=0
+    JUCE_PLUGINHOST_VST3=0
+    JUCE_USE_MP3AUDIOFORMAT=0
+    # 禁用MIDI设备扫描
+    JUCE_DONT_AUTO_OPEN_MIDI_DEVICES_ON_MOBILE=1
     $<$<CONFIG:Debug>:DEBUG=1;_DEBUG=1>
 )
 
 # 头文件路径（你的工程里还有自有头）
-target_include_directories(Earx PRIVATE
+target_include_directories(EarxAudioEngine PRIVATE
     "${CMAKE_CURRENT_SOURCE_DIR}"
 )
 
 # =============================================
-# 钢琴样本（打进 bundle，不做二进制内嵌）
+# 钢琴样本（Accurate Salamander Grand Piano）
 file(GLOB_RECURSE PIANO_SAMPLES
-    "Source/UprightPianoKW-small-SFZ-20190703/samples/*.wav")
+    "Source/AccurateSalamanderGrandPianoV6.0_48khz16bit/48khz16bit_vel9_dry_flac/*.flac")
 
 set(PIANO_META
-    Source/UprightPianoKW-small-SFZ-20190703/cc0.txt
-    Source/UprightPianoKW-small-SFZ-20190703/photo.jpg
-    Source/UprightPianoKW-small-SFZ-20190703/readme.txt
-    Source/UprightPianoKW-small-SFZ-20190703/UprightPianoKW-small-20190703.sfz
+    Source/AccurateSalamanderGrandPianoV6.0_48khz16bit/README.txt
+    Source/AccurateSalamanderGrandPianoV6.0_48khz16bit/README.orig.txt
+    Source/AccurateSalamanderGrandPianoV6.0_48khz16bit/sfz/Accurate-SalamanderGrandPiano_flat.Recommended_vel9_dry_flac_48_84.sfz
 )
 
-set_source_files_properties(${PIANO_META} PROPERTIES
-    MACOSX_PACKAGE_LOCATION "Resources/UprightPianoKW-small-SFZ-20190703")
-set_source_files_properties(${PIANO_SAMPLES} PROPERTIES
-    MACOSX_PACKAGE_LOCATION "Resources/UprightPianoKW-small-SFZ-20190703/samples")
-target_sources(Earx PRIVATE ${PIANO_META} ${PIANO_SAMPLES} ${APP_ICON_RESOURCES})
+# 钢琴样本将通过Flutter资源系统加载，无需编译进库
 
-
-# ===== 平台差异化设置 & 资源放包 =====
-if(CMAKE_SYSTEM_NAME STREQUAL "iOS")
-    # iOS 包信息 + 自动签名（Personal Team 也能跑真机）
-    set_target_properties(Earx PROPERTIES
-        MACOSX_BUNDLE TRUE
-        MACOSX_BUNDLE_GUI_IDENTIFIER "com.earx.earx"
-        XCODE_ATTRIBUTE_IPHONEOS_DEPLOYMENT_TARGET "12.0"
-        XCODE_ATTRIBUTE_TARGETED_DEVICE_FAMILY "1,2"
-        XCODE_ATTRIBUTE_ENABLE_BITCODE NO
-        XCODE_ATTRIBUTE_CODE_SIGN_STYLE "Automatic"
-        XCODE_ATTRIBUTE_ASSETCATALOG_COMPILER_APPICON_NAME "AppIcon"
-        # 如有 TeamID：cmake -DCMAKE_XCODE_ATTRIBUTE_DEVELOPMENT_TEAM=YOURTEAM ..
-        XCODE_ATTRIBUTE_DEVELOPMENT_TEAM "${CMAKE_XCODE_ATTRIBUTE_DEVELOPMENT_TEAM}"
-    )
-
-    # 把资源打进 iOS 包
-    set_source_files_properties(${PIANO_RESOURCES} PROPERTIES
-        MACOSX_PACKAGE_LOCATION Resources/UprightPianoKW-small-SFZ-20190703)
-    set_source_files_properties(${APP_ICON_RESOURCES} PROPERTIES
-        MACOSX_PACKAGE_LOCATION Resources)
-    target_sources(Earx PRIVATE ${PIANO_RESOURCES} ${APP_ICON_RESOURCES})
-
-else() # macOS
-    set_target_properties(Earx PROPERTIES
-        MACOSX_BUNDLE TRUE
-        MACOSX_BUNDLE_GUI_IDENTIFIER "com.earx.earx"
-        XCODE_ATTRIBUTE_PRODUCT_BUNDLE_IDENTIFIER "com.earx.earx"
-    )
-
-    # 把资源打进 macOS 包
-    set_source_files_properties(${PIANO_RESOURCES} PROPERTIES
-        MACOSX_PACKAGE_LOCATION Resources/UprightPianoKW-small-SFZ-20190703)
-    target_sources(Earx PRIVATE ${PIANO_RESOURCES})
-endif()
 
 # 警告级别
-target_compile_options(Earx PRIVATE
+target_compile_options(EarxAudioEngine PRIVATE
     $<$<COMPILE_LANGUAGE:CXX>:-Wno-deprecated-declarations>
     $<$<COMPILE_LANGUAGE:OBJCXX>:-Wno-deprecated-declarations>
+)
+
+# 导出头文件给Flutter使用
+target_include_directories(EarxAudioEngine PUBLIC
+    "${CMAKE_CURRENT_SOURCE_DIR}/Source"
 )

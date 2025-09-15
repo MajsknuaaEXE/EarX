@@ -7,6 +7,7 @@ import 'audio_engine.dart';
 import 'settings_ui.dart';
 import 'splash_screen.dart';
 import 'onboarding_overlay.dart';
+import 'custom_page_transition.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -119,18 +120,15 @@ class _AppState extends State<App> {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: AnimatedSwitcher(
-        duration: const Duration(milliseconds: 800), // 800ms 渐变过渡
+        duration: const Duration(milliseconds: 800), // 恢复原来的800ms过渡时间
         transitionBuilder: (Widget child, Animation<double> animation) {
-          return FadeTransition(
-            opacity: animation,
-            child: child,
-          );
+          return buildAudioThemeTransition(child, animation);
         },
         child: _showSplash
             ? const SplashScreen(key: ValueKey('splash'))
             : _MainPage(
                 key: const ValueKey('main'),
-                audioEngineInitialized: _audioEngineInitialized, 
+                audioEngineInitialized: _audioEngineInitialized,
                 controller: controller,
               ),
       ),

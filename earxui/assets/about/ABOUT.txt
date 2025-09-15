@@ -1,7 +1,9 @@
-EarX — Licenses and Acknowledgements
+EarX — About & Licenses
 
-Application License (MIT)
-Copyright (c) 2025 EarX contributors
+⸻ License ⸻
+
+This app is open-source under the MIT License.
+Copyright (c) 2025 EarX contributors.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -21,16 +23,59 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
-Accurate Salamander Grand Piano (Samples)
-Accurate-Salamander Grand Piano V6.0 48kHz/16bit
-Author/Project: Accurate-Salamander Project (Chisato Yamauchi)
-Website: https://www.ir.isas.jaxa.jp/~cyamauch/AccurateSalamander/
-Original Project: Salamander Grand Piano (Alexander Holm)
-Info: https://freepats.zenvoid.org/Piano/acoustic-grand-piano.html
-License: Creative Commons Attribution 3.0 (CC BY 3.0)
-https://creativecommons.org/licenses/by/3.0/
+⸻ Third-Party Credits ⸻
 
-This application bundles/remasters the Accurate-Salamander soundbank for piano
-playback. We gratefully acknowledge the work of the Accurate-Salamander
-Project and the original Salamander Grand Piano.
+• Accurate-Salamander Grand Piano V6.0 (CC BY 3.0)
+  Author: Chisato Yamauchi
+  Website: https://www.ir.isas.jaxa.jp/~cyamauch/AccurateSalamander/
+  Original Project: Salamander Grand Piano (Alexander Holm)
+
+• JUCE Framework (GPLv3 / Commercial)
+  Audio processing and synthesis engine
+  Website: https://juce.com/
+
+• Flutter Framework
+  Cross-platform UI development framework
+  Developed by Google
+  License: BSD-3-Clause
+
+• Dart Programming Language
+  Client-optimized language for apps
+  Developed by Google
+  License: BSD-3-Clause
+
+• FFI Package (v2.1.2)
+  Dart Foreign Function Interface for native code integration
+  License: BSD-3-Clause
+
+• Shared Preferences (v2.3.2)
+  Persistent key-value storage for Flutter
+  License: BSD-3-Clause
+
+• Tutorial Coach Mark (v1.2.11)
+  Interactive tutorial overlay component
+  License: MIT
+
+⸻ Privacy ⸻
+
+This app does not collect, store, or share personal data.
+All settings and preferences are stored locally on your device.
+
+⸻ Source Code ⸻
+
+GitHub Repository: https://github.com/MajsknuaaEXE/EarX
+Contributions welcome
+
+Support the project: ko-fi.com/yeeey
+
+⸻ Support ⸻
+
+• Report bugs: https://github.com/MajsknuaaEXE/EarX/issues
+• Contact: tdthunderflower@gmail.com
+
+⸻ Version Information ⸻
+
+EarX v1.0.2
+Built with Flutter 3.9.2+ and JUCE v8.0.8
+Compatible with iOS 12.0+
 

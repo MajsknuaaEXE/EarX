@@ -1,3 +1,4 @@
+import 'dart:ui';
 import 'package:flutter/foundation.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
@@ -20,9 +21,9 @@ class LocalizationManager extends ChangeNotifier {
     _loadLanguageFromPreferences();
   }
 
-  SupportedLanguage _currentLanguage = SupportedLanguage.chinese;
+  SupportedLanguage _currentLanguage = SupportedLanguage.english; // 默认英语
   static const String _languageKey = 'selected_language';
-  
+
   SupportedLanguage get currentLanguage => _currentLanguage;
   
   void setLanguage(SupportedLanguage language) {
@@ -39,20 +40,68 @@ class LocalizationManager extends ChangeNotifier {
     }
   }
 
-  // 从 SharedPreferences 加载语言设置
+  // 从 SharedPreferences 加载语言设置，如果是首次启动则自动检测系统语言
   Future<void> _loadLanguageFromPreferences() async {
     try {
       final prefs = await SharedPreferences.getInstance();
       final languageIndex = prefs.getInt(_languageKey);
-      if (languageIndex != null && 
-          languageIndex >= 0 && 
+
+      if (languageIndex != null &&
+          languageIndex >= 0 &&
           languageIndex < SupportedLanguage.values.length) {
+        // 用户已经设置过语言，使用保存的设置
         _currentLanguage = SupportedLanguage.values[languageIndex];
-        notifyListeners();
+      } else {
+        // 首次启动，自动检测系统语言
+        _currentLanguage = await _detectSystemLanguage();
+        // 保存检测到的语言作为默认设置
+        await _saveLanguageToPreferences(_currentLanguage);
       }
+      notifyListeners();
     } catch (e) {
-      // 如果加载失败，使用默认语言
+      // 如果加载失败，使用英语作为默认语言
       debugPrint('Failed to load language preference: $e');
+      _currentLanguage = SupportedLanguage.english;
+      notifyListeners();
+    }
+  }
+
+  // 检测系统语言
+  Future<SupportedLanguage> _detectSystemLanguage() async {
+    try {
+      // 获取系统区域设置
+      final List<Locale> systemLocales = PlatformDispatcher.instance.locales;
+
+      // 如果有系统区域设置，使用第一个
+      if (systemLocales.isNotEmpty) {
+        final primaryLocale = systemLocales.first;
+        final languageCode = primaryLocale.languageCode.toLowerCase();
+
+        debugPrint('检测到系统语言: $languageCode');
+
+        // 根据语言代码匹配支持的语言
+        switch (languageCode) {
+          case 'zh':
+            return SupportedLanguage.chinese;
+          case 'ja':
+            return SupportedLanguage.japanese;
+          case 'de':
+            return SupportedLanguage.german;
+          case 'fr':
+            return SupportedLanguage.french;
+          case 'ko':
+            return SupportedLanguage.korean;
+          case 'en':
+          default:
+            return SupportedLanguage.english;
+        }
+      }
+
+      // 如果无法获取系统区域设置，默认英语
+      return SupportedLanguage.english;
+    } catch (e) {
+      debugPrint('系统语言检测失败: $e');
+      return SupportedLanguage.english;
     }
   }
 
